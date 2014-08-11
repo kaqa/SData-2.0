@@ -1,0 +1,14 @@
+# Site settings
+title: SData test pages
+email: kaqa@users.noreply.github.com
+description: "ToDo wiki description."
+baseurl: "/SData-2.0"
+url: "http://kaqa.github.io"
+twitter_username:
+github_username:  kaqa
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+encoding: utf-8
