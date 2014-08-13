@@ -1,7 +1,9 @@
+---
+---
 @charset "utf-8";
 body {
 	background-attachment: scroll;
-	background-image: url(/daisy/resources/local/img/greenBackLarge.png);
+	background-image: url({{site.baseurl}}/img/greenBackLarge.png);
 	background-repeat: no-repeat;
 	background-position: center 45px;
 }
@@ -34,12 +36,12 @@ body {
 a.Heading3, h3 a {
 	text-decoration:none;
 	padding-right: 40px;
-	background: url(/daisy/resources/local/img/h3arrowV3.gif) no-repeat right 2px;
+	background: url({{site.baseurl}}/img/h3arrowV3.gif) no-repeat right 2px;
 }
 a.Heading3:hover, h3 a:hover {
 	text-decoration:none;
 	padding-right: 40px;
-	background: url(/daisy/resources/local/img/h3arrowV3.gif) no-repeat right -36px;
+	background: url({{site.baseurl}}/img/h3arrowV3.gif) no-repeat right -36px;
 }
 .Heading4, H4 {
 	color: #69923a;
@@ -67,16 +69,16 @@ a.Heading3:hover, h3 a:hover {
 	padding-top: 0.5em;
 	padding-bottom: 0.6em;
 	padding-left:15px;
-	background: url(/daisy/resources/local/img/greyBck2.gif) no-repeat 0 2px;
+	background: url({{site.baseurl}}/img/greyBck2.gif) no-repeat 0 2px;
 	margin-top:1.5em;
 	margin-bottom:1em;
 	font-family: Arial, Helvetica, sans-serif
 }
 #contentOneCol .Heading6, #contentOneCol H6 {
-	background: url(/daisy/resources/local/img/greyBck.gif) no-repeat 0 2px;
+	background: url({{site.baseurl}}/img/greyBck.gif) no-repeat 0 2px;
 }
 #contentLeft .Heading6, #contentLeft H6 {
-	background: url(/daisy/resources/local/img/greyBck2.gif) no-repeat 0 2px;
+	background: url({{site.baseurl}}/img/greyBck2.gif) no-repeat 0 2px;
 }
 .Normal {
 	font-family: Arial, Helvetica, sans serif;
@@ -169,11 +171,11 @@ img {
 	margin-right: auto;
 	margin-bottom: 0px;
 	margin-left: auto;
-	background:url(/daisy/resources/local/img/headerBackTileR.gif) right top no-repeat;
+	background:url({{site.baseurl}}/img/headerBackTileR.gif) right top no-repeat;
 	height:34px;
 }
 #headerUnderlay {
-	background:url(/daisy/resources/local/img/headerBackTileL.gif) no-repeat;
+	background:url({{site.baseurl}}/img/headerBackTileL.gif) no-repeat;
 	height:34px;
 }
 #headerContent {
@@ -187,8 +189,8 @@ img {
 	white-space: nowrap;
 }
 #accMenu {
-	background: url(/daisy/resources/local/img/accBack.jpg) right top no-repeat!important;
-	background: url(/daisy/resources/local/img/accBack.jpg) 685px 0px no-repeat;
+	background: url({{site.baseurl}}/img/accBack.jpg) right top no-repeat!important;
+	background: url({{site.baseurl}}/img/accBack.jpg) 685px 0px no-repeat;
 	margin-top: 0px;
 	margin-right: auto;
 	margin-bottom: -60px;
@@ -215,14 +217,14 @@ img {
 	color: #E9F5F0;
 	text-decoration: none;
 	font-size:0.8em;
-	background:url(/daisy/resources/local/img/triangleCDE6A0.gif) right 50% no-repeat;
+	background:url({{site.baseurl}}/img/triangleCDE6A0.gif) right 50% no-repeat;
 	padding-right:10px;
 	font-weight:bold;
 }
 #accMenu ul li a:hover {
 	color: #FFFFFF;
 	text-decoration: none;
-	background:url(/daisy/resources/local/img/triangleFFFFFF.gif) right 50% no-repeat;
+	background:url({{site.baseurl}}/img/triangleFFFFFF.gif) right 50% no-repeat;
 }
 #outerForm {
 	margin: 0px;
@@ -243,7 +245,7 @@ img {
 	/* width: 212px; */
 	width: 130px;
 	background-attachment: scroll;
-	background: url(/daisy/resources/local/img/search.gif) no-repeat;
+	background: url({{site.baseurl}}/img/search.gif) no-repeat;
 	padding: 0px;
 	margin-top: 5px;
 	margin-right: 40px;
@@ -322,7 +324,7 @@ img {
 	margin-left: auto;
 	width: 987px;
 	position: relative;
-	background: url(/daisy/resources/local/img/tabMenuTabs.jpg) no-repeat 0px 0px;
+	background: url({{site.baseurl}}/img/tabMenuTabs.jpg) no-repeat 0px 0px;
 	height:74px;
 }
 #tabMenuTabs {
@@ -346,7 +348,7 @@ img {
 #tabMenuTabs .softServ {
 	width: 269px;
 	height: 74px;
-	background: url(/daisy/resources/local/img/tabMenuTabs.jpg) no-repeat -170px 0px;
+	background: url({{site.baseurl}}/img/tabMenuTabs.jpg) no-repeat -170px 0px;
 	left: 170px;
 	top: 0px;
 }
@@ -356,7 +358,7 @@ img {
 #tabMenuTabs .supTrain {
 	width: 264px;
 	height: 74px;
-	background: url(/daisy/resources/local/img/tabMenuTabs.jpg) no-repeat -435px 0px;
+	background: url({{site.baseurl}}/img/tabMenuTabs.jpg) no-repeat -435px 0px;
 	left: 435px;
 	top: 0px;
 	cursor:pointer;
@@ -367,7 +369,7 @@ img {
 #tabMenuTabs .sageStore {
 	width: 264px;
 	height: 74px;
-	background: url(/daisy/resources/local/img/tabMenuTabs.jpg) no-repeat -700px 0px;
+	background: url({{site.baseurl}}/img/tabMenuTabs.jpg) no-repeat -700px 0px;
 	left: 700px;
 	top: 0px;
 }
@@ -396,8 +398,8 @@ img {
 	margin-bottom: 0px;
 	margin-left: 178px;
 	background-attachment: scroll;
-	background-image: url(/daisy/resources/local/img/exploreBack.png)!important;
-	background-image: url(/daisy/resources/local/img/exploreBack.gif);
+	background-image: url({{site.baseurl}}/img/exploreBack.png)!important;
+	background-image: url({{site.baseurl}}/img/exploreBack.gif);
 	filter:alpha(opacity=90);
 	background-repeat: no-repeat;
 	background-position: left top;
@@ -412,8 +414,8 @@ img {
 	margin-bottom: 0px;
 	margin-left: 178px;
 	background-attachment: scroll;
-	background-image: url(/daisy/resources/local/img/exploreBackMenu.png)!important;
-	background-image: url(/daisy/resources/local/img/exploreBackMenu.gif);
+	background-image: url({{site.baseurl}}/img/exploreBackMenu.png)!important;
+	background-image: url({{site.baseurl}}/img/exploreBackMenu.gif);
 	background-repeat: no-repeat;
 	background-position: left top;
 	height: 36px;
@@ -473,7 +475,7 @@ img {
 }
 #exploreCol1 h2 {
 	background-attachment: scroll;
-	background-image: url(/daisy/resources/local/img/orange_Bull.gif);
+	background-image: url({{site.baseurl}}/img/orange_Bull.gif);
 	background-repeat: no-repeat;
 	background-position: left 5px;
 	padding-top: 0px;
@@ -519,7 +521,7 @@ img {
 }
 #exploreCol2 h2 {
 	background-attachment: scroll;
-	background-image: url(/daisy/resources/local/img/orange_Bull.gif);
+	background-image: url({{site.baseurl}}/img/orange_Bull.gif);
 	background-repeat: no-repeat;
 	background-position: left 5px;
 	padding-top: 0px;
@@ -565,7 +567,7 @@ img {
 }
 #exploreCol3 h2 {
 	background-attachment: scroll;
-	background-image: url(/daisy/resources/local/img/orange_Bull.gif);
+	background-image: url({{site.baseurl}}/img/orange_Bull.gif);
 	background-repeat: no-repeat;
 	background-position: left 5px;
 	padding-top: 0px;
@@ -633,8 +635,8 @@ img {
 	margin-bottom: 0px;
 	margin-left: 178px;
 	background-attachment: scroll;
-	/* background-image: url(/daisy/resources/local/img/contentBackMid.png)!important; */
-	background-image: url(/daisy/resources/local/img/contentBackMid.gif);
+	/* background-image: url({{site.baseurl}}/img/contentBackMid.png)!important; */
+	background-image: url({{ site.baseurl }}/img/contentBackMid.gif);
 	background-repeat: repeat-y;
 	background-position: left top;
 	display: block;
@@ -663,18 +665,18 @@ h3 {
 	padding-left: 0px;
 }
 #content ul {
-	list-style: url(/daisy/resources/local/img/bullet-green.gif)
+	list-style: url({{site.baseurl}}/img/bullet-green.gif)
 }
 #contentRight ul {
-	list-style: url(/daisy/resources/local/img/spacer.gif)
+	list-style: url({{site.baseurl}}/img/spacer.gif)
 }
 #footer {
 	color: #999999;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	text-align: center;
 	background-attachment: scroll;
-	/* background-image: url(/daisy/resources/local/img/contentBackBot.png)!important; */
-	background-image: url(/daisy/resources/local/img/contentBackBot.gif);
+	/* background-image: url({{site.baseurl}}/img/contentBackBot.png)!important; */
+	background-image: url({{site.baseurl}}/img/contentBackBot.gif);
 	background-repeat: no-repeat;
 	background-position: left bottom;
 	margin-top: 0px;
@@ -695,8 +697,8 @@ h3 {
 	margin-left: 178px;
 	height: 21px;
 	background-attachment: scroll;
-	/* background-image: url(/daisy/resources/local/img/contentBackTop.png)!important; */
-	background-image: url(/daisy/resources/local/img/contentBackTop.gif);
+	/* background-image: url({{site.baseurl}}/img/contentBackTop.png)!important; */
+	background-image: url({{site.baseurl}}/img/contentBackTop.gif);
 	background-repeat: no-repeat;
 	background-position: left top;
 }
@@ -832,7 +834,7 @@ div#sidemenu a SPAN {
 }
 #RightSideMenu {
 	background-attachment: scroll;
-	background-image: url(/daisy/resources/local/img/thisSectionBackmid.gif);
+	background-image: url({{site.baseurl}}/img/thisSectionBackmid.gif);
 	background-repeat: repeat-y;
 	background-position: left top;
 	padding: 0px;
@@ -866,7 +868,7 @@ div#sidemenu a SPAN {
 	width: 197px;
 	height: 6px;
 	background-attachment: scroll;
-	background-image: url(/daisy/resources/local/img/thisSectionBackTop.gif);
+	background-image: url({{site.baseurl}}/img/thisSectionBackTop.gif);
 	background-repeat: no-repeat;
 	background-position: center bottom;
 }
@@ -962,7 +964,7 @@ div#sidemenu a SPAN {
 	background-color:#E5F5C6;
 	border-top:1px solid #D3DDDC;
 	border-bottom:1px solid #D3DDDC;
-	background-image:url(/daisy/resources/local/img/LsqBltGreyon.gif);
+	background-image:url({{site.baseurl}}/img/LsqBltGreyon.gif);
 	background-repeat:no-repeat;
 } /* defines level 0 bullet for children if selected page */
 #RightSideMenu a.L0ncsel {
@@ -970,7 +972,7 @@ div#sidemenu a SPAN {
 	background-color:#E5F5C6;
 	border-top:1px solid #D3DDDC;
 	border-bottom:1px solid #D3DDDC;
-	background-image:url(/daisy/resources/local/img/LsqBltGreyon.gif);
+	background-image:url({{site.baseurl}}/img/LsqBltGreyon.gif);
 	background-repeat:no-repeat;
 } /* defines level 0 bullet for no children if selected page*/
 #RightSideMenu a.L0hcsel:hover {
@@ -982,13 +984,13 @@ div#sidemenu a SPAN {
 #RightSideMenu a.L0hc:hover {
 	color:#000000;
 	background:#E5F5C6;
-	background-image:url(/daisy/resources/local/img/LsqBltGreyon.gif);
+	background-image:url({{site.baseurl}}/img/LsqBltGreyon.gif);
 	background-repeat:no-repeat;
 } /* defines the level 0 hover effect */
 #RightSideMenu a.L0nc:hover {
 	color:#000000;
 	background:#E5F5C6;
-	background-image:url(/daisy/resources/local/img/LsqBltGreyon.gif);
+	background-image:url({{site.baseurl}}/img/LsqBltGreyon.gif);
 	background-repeat:no-repeat;
 } /* defines the level 0 hover bullet for children */
 /* Level 1 Styles */
@@ -1003,30 +1005,30 @@ div#sidemenu a SPAN {
 #RightSideMenu a.L1hcsel {
 	background-color:#E5F5C6;
 	color:#005C00;
-	background-image:url(/daisy/resources/local/img/rtArwGrey.gif);
+	background-image:url({{site.baseurl}}/img/rtArwGrey.gif);
 }
 #RightSideMenu a.L1ncsel {
 	background-color:#E5F5C6;
 	color:#005C00;
-	background-image:url(/daisy/resources/local/img/sqBltGrey.gif);
+	background-image:url({{site.baseurl}}/img/sqBltGrey.gif);
 }
 #RightSideMenu a.L1hcsel:hover {
 	background-color:#E5F5C6;
-	background-image:url(/daisy/resources/local/img/rtArwGrey.gif);
+	background-image:url({{site.baseurl}}/img/rtArwGrey.gif);
 }
 #RightSideMenu a.L1ncsel:hover {
 	background-color:#E5F5C6;
-	background-image:url(/daisy/resources/local/img/sqBltGrey.gif);
+	background-image:url({{site.baseurl}}/img/sqBltGrey.gif);
 }
 #RightSideMenu a.L1hc:hover {
 	background-color:#E5F5C6;
 	color:#005C00;
-	background-image:url(/daisy/resources/local/img/rtArwGrey.gif);
+	background-image:url({{site.baseurl}}/img/rtArwGrey.gif);
 }
 #RightSideMenu a.L1nc:hover {
 	background-color:#E5F5C6;
 	color:#005C00;
-	background-image:url(/daisy/resources/local/img/sqBltGrey.gif);
+	background-image:url({{site.baseurl}}/img/sqBltGrey.gif);
 }
 /* Level 2 Styles */
 #RightSideMenu a.L2hc {
@@ -1040,12 +1042,12 @@ div#sidemenu a SPAN {
 #RightSideMenu a.L2hcsel {
 	background-color:#E5F5C6;
 	color:#005C00;
-	background-image:url(/daisy/resources/local/img/rtArwGrey.gif);
+	background-image:url({{site.baseurl}}/img/rtArwGrey.gif);
 }
 #RightSideMenu a.L2ncsel {
 	background-color:#E5F5C6;
 	color:#005C00;
-	background-image:url(/daisy/resources/local/img/sqBltGrey.gif);
+	background-image:url({{site.baseurl}}/img/sqBltGrey.gif);
 }
 #RightSideMenu a.L2hcsel:hover {
 	background-color:#E5F5C6;
@@ -1056,12 +1058,12 @@ div#sidemenu a SPAN {
 #RightSideMenu a.L2hc:hover {
 	background-color:#E5F5C6;
 	color:#005C00;
-	background-image:url(/daisy/resources/local/img/rtArwGrey.gif);
+	background-image:url({{site.baseurl}}/img/rtArwGrey.gif);
 }
 #RightSideMenu a.L2nc:hover {
 	background-color:#E5F5C6;
 	color:#005C00;
-	background-image:url(/daisy/resources/local/img/sqBltGrey.gif);
+	background-image:url({{site.baseurl}}/img/sqBltGrey.gif);
 }
 #RightSideMenuBot {
 	margin: 0px;
@@ -1069,7 +1071,7 @@ div#sidemenu a SPAN {
 	width: 197px;
 	height: 6px;
 	background-attachment: scroll;
-	background-image: url(/daisy/resources/local/img/thisSectionBackBot.gif);
+	background-image: url({{site.baseurl}}/img/thisSectionBackBot.gif);
 	background-repeat: no-repeat;
 	background-position: center top;
 }
@@ -1274,7 +1276,7 @@ table.plain a {
 /* ----------------------- Payroll 50 ----------------------------*/
 
 #wrapper-payroll50 {
-	background: url(/daisy/resources/local/img/sage50-Product.jpg) no-repeat 20px 20px;
+	background: url({{site.baseurl}}/img/sage50-Product.jpg) no-repeat 20px 20px;
 	width:100%;
 	margin:20px auto;
 }
@@ -1313,7 +1315,7 @@ table.plain a {
 	padding: 5px 0 0 0px;
 }
 #aClubWrapper h3 {
-	background:url(/daisy/resources/local/img/bullet-green.gif) no-repeat 0px 10px;
+	background:url({{site.baseurl}}/img/bullet-green.gif) no-repeat 0px 10px;
 	padding: 6px 0 0px 16px;
 	margin: 10px 0px 0px 18px;
 }
@@ -1352,11 +1354,11 @@ table.plain a {
 	width: 98px;
 	height: 32px;
 	display:block;
-	background:url(/daisy/resources/local/img/btnJoinNow.jpg) no-repeat 0 0;
+	background:url({{site.baseurl}}/img/btnJoinNow.jpg) no-repeat 0 0;
 	text-indent: -9999px;
 }
 #aClubFooter a:hover {
-	background:url(/daisy/resources/local/img/btnJoinNow.jpg) no-repeat 0 -33px;
+	background:url({{site.baseurl}}/img/btnJoinNow.jpg) no-repeat 0 -33px;
 }
 
 /* adding formatting for daisy wiki */
@@ -1386,7 +1388,7 @@ tt{
 {
 	width:325px;
 	height:270px;
-	background-image:url(/daisy/resources/local/img/landingpage/pod_interoperability.png); 
+	background-image:url({{site.baseurl}}/img/landingpage/pod_interoperability.png); 
 	float: right; 
 	color: #fff;
 }
@@ -1465,20 +1467,20 @@ ul.sites li img.sitesListItem
 
 #teaserPod .borderTop
 {
-	background-image: url(/daisy/resources/local/img/landingpage/podBackground_top.png);
+	background-image: url({{site.baseurl}}/img/landingpage/podBackground_top.png);
 	height: 15px;
 	background-repeat: no-repeat;
 }
 
 #teaserPod .borderMid
 {
-	background-image: url(/daisy/resources/local/img/landingpage/podBackground_mid.png);
+	background-image: url({{site.baseurl}}/img/landingpage/podBackground_mid.png);
 	padding: 0 10px;
 }
 
 #teaserPod .borderBot
 {
-	background-image: url(/daisy/resources/local/img/landingpage/podBackground_bot.png);
+	background-image: url({{site.baseurl}}/img/landingpage/podBackground_bot.png);
 	height: 15px;
 	background-repeat: no-repeat;
 }
@@ -1491,7 +1493,7 @@ ul.sites li img.sitesListItem
 
 #teaserPod ul
 {
-	list-style-image: url(/daisy/resources/local/img/landingpage/bullet_teaserPod.gif);
+	list-style-image: url({{site.baseurl}}/img/landingpage/bullet_teaserPod.gif);
 	padding-left: 30px;
 	margin-left: 0px;
 }

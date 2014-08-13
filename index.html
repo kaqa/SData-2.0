@@ -6,17 +6,4 @@ layout: default
 
   <h1>SData Core Specification - version 1.1</h1>
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <!--span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span-->
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-		<br/><br/>
-		<!--{{ post.content }} -->
-      </li>
-    {% endfor %}
-  </ul>
-
-  <!--p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p-->
-
 </div>

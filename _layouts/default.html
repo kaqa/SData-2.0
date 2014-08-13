@@ -7,9 +7,13 @@
 
     {% include header.html %}
 
-    <div class="page-content">
-      
-      <div class="wrap">
+	<div id="sidemenu">
+	{% markdown sidebar.md %}
+	</div>
+	
+	<div id="contentBorderTop"></div>
+    <div id="contentBorder">
+      <div id="content">
       {{ content }}
       </div>
     </div>

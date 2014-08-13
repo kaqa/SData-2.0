@@ -1,0 +1,48 @@
+---
+layout: default
+title: "2  Anatomy of an SData URL"
+---
+
+SData uses URLs to address the resources, resource collections, schemas and
+service operations that are exposed by a service.
+
+This section gives an overview of the SData URL syntax. Its
+subsections&nbsp;describe the URLs for various resources that are exposed by an SData
+service:
+
+*   [Resource collection](2.1 Resource Collection URL "2.1  Resource Collection URL")
+
+*   [Single resource](2.2 Single Resource URL "2.2  Single Resource URL")
+
+*   [Resource property](2.3 Resource Property URL "2.3 Resource Property URL")
+
+*   [Service operation](2.4 Service Operation URL "2.4  Service Operation URL")
+
+*   [Named query](2.5 Named Query URL "2.5 Named Query URL")
+
+*   [Resource template](2.6 Template Resource URL "2.6 Template Resource URL")
+
+*   [Schema definition](2.7 Resource Schema URL "2.7  Resource Schema URL")
+
+*   [System information](2.8 System and Registry URL "2.8  System and Registry URL")
+
+*   [Intermediate URLs](2.9 Intermediate URLs "2.9 Intermediate URLs")
+
+*   [Miscellaneous URLs](2.10 Miscellaneous URLs "2.10 Miscellaneous URLs")
+
+The following subsections describe features that apply to several URL types:
+
+*   [Query parameters](2.11 Query Parameters "2.11  Query Parameters")
+
+*   [Query language](2.12 Query Language "2.12  Query Language") to filter resource collections
+
+*   [Naming conventions](2.13 Naming Conventions for URLs "2.13 Naming Conventions for URLs")
+
+*   [Resource versioning](2.14 Resource Versioning "2.14 Resource Versioning")
+
+*   [Extensibility](2.15 Extensibility "2.15 Extensibility")
+
+The last subsection describes how non ASCII characters should be encoded in
+[internationalized URLs](2.16 Internationalized URLs "2.16 Internationalized URLs").
+
+* * *

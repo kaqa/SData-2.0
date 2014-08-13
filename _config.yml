@@ -1,7 +1,7 @@
 # Site settings
 title: SData test pages
 email: kaqa@users.noreply.github.com
-description: "ToDo wiki description."
+description: Copyright Sage Technologies Limited 2009
 baseurl: "/SData-2.0"
 url: "http://kaqa.github.io"
 twitter_username:
