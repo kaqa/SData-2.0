@@ -5,20 +5,11 @@
 
     <body>
 
-    {% include header.html %}
-
-	<div id="sidemenu">
-	{% markdown sidebar.md %}
-	</div>
+		{% include header.html %}
 	
-	<div id="contentBorderTop"></div>
-    <div id="contentBorder">
-      <div id="content">
-      {{ content }}
-      </div>
-    </div>
-
-    {% include footer.html %}
-
+		{{ content }}
+		
+		{% include footer.html %}
+	
     </body>
 </html>

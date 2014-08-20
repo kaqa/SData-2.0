@@ -1,68 +1,33 @@
-<div id="leftMenu">
-    <div id="sidemenu">
-        <ul class="navigation">
-            <li class="navigation active-navnode navnode-open">
-                <a href="/daisy/sdata/Introduction.html" class="navigation active-navnode navnode-open" onclick="return collapseExpandNavNode(this);">1  Introduction</a>
-                <ul>
-                    <li class="navigation ">
-                        <a href="/daisy/sdata/Introduction/186-DSY.html" class="navigation ">1.1 Terminology</a>
-                    </li>
-                    <li class="navigation ">
-                        <a href="/daisy/sdata/Introduction/663-DSY.html" class="navigation ">1.2 General Principles</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="navigation  navnode-closed">
-                <a href="/daisy/sdata/AnatomyOfAnSDataURL.html" class="navigation  navnode-closed">2  Anatomy of an SData URL</a>
-            </li>
-            <li class="navigation  navnode-closed">
-                <a href="/daisy/sdata/AnatomyOfAnSDataFeed.html" class="navigation  navnode-closed">3  Anatomy of an SData Feed</a>
-            </li>
-            <li class="navigation  navnode-closed">
-                <a href="/daisy/sdata/Metadata.html" class="navigation  navnode-closed">4  Metadata</a>
-            </li>
-            <li class="navigation  navnode-closed">
-                <a href="/daisy/sdata/Security.html" class="navigation  navnode-closed">5 Security</a>
-            </li>
-            <li class="navigation  navnode-closed">
-                <a href="/daisy/sdata/Queries.html" class="navigation  navnode-closed">6 Queries</a>
-            </li>
-            <li class="navigation  navnode-closed">
-                <a href="/daisy/sdata/ReadOperation.html" class="navigation  navnode-closed">7 Read Operation</a>
-            </li>
-            <li class="navigation  navnode-closed">
-                <a href="/daisy/sdata/CreateOperation.html" class="navigation  navnode-closed">8 Create Operation</a>
-            </li>
-            <li class="navigation  navnode-closed">
-                <a href="/daisy/sdata/UpdateOperation.html" class="navigation  navnode-closed">9 Update Operation</a>
-            </li>
-            <li class="navigation  navnode-closed">
-                <a href="/daisy/sdata/DeleteOperation.html" class="navigation  navnode-closed">10 Delete Operation</a>
-            </li>
-            <li class="navigation  navnode-closed">
-                <a href="/daisy/sdata/ServiceOperations.html" class="navigation  navnode-closed">11 Service Operations</a>
-            </li>
-            <li class="navigation  navnode-closed">
-                <a href="/daisy/sdata/596-DSY.html" class="navigation  navnode-closed">12 Named Queries</a>
-            </li>
-            <li class="navigation  navnode-closed">
-                <a href="/daisy/sdata/165-DSY.html" class="navigation  navnode-closed">13 Batch Operations</a>
-            </li>
-            <li class="navigation  navnode-closed">
-                <a href="/daisy/sdata/423-DSY.html" class="navigation  navnode-closed">14 SData Registry</a>
-            </li>
-            <li class="navigation navgroup-clickable navnode-closed">
-                <a class="navigation navgroup-clickable navnode-closed" href="/daisy/sdata/g1">Appendices</a>
-            </li>
-            <li class="navigation ">
-                <a href="/daisy/sdata/662-DSY.html" class="navigation ">Compliance Summary</a>
-            </li>
-            <li class="navigation ">
-                <a href="/daisy/sdata/601-DSY.html" class="navigation ">Versions Summary</a>
-            </li>
-            <li class="navigation ">
-                <a href="/daisy/sdata/HistoryOfChanges.html" class="navigation ">History of Changes</a>
-            </li>
-        </ul>
-    </div>
-</div>
+<!--span>{{page.title}} - {{page.group}}</span-->
+<ul class="navigation">
+
+{% assign pages_list = site.pages %}
+{% assign menuitem = 'top' %}
+{% assign isToplevelOpen = false %}
+
+{% for p in site.pages %}
+    {% if p.group == page.group %}
+		{% if p.level == 0 %}
+			{% if isToplevelOpen %} {% if menuitem == 'sub' %} </ul> {% endif %} </li> {% endif %}
+			{% assign isToplevelOpen = true %}
+			{% assign menuitem = 'top' %}
+			<li class="navigation active-navnode navnode-open">
+				
+				<a href="{% if p.layout != null %}{{site.baseurl}}{{p.url}}{% else %}#{% endif %}" {% if p.url == page.url %}class="active"{% endif %}>{{p.title}}</a>
+		{% endif %}
+		{% if p.level > 0 %}
+			{% if menuitem == 'top' %} <ul> {% endif %}
+			{% assign menuitem = 'sub' %}
+			
+				<li class="navigation active-navnode navnode-open">
+					<a href="{{site.baseurl}}{{p.url}}" {% if p.url == page.url %}class="active"{% endif %}>{{p.title}}</a>
+				</li>
+			
+		{% endif %}
+    {% endif %}
+{% endfor %}
+
+<!-- close tag(s) for last menu item -->
+{% if isToplevelOpen %} {% if menuitem == 'sub' %} </ul> {% endif %} </li> {% endif %}
+</ul>
+

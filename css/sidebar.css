@@ -1,0 +1,52 @@
+﻿div#sidemenu {font-size:83%;}
+div#sidemenu .head {font-weight:bold;height:1.75em;padding-left:0.6em;padding-top:0.5em;margin-bottom:0.01px;margin-top:0.01px;}
+div#sidemenu ul {list-style:none;margin:0;padding:0px;}
+div#sidemenu ul li {float:left;width:100%;margin:0px;}
+div#sidemenu a {display:block;text-decoration:none;padding-top:0.23em;padding-bottom:0.33em;background-position: left center;}
+/*div#sidemenu a SPAN {float:left;height:1.5em;width:14px;background-repeat:no-repeat;}*/
+div#sidemenu ul {list-style:none;margin:0;	padding:0px;}
+div#sidemenu ul li {float:left;width:100%;margin:0px;}
+/*div#sidemenu a SPAN {float:left;height:1.5em;width:14px;background-repeat:no-repeat;}*/
+/*#sidemenu {margin: 0px;width: 160px;float: left;position: absolute;padding-top: 25px;padding-right: 0px;padding-bottom: 10px;padding-left: 10px;}*/
+/* changed */
+#sidemenu {margin: 0px;width: 160px;float: left;/* position: absolute; *//* padding-top: 25px; */padding-right: 0px;padding-bottom: 10px;padding-left: 10px;top: 0;/* text-align: right; */xxposition: absolute;}
+
+#sidemenu a {
+	text-decoration:none;
+	padding-top:0.23em;
+	padding-bottom:0.33em;
+	background-repeat:no-repeat;
+	text-align: left;
+	display: block;
+	padding: 0 30px 0 16px;
+	margin-top: 2px;
+	margin-right: 0px;
+	margin-bottom: 2px;
+	margin-left: 0px;
+	/* color: #00a1de; */
+	color: #024731;
+	/*font-size: 1.4em;*/
+	/*font-weight:bold;*/
+}
+#sidemenu a:hover {
+	/*color: #675c53;*/
+	color: #008469;
+}
+#sidemenu a.L0sel {
+	color: #00338d;
+}
+#sidemenu a.L0sel:hover {
+	color: #00338d;
+}
+
+#sidemenu > ul > li > a {
+color: #008469;
+padding: 0.5em;
+background-image: none;
+border: #c1d59f dotted 1px;
+background: #E0EBCF;
+}
+
+#sidemenu a.active {color: #008066;font-weight: bold;font-size: 1.1em !important;text-decoration: underline !important;}
+
+div#sidemenu ul li ul li {padding: 0 0 0.5em 2em;}

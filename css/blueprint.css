@@ -1,0 +1,166 @@
+---
+---
+@charset "utf-8";
+* {margin:0;}
+html, body {height: 100%;}
+body {
+	background-attachment: scroll;
+	background-image: url({{site.baseurl}}/img/greenBackLarge.png);
+	background-repeat: no-repeat;
+	background-position: center 45px;
+	font-family: helvetica, sans-serif;
+	margin:0;
+}
+a {text-decoration: none;color: #007f64;text-shadow: none;transition: color 0.5s ease;transition: text-shadow 0.5s ease;-webkit-transition: color 0.5s ease;-webkit-transition: text-shadow 0.5s ease;
+-moz-transition: color 0.5s ease;-moz-transition: text-shadow 0.5s ease;-o-transition: color 0.5s ease;-o-transition: text-shadow 0.5s ease;-ms-transition: color 0.5s ease;-ms-transition: text-shadow 0.5s ease;}
+h1.document-name {font-size: 1.9em;font-weight: normal;color: black;margin: 10px 0;}
+h1 {color: #693;font-weight: normal;font-size: 1.7em;}
+p {color: #675c53;margin: 0.5em 0px;font-size: small;}
+pre {border: 1px solid gray;background-color: #eee;font-family: monospace;white-space: pre;word-wrap: break-word;word-break: break-word;}
+
+/**** Home Page ****/
+#header_wrap {
+background: #69923a;
+background: -moz-linear-gradient(top, #93a914, #69923a);
+background: -webkit-linear-gradient(top, #93a914, #69923a);
+background: -ms-linear-gradient(top, #93a914, #69923a);
+background: -o-linear-gradient(top, #93a914, #69923a);
+background: linear-gradient(top, #93a914, #69923a);
+background: linear-gradient(top, #93a914, #69923a);
+}
+.headerlines {background: url({{site.baseurl}}/img/lines.png) 0 100% no-repeat;}
+#header_wrap .inner {padding: 50px 10px 30px 10px;}
+.inner {position: relative;max-width: 640px;padding: 20px 10px;margin: 0 auto;}
+.inner_subp {position: relative;max-width: 640px;margin: 0 auto;padding: 20px 10px;}
+#project_title_subp {margin: 0;color: #fff;font-size: 30px;font-weight: 700;text-shadow: #111 0px 0px 10px;}
+
+#forkme_banner {display: block;position: absolute;top: 0;right: 10px;z-index: 10;padding: 10px 50px 10px 10px;color: #fff;background: url({{site.baseurl}}/img/blacktocat.png) #008066 no-repeat 95% 50%;font-weight: 700;box-shadow: 0 0 10px rgba(0,0,0,.5);border-bottom-left-radius: 2px;border-bottom-right-radius: 2px;}
+#project_title {margin: 0;color: #fff;font-size: 42px;font-weight: 700;text-shadow: #111 0px 0px 10px;}
+#project_tagline {color: #fff;font-size: 24px;font-weight: 300;background: none;text-shadow: #111 0px 0px 10px;letter-spacing: -1px;}
+
+
+/************ CONTENT ************/
+#content, #breadcrumb {color: #675c53;font-size: small;}
+
+#bodyContainer {width: 987px;margin-top: 0px;margin-right: auto;margin-bottom: 0px;margin-left: auto;padding-bottom:50px;}
+#bodyContainer {	min-height: 100%;height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+	height: 100%;margin: 0 auto -74px; /* the bottom margin is the negative value of the footer's height */
+}
+
+#breadcrumb {padding-top: 5px;padding-bottom:5px;margin: 0px;}
+
+div#sidemenu ul li ul li a {background-image: url({{site.baseurl}}/img/navnode_closed.gif);background-position-y: 6px;}
+
+#breadcrumb, #contentBorderTop {margin-left: 178px;}
+
+#contentBorderTop {
+padding: 0px;
+margin-top: 0px;
+margin-right: 0px;
+margin-bottom: 0px;
+margin-left: 178px;
+height: 21px;
+background-attachment: scroll;
+background-image: url(/SData-2.0/img/contentBackTop.gif);
+background-repeat: no-repeat;
+background-position: left top;
+}
+
+#contentBorder {
+background-repeat: repeat-y;
+background-position: left top;
+display: block;
+xxmargin-left: 219px;
+overflow: hidden;
+position: relative;
+margin: auto;
+}
+
+/*#content {width:713px;margin-right:auto;	margin-left:auto;word-wrap: break-word;}*/
+#content {
+width: 799px;
+margin-right: auto;
+margin-left: auto;
+/* word-wrap: break-word; */
+float: right;
+background-image: url(/SData-2.0/img/contentBackMid.gif);
+background-repeat: repeat-y;
+padding: 0px 0px 0 10px;
+background-position: left top;
+background-attachment: scroll;
+/* margin-right: 10px; */
+}
+.inner-content {padding: 0 25px 0 0;}
+
+#prevNextTool {
+float: right;
+clear: none;
+/*margin-right: 40px;*/
+margin-top: 12px;
+}
+
+hr, #prevNextTool {margin-right: 40px;}
+
+/************* TABLE STYLES ******************/
+pre, table {width: 96%;}
+table {border: 1px solid #373737;border-collapse: collapse;margin-bottom: 20px;text-align: left;}
+th {font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;padding: 10px;background: #373737;color: #fff;}
+td {padding: 10px;border: 1px solid #373737;}
+
+
+
+table.borderless, table.content, table.default, table.footnotes, table.plainTable {
+  border-spacing: 0em;
+  border-collapse: collapse;
+  font-size: small;
+  margin-top: .3em;
+  margin-bottom: .3em;
+}
+
+table.borderless tbody tr td, table.content tbody tr td, table.default tr td, table.default tr th  {padding: .2em .3em .2em .3em;}
+table.borderless tbody tr th, table.content tbody tr th {background-color: #ddd;padding: .2em .3em .2em .3em;}
+table.content tbody tr td, table.default tr td, table.content tbody tr th, table.default tr th  {border: 1px solid gray;}
+table.footnotes {margin: 1em;padding-top: 0.5em;border-top: 1px solid gray;}
+table.footnotes tbody tr td {vertical-align: top;padding-bottom: .3em;}
+
+/* Footer */
+.push {height: 20px;}
+#footer_wrap {background: #212121;height: 74px;}
+footer p {color: #f2f2f2;}
+footer a:hover {color: #ffffff;text-shadow: #ffffff 0px 0px 2px;}
+#footer {
+	color: #999999;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+	background-attachment: scroll;
+	background-image: url({{site.baseurl}}/img/contentBackBot.gif);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 178px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	clear: both;
+}
+#footerMenu {padding: 0px;margin-top: 70px;margin-right: 0px;margin-bottom: 0px;	margin-left: 0px;}
+#footerMenu li {
+	display: inline;
+	list-style-type: none;
+	font-size: 0.7em;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 2px;
+	margin-bottom: 0px;
+	margin-left: 2px;
+}
+#footerMenu li a {color: #999999;text-decoration: none;font-size: 1em;}
+#footerMenu li a:hover {color: #000000;text-decoration: none;}
+
+/***** Content Infopages ****/
+#main_content_wrap {/*background: #f2f2f2;border-top: 2px solid #ffffff;border-bottom: 1px solid #111;*/}
+#main_content {padding-top: 40px;}
+
