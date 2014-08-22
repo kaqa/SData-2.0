@@ -1,7 +1,7 @@
 ---
 layout: page
 group: sync
-level: 1
+level: 0
 title: SData Linking &amp; Synchronisation
 ---
 

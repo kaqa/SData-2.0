@@ -1,4 +1,21 @@
 <!--span>{{page.title}} - {{page.group}}</span-->
+<script>
+$(document).ready(function(){
+  
+	var path = window.location.pathname;
+	var active = $("ul.navigation ul a[href*='"+path+"']").parent().parent();
+	if(active.length == 0) active = $("ul.navigation > li > a[href*='"+path+"']").parent().find('ul');
+	//console.log(active.length);
+
+	$('ul.navigation ul').not(active).hide();
+  
+	$('ul.navigation > li > a.childs-only').click(function(){
+		//$(this).find('ul').show();
+		$(this).parent().find('ul').slideToggle(200);
+	});
+  
+});
+</script>
 <ul class="navigation">
 
 {% assign pages_list = site.pages %}
@@ -13,7 +30,7 @@
 			{% assign menuitem = 'top' %}
 			<li class="navigation active-navnode navnode-open">
 				
-				<a href="{% if p.layout != null %}{{site.baseurl}}{{p.url}}{% else %}#{% endif %}" {% if p.url == page.url %}class="active"{% endif %}>{{p.title}}</a>
+				<a {% if p.layout != null %}href="{{site.baseurl}}{{p.url}}"{% else %}class="childs-only" style="cursor: pointer;"{% endif %} {% if p.url == page.url %}class="active"{% endif %}>{{p.title}}</a>
 		{% endif %}
 		{% if p.level > 0 %}
 			{% if menuitem == 'top' %} <ul> {% endif %}

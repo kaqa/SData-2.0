@@ -1,6 +1,32 @@
 ---
 layout: default
 ---
+{% assign prev = null %}
+{% assign prevPage = null %}
+
+{% assign flagNext = 0 %}
+{% assign nextPage = null %}
+
+{% for p in site.pages %}
+	{% if p.layout != null %}
+		{% if p.group == page.group %}
+			{% if (p.url == page.url) && (prevPage != null) %}
+				{% assign prevPage = prev %}
+			{% else %}
+				{% assign prev = p.url %}
+			{% endif %}
+
+			{% if flagNext == 1 %}
+				{% assign flagNext = 0 %}
+				{% assign nextPage = p.url %}
+			{% endif %}
+			{% if (p.url == page.url) %}
+				{% assign flagNext = 1 %}
+			{% endif %}
+		{% endif %}
+	{% endif %}
+{% endfor %}
+
 <div id="bodyContainer">
 	
 	<div id="breadcrumb">
@@ -15,50 +41,35 @@ layout: default
 		{% include sidebar.html %}
 		</div>
 		
-		<div id="contentBorderTop"></div>
-		
 		<div id="content">
-			<div style="float: right; clear: none;" id="prevNextTool">
-				{% assign prev = null %}
-				{% assign prevPage = null %}
-				
-				{% assign flagNext = 0 %}
-				{% assign nextPage = null %}
-				
-				{% for p in site.pages %}
-					{% if p.group == page.group %}
-						{% if (p.url == page.url) && (prevPage != null) %}
-							{% assign prevPage = prev %}
-						{% else %}
-							{% assign prev = p.url %}
-						{% endif %}
-						
-						{% if flagNext == 1 %}
-							{% assign flagNext = 0 %}
-							{% assign nextPage = p.url %}
-						{% endif %}
-						{% if (p.url == page.url) %}
-							{% assign flagNext = 1 %}
-						{% endif %}
+		
+			<div id="contentBorderTop">
+			
+				<div style="float: right; clear: none;" id="prevNextTop">
+					{% if prevPage != null %}
+					<a style="padding-right: 15px;" href="{{site.baseurl}}{{prevPage}}"><img border="0" src="{{site.baseurl}}/img/button_previousPage.png" alt="Previous Page Arrow" title="Previous Page"></a>
 					{% endif %}
-				{% endfor %}
+					<space></space><space></space>
+					{% if nextPage != null %}
+					<a href="{{site.baseurl}}{{nextPage}}"><img border="0" src="{{site.baseurl}}/img/button_nextPage.png" alt="Next Page Arrow" title="Next Page"></a>
+					{% endif %}
+				</div>
 				
-				
-				{% if prevPage != null %}
-				<a style="padding-right: 15px;" href="{{site.baseurl}}{{prevPage}}"><img border="0" src="{{site.baseurl}}/img/button_previousPage.png" alt="Previous Page Arrow" title="Previous Page"></a>
-				{% endif %}
-				<space></space><space></space>
-				{% if nextPage != null %}
-				<a href="{{site.baseurl}}{{nextPage}}"><img border="0" src="{{site.baseurl}}/img/button_nextPage.png" alt="Next Page Arrow" title="Next Page"></a>
-				{% endif %}
 			</div>
-			<h1 class="document-name">{{page.title}}</h1>
 			
 			<div class="inner-content">
-			{{ content }}
+
+				<h1 class="document-name">{{page.title}}</h1>
+			
+				{{ content }}
+			
 			</div>
 			
-			<div style="float: right; clear: none;" id="prevNextTool">
+			
+			
+			<div id="contentBorderBottom">
+			
+				<div style="float: right; clear: none;" id="prevNextBottom">
 				{% if prevPage != null %}
 				<a style="padding-right: 15px;" href="{{site.baseurl}}{{prevPage}}"><img border="0" src="{{site.baseurl}}/img/button_previousPage.png" alt="Previous Page Arrow" title="Previous Page"></a>
 				{% endif %}
@@ -67,7 +78,11 @@ layout: default
 				<a href="{{site.baseurl}}{{nextPage}}"><img border="0" src="{{site.baseurl}}/img/button_nextPage.png" alt="Next Page Arrow" title="Next Page"></a>
 				{% endif %}
 			</div>
+			
+			</div>
+			
 		</div>
+		
 	</div>
 	
 	<div class="push"></div>

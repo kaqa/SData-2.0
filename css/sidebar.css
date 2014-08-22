@@ -1,6 +1,6 @@
 ﻿div#sidemenu {font-size:83%;}
 div#sidemenu .head {font-weight:bold;height:1.75em;padding-left:0.6em;padding-top:0.5em;margin-bottom:0.01px;margin-top:0.01px;}
-div#sidemenu ul {list-style:none;margin:0;padding:0px;}
+div#sidemenu ul {list-style:none;margin:0;padding:0px;line-height: 1.2em;}
 div#sidemenu ul li {float:left;width:100%;margin:0px;}
 div#sidemenu a {display:block;text-decoration:none;padding-top:0.23em;padding-bottom:0.33em;background-position: left center;}
 /*div#sidemenu a SPAN {float:left;height:1.5em;width:14px;background-repeat:no-repeat;}*/

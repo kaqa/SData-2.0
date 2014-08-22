@@ -27,7 +27,7 @@ are correlated with each other.
 The following diagram illustrates this with three resources that are
 correlated thanks to a common UUID:
 
-![UUID.png](img/UUID.png)
+![UUID.png]({{site.baseurl}}/img/UUID.png)
 
 This approach is a distributed approach. Each application maintains one half
 of the complete mapping and does not need to be aware of the local ids of other
