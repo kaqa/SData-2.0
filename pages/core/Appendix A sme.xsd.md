@@ -2,7 +2,7 @@
 layout: page
 group: core
 level: 1
-title: Appendix A sme.xsd
+title: Appendix A&colon; sme.xsd
 ---
 
 <code>
