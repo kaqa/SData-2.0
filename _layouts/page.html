@@ -1,6 +1,15 @@
 ---
 layout: default
 ---
+
+<script>
+    $(document).ready(function() {
+        $('pre, code').each(function(i, block) {
+            hljs.highlightBlock(block);
+        });
+    });
+</script>
+
 {% assign prev = null %}
 {% assign prevPage = null %}
 
@@ -29,12 +38,7 @@ layout: default
 
 <div id="bodyContainer">
 	
-	<div id="breadcrumb">
-		<a href="{{site.baseurl}}/" title="Home">SData Home</a>
-		{% if page.group == 'core' %} / <a href="{{site.baseurl}}/pages/core/0100/">SData Core Specification - version 1.1</a>{% endif %}
-		{% if page.group == 'sync' %} / <a href="{{site.baseurl}}/pages/sync/LinkAndSync/">SData Synchronization - version 1.1</a>{% endif %}
-		{% if page.title %} / {{page.title}}{% endif %}
-	</div>
+	<!-- breadcrumb's old position -->
 	
 	<div id="contentBorder">
 		<div id="sidemenu">
@@ -42,6 +46,13 @@ layout: default
 		</div>
 		
 		<div id="content">
+		
+			<div id="breadcrumb">
+				<a href="{{site.baseurl}}/" title="Home">SData Home</a>
+				{% if page.group == 'core' %} / <a href="{{site.baseurl}}/pages/core/0100/">SData Core Specification - version 1.1</a>{% endif %}
+				{% if page.group == 'sync' %} / <a href="{{site.baseurl}}/pages/sync/LinkAndSync/">SData Synchronization - version 1.1</a>{% endif %}
+				{% if page.title %} / {{page.title}}{% endif %}
+			</div>
 		
 			<div id="contentBorderTop">
 			
@@ -65,7 +76,7 @@ layout: default
 			
 			</div>
 			
-			
+			{% include tointeropforum.html %}
 			
 			<div id="contentBorderBottom">
 			

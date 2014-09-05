@@ -1087,7 +1087,7 @@ Some &lt;feed&gt; and &lt;entry&gt; elements were lacking xmlns attributes.
 <td valign="top"></td>
 <td valign="top">
 
-[3.13 SData Atom Extensions](3.13 SData Atom Extensions "3.13 SData Atom Extensions")
+<a href="../0313/" title="3.13 SData Atom Extensions">3.13 SData Atom Extensions</a>
 
 </td>
 <td valign="top">
@@ -1105,7 +1105,7 @@ it)
 <td valign="top"></td>
 <td valign="top">
 
-[9.2 Partial Updates](9.2 Update Payloads "9.2 Update Payloads")
+<a href="../0902/" title="9.2 Update Payloads">9.2 Partial Updates</a>
 
 </td>
 <td valign="top">
@@ -1123,13 +1123,13 @@ Recommend that minOccurs be explicitly set to 0 (I was wrong in assuming that
 <td valign="top"></td>
 <td valign="top">
 
-[Appendix A: sme.xsd](Appendix A sme.xsd "Appendix A: sme.xsd")
+<a href="../AppendixA/" title="Appendix A: sme.xsd">Appendix A: sme.xsd</a>
 
-[Appendix B: sdata.xsd](Appendix B sdata.xsd "Appendix B: sdata.xsd")
+<a href="../AppendixB/" title="Appendix B: sdata.xsd">Appendix B: sdata.xsd</a>
 
-[3.13 SData Atom Extensions](3.13 SData Atom Extensions "3.13 SData Atom Extensions")
+<a href="../0313/" title="3.13 SData Atom Extensions">3.13 SData Atom Extensions</a>
 
-[4.7 SME Summary](4.8 Simple Metadata Extensions Summary "4.8 Simple Metadata Extensions Summary")
+<a href="../0408/" title="4.8 Simple Metadata Extensions Summary">4.8 SME Summary</a>
 
 </td>
 <td valign="top">
@@ -1167,23 +1167,21 @@ BJ
 
 4.1 Typical SData Schema
 
-[4.2 Resource Kind Definition](4.2 Resource Kind Definition "4.2 Resource Kind Definition")
+<a href="../0402/" title="4.2 Resource Kind Definition">4.2 Resource Kind Definition</a>
 
-[4.3 Property Definition
+<a href="../0403/" title="4.3 Property Definition">4.3 Property Definition</a>
 
-](4.3 Property Definition "4.3 Property Definition")4.4 Relationship Definitions
+<a href="../0408/" title="4.8 Simple Metadata Extensions Summary">4.8 Simple Metadata Extensions Summary</a>
 
-[4.7 Simple Metadata Extensions Summary](4.8 Simple Metadata Extensions Summary "4.8 Simple Metadata Extensions Summary")
+<a href="../0410/" title="4.10 Inlined Schemas">4.10 Inlined Schemas</a>
 
-[4.9 Inlined Schemas](4.10 Inlined Schemas "4.10 Inlined Schemas")
+<a href="../0604/" title="6.4 Query Paging">6.4 Query Paging</a>
 
-[6.4 Query Paging](6.4 Query Paging "6.4 Query Paging")
+<a href="../0607/" title="6.7 Feed Rendering">6.7 Feed Rendering</a>
 
-[6.7 Feed Rendering](6.7 Feed Rendering "6.7 Feed Rendering")
+<a href="../1302/" title="13.2 Metadata Extension for Batching">13.2 Metadata Extension for Batching</a>
 
-[12.2 Metadata Extension for Batching](13.2 Metadata Extension for Batching "13.2 Metadata Extension for Batching")
-
-[Appendix A: sme.xsd](Appendix A sme.xsd "Appendix A: sme.xsd")
+<a href="../AppendixA/" title="Appendix A: sme.xsd">Appendix A: sme.xsd</a>
 
 </td>
 <td valign="top">
@@ -1202,7 +1200,7 @@ Replaced roles attribute by separate isIdentifier and isDescriptor attributes
 <td valign="top"></td>
 <td valign="top">
 
-[2.4 Service Operation URL](2.4 Service Operation URL "2.4  Service Operation URL")
+<a href="../0204/" title="2.4  Service Operation URL">2.4 Service Operation URL</a>
 
 </td>
 <td valign="top">
@@ -1219,13 +1217,13 @@ Only allow $service after contract URL&nbsp;and resource kind URLs
 <td valign="top"></td>
 <td valign="top">
 
-[3.11 Tracking Payload](3.11 Tracking Payload "3.11 Tracking Payload")
+<a href="../0311/" title="3.11 Tracking Payload">3.11 Tracking Payload</a>
 
-[11.5 Asynchronous Operations](11.5 Asynchronous Operations "11.5 Asynchronous Operations")
+<a href="../1105/" title="11.5 Asynchronous Operations">11.5 Asynchronous Operations</a>
 
-[12.5 Asynchronous Batch Operations](13.5 Asynchronous Batch Operations "13.5 Asynchronous Batch Operations")
+<a href="../1305/" title="13.5 Asynchronous Batch Operations">13.5 Asynchronous Batch Operations</a>
 
-[Appendix B: sdata.xsd](Appendix B sdata.xsd "Appendix B: sdata.xsd")
+<a href="../AppendixB/" title="Appendix B: sdata.xsd">Appendix B: sdata.xsd</a>
 
 </td>
 <td valign="top">
@@ -1261,21 +1259,17 @@ BJ
 </td>
 <td valign="top">
 
-[2.3 Resource Property URL
+<a href="../0203/" title="2.3 Resource Property URL">2.3 Resource Property URL</a>
 
-4.1 Typical SData Schema](2.3 Resource Property URL "2.3 Resource Property URL")
+<a href="../0402/" title="4.2 Resource Kind Definition">4.2 Resource Kind Definition</a>
 
-[4.2 Resource Kind Definition](4.2 Resource Kind Definition "4.2 Resource Kind Definition")
+<a href="../0403/" title="4.3 Property Definition">4.3 Property Definition</a>
 
-[4.3 Property Definition
+<a href="../0408/" title="4.8 Simple Metadata Extensions Summary">4.8 Simple Metadata Extensions Summary</a>
 
-4.4 Relationship Definitions](4.3 Property Definition "4.3 Property Definition")
+<a href="../0803/" title="8.3 Create on Property URL">8.3 Create on Property URL</a>
 
-[4.7 Simple Metadata Extensions Summary](4.8 Simple Metadata Extensions Summary "4.8 Simple Metadata Extensions Summary")
-
-[8.3 Create on Property URL](8.3 Create on Property URL "8.3 Create on Property URL")
-
-[Appendix A: sme.xsd](Appendix A sme.xsd "Appendix A: sme.xsd")
+<a href="../AppendixA/" title="Appendix A: sme.xsd">Appendix A: sme.xsd</a>
 
 </td>
 <td valign="top">
@@ -1311,7 +1305,7 @@ BJ
 
 All feed or entry examples
 
-[Appendix C: sdatahttp.xsd](Appendix C sdatahttp.xsd "Appendix C: sdatahttp.xsd")
+<a href="../AppendixC" title="Appendix C: sdatahttp.xsd">Appendix C: sdatahttp.xsd</a>
 
 </td>
 <td valign="top">
@@ -1332,7 +1326,7 @@ Split sdata namespace in two
 
 All feed or entry examples
 
-[3.3 Feed-level links](3.3 Feed-level Links "3.3 Feed-level Links")
+<a href="../0303/" title="3.3 Feed-level Links">3.3 Feed-level links</a>
 
 </td>
 <td valign="top">
@@ -1351,13 +1345,9 @@ fixed typos in linkRel rel attributes.
 <td valign="top"></td>
 <td valign="top">
 
-[2.8 Intermediate URLs
+<a href="../0209/" title="2.9 Intermediate URLs">2.9 Intermediate URLs</a>
 
-3.4 Categories](2.9 Intermediate URLs "2.9 Intermediate URLs")
-
-[3.12 SData Category Scheme
-
-6.9 Query on intermediate URL](3.12 SData Category Scheme "3.12 SData Category Scheme")
+<a href="../0312/" title="3.12 SData Category Scheme">3.12 SData Category Scheme</a>
 
 3.X examples
 
@@ -1399,7 +1389,7 @@ BJ
 </td>
 <td valign="top">
 
-[3.3 Feed-level links](3.3 Feed-level Links "3.3 Feed-level Links")
+<a href="../0303/" title="3.3 Feed-level Links">3.3 Feed-level links</a>
 
 All feed or entry examples
 
@@ -1423,7 +1413,7 @@ Introduced &lt;category&gt; element in all examples
 <td valign="top"></td>
 <td valign="top">
 
-[9.2 Partial Updates](9.2 Update Payloads "9.2 Update Payloads")
+<a href="../0902/" title="9.2 Update Payloads">9.2 Partial Updates</a>
 
 </td>
 <td valign="top">
@@ -1475,9 +1465,7 @@ BJ
 </td>
 <td valign="top">
 
-[Appendix D: categories.xml
-
-3.12 SData Category Scheme](Appendix D categories.xml "Appendix D: categories.xml")
+<a href="../AppendixD/" title="Appendix D: categories.xml">Appendix D: categories.xml</a>
 
 </td>
 <td valign="top">
@@ -1545,9 +1533,7 @@ Cleaned up comments. Saved old comments in a file.
 <td valign="top"></td>
 <td valign="top">
 
-[3.11 Tracking Payload
-
-Appendix B: sdata.xsd](Appendix B sdata.xsd "Appendix B: sdata.xsd")
+<a href="../AppendixB/" title="Appendix B: sdata.xsd">Appendix B: sdata.xsd</a>
 
 Misc examples
 
@@ -1566,13 +1552,13 @@ Added &lt;pollingMillis&gt; element to tracking payload
 <td valign="top"></td>
 <td valign="top">
 
-[4.2 Resource Kind Definition](4.2 Resource Kind Definition "4.2 Resource Kind Definition")
+<a href="../0402/" title="4.2 Resource Kind Definition">4.2 Resource Kind Definition</a>
 
-[4.3 Property Definition](4.3 Property Definition "4.3 Property Definition")
+<a href="../0403/" title="4.3 Property Definition">4.3 Property Definition</a>
 
-[11.3 Operation Metadata](11.3 Operation Metadata "11.3 Operation Metadata")
+<a href="../1103/" title="11.3 Operation Metadata">11.3 Operation Metadata</a>
 
-[Appendix A: sme.xsd](Appendix A sme.xsd "Appendix A: sme.xsd")
+<a href="../AppendixA/" title="Appendix A: sme.xsd">Appendix A: sme.xsd</a>
 
 </td>
 <td valign="top">
@@ -1591,7 +1577,7 @@ Added "unsupported" SME attribute
 
 4.X Metadata
 
-[11.3 Operation Metadata](11.3 Operation Metadata "11.3 Operation Metadata")
+<a href="../1103/" title="11.3 Operation Metadata">11.3 Operation Metadata</a>
 
 </td>
 <td valign="top">
@@ -1610,13 +1596,9 @@ XxxListType -&gt; Xxx--list
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[2.9 Query Parameters
+<td valign="top"><a href="../0211/" title="2.11  Query Parameters">2.11 Query Parameters</a>
 
-4.2 Resource Kind Definition](2.11 Query Parameters "2.11  Query Parameters")
-
-[4.7 Simple Metadata Extensions Summary
-
-Appendix A: sme.xsd](4.8 Simple Metadata Extensions Summary "4.8 Simple Metadata Extensions Summary")
+<a href="../0408/" title="4.8 Simple Metadata Extensions Summary">4.8 Simple Metadata Extensions Summary Appendix A: sme.xsd</a>
 
 </td>
 <td valign="top">
@@ -1654,9 +1636,9 @@ BJ
 </td>
 <td valign="top">
 
-[3.1 Typical Feed](3.1 Typical Feed "3.1 Typical Feed")
+<a href="../0301/" title="3.1 Typical Feed">3.1 Typical Feed</a>
 
-[3.8 Resource Payload](3.8 Resource Payload "3.8  Resource Payload")
+<a href="../0308/" title="3.8  Resource Payload">3.8 Resource Payload</a>
 
 Appendix B: sdata.xsd
 
@@ -1677,7 +1659,7 @@ Added &lt;sdata:payload&gt; element around payload.
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[5.3 Impersonation](/daisy/sdata/275-DSY.html)</td>
+<td valign="top"><a href="../0502/" title="5.2 Impersonation">5.2 Impersonation</a></td>
 <td valign="top">
 
 Added impersonation section (SSO proposal&nbsp;for CRM/ERP)
@@ -1709,7 +1691,7 @@ Oct 13, 2008
 BJ
 
 </td>
-<td valign="top">[5.3 Impersonation](/daisy/sdata/275-DSY.html)</td>
+<td valign="top"><a href="../0502/" title="5.2 Impersonation">5.2 Impersonation</a></td>
 <td valign="top">
 
 Added diagram and improved example
@@ -1739,7 +1721,7 @@ Oct 14, 2008
 BJ
 
 </td>
-<td valign="top">[5.4 Single Sign-On with CAS](/daisy/sdata/323-DSY.html)</td>
+<td valign="top"><a href="../0503/">5.3 Single Sign-On with CAS</a></td>
 <td valign="top">
 
 Added CAS SSO section (alternate SSO proposal for CRM/ERP and Orion)
@@ -1773,9 +1755,9 @@ BJ
 </td>
 <td valign="top">
 
-[13.1.3 UUID Domains](/daisy/sdata/276-DSY.html)
+<a href="../../sync/0101/" title="1.1 Correlating with UUIDs">13.1.3 UUID Domains</a>
 
-[13.1.4 Protocol Elements for Linking](/daisy/sdata/277-DSY.html)
+<a href="../../sync/0103/" title="1.3 Linking Protocol">13.1.4 Protocol Elements for Linking</a>
 
 </td>
 <td valign="top">
@@ -1807,7 +1789,7 @@ Nov 17, 2008
 BJ
 
 </td>
-<td valign="top">[2.10 Query Language](2.12 Query Language "2.12  Query Language")</td>
+<td valign="top"><a href="../0212/" title="2.12  Query Language">2.12 Query Language</a></td>
 <td valign="top">
 
 Added a proposal for conformance levels
@@ -1830,37 +1812,37 @@ BJ
 </td>
 <td valign="top">
 
-[2.6 Resource Schema URL](2.7 Resource Schema URL "2.7  Resource Schema URL")
+<a href="../0207/" title="2.7 Resource Schema URL">2.7 Resource Schema URL</a>
 
-[2.7 System URL](2.8 System and Registry URL "2.8  System and Registry URL")
+<a href="../0208/" title="2.8  System and Registry URL">2.8 System URL</a>
 
-[2.9 Query Parameters](2.11 Query Parameters "2.11  Query Parameters")
+<a href="../0211/" title="2.11  Query Parameters">2.11 Query Parameters</a>
 
-[2.10 Query Language](2.12 Query Language "2.12  Query Language")
+<a href="../0212/" title="2.12  Query Language">2.12 Query Language</a>
 
-[3.3 Feed-level Links](3.3 Feed-level Links "3.3 Feed-level Links")
+<a href="../0303/" title="3.3 Feed-level Links">3.3 Feed-level links</a>
 
-[3.10 Error Payload](3.10 Error Payload "3.10  Error Payload")
+<a href="../0310/" title="3.10  Error Payload">3.10 Error Payload</a>
 
-[3.13 SData Atom Extensions](3.13 SData Atom Extensions "3.13 SData Atom Extensions")
+<a href="../0313/" title="3.13 SData Atom Extensions">3.13 SData Atom Extensions</a>
 
-[4 Metadata](4 Metadata "4  Metadata")
+<a href="../0400/" title="4  Metadata">4 Metadata</a>
 
-[5.2 Authentication](5.2 Authentication "5.2 Authentication")
+<a href="../0502/" title="5.2 Authentication">5.2 Authentication</a>
 
-[6.5 Query Payload Control](6.5 Query Payload Control "6.5 Query Payload Control")
+<a href="../0605/" title="6.5 Query Payload Control">6.5 Query Payload Control</a>
 
-[6.10 Query Error Handling](6.10 Query Error Handling "6.10 Query Error Handling")
+<a href="0610/" title="6.10 Query Error Handling">6.10 Query Error Handling</a>
 
-[7.1 Read Example](7.1 Read Example "7.1 Read Example")
+<a href="../0701/" title="7.1 Read Example">7.1 Read Example</a>
 
-[10.2 Delete Concurrency Handling](10.2 Delete Concurrency Handling "10.2 Delete Concurrency Handling")
+<a href="../1002/" title="10.2 Delete Concurrency Handling">10.2 Delete Concurrency Handling</a>
 
-[11.3 Operation Metadata](11.3 Operation Metadata "11.3 Operation Metadata")
+<a href="../1103/" title="11.3 Operation Metadata">11.3 Operation Metadata</a>
 
-[Appendix A](Appendix A sme.xsd "Appendix A: sme.xsd")
+<a href="../AppendixA/" title="Appendix A: sme.xsd">Appendix A: sme.xsd</a>
 
-[Appendix B](Appendix B sdata.xsd "Appendix B: sdata.xsd")
+<a href="../AppendixB/" title="Appendix B: sdata.xsd">Appendix B: sdata.xsd</a>
 
 </td>
 <td valign="top">
@@ -1956,9 +1938,7 @@ BJ
 </td>
 <td valign="top">
 
-[9.1 Update Example
-
-10.1 Delete Example](10.1 Delete Example "10.1 Delete Example")
+<a href="../1001/" title="10.1 Delete Example">10.1 Delete Example</a>
 
 </td>
 <td valign="top">
@@ -1981,7 +1961,7 @@ Mar 16, 2009
 BJ
 
 </td>
-<td valign="top">[5.3 Single Sign-On](5.3 Single Sign-On "5.3 Single Sign-On")</td>
+<td valign="top"><a href="../0503/">5.3 Single Sign-On</a></td>
 <td valign="top">
 
 Rewrote SSO proposal
@@ -2002,7 +1982,7 @@ Mar 20, 2009
 BJ
 
 </td>
-<td valign="top">[13 Link&amp;Sync](/daisy/sdata/236-DSY.html)</td>
+<td valign="top"><a href="../../sync/0000/" title="SData Linking & Synchronisation">Link&amp;Sync</a></td>
 <td valign="top">
 
 Completed in depth review of Link&amp;Sync section
@@ -2023,7 +2003,7 @@ Mar 31, 2009
 BJ
 
 </td>
-<td valign="top">[13 Link&amp;Sync](/daisy/sdata/236-DSY.html)</td>
+<td valign="top"><a href="../../sync/0000/" title="SData Linking & Synchronisation">Link&amp;Sync</a></td>
 <td valign="top">
 
 Simplified synchronization feed to use one digest instead of two. Floor and
@@ -2048,7 +2028,7 @@ Apr 1, 2009
 BJ
 
 </td>
-<td valign="top">[2.11 Naming Conventions for URLs](2.13 Naming Conventions for URLs "2.13 Naming Conventions for URLs")
+<td valign="top"><a href="../0213/" title="2.13 Naming Conventions for URLs">2.13 Naming Conventions for URLs</a>
 </td>
 <td valign="top">
 
@@ -2070,17 +2050,17 @@ Apr 6, 2009
 BJ
 
 </td>
-<td valign="top">[3.8 Resource Payload](3.8 Resource Payload "3.8  Resource Payload")
+<td valign="top"><a href="../0308/" title="3.8  Resource Payload">3.8 Resource Payload</a>
 
-[3.14 Localization](3.14 Localization "3.14 Localization")
+<a href="../0314/" title="3.14 Localization">3.14 Localization</a>
 
-[4.1 Typical SData Schema](4.1 Typical SData Schema "4.1 Typical SData Schema")
+<a href="../0401/" title="4.1 Typical SData Schema">4.1 Typical SData Schema</a>
 
-[4.8 Schema Rules](4.9 Schema Rules "4.9 Schema Rules")
+<a href="../0409/" title="4.9 Schema Rules">4.9 Schema Rules</a>
 
-[12.3 Synchronous Batch Request](12.3 Synchronous Batch Request "12.3 Synchronous Batch Request")
+<a href="../1303/" title="12.3 Synchronous Batch Request">13.3 Synchronous Batch Request</a>
 
-[2.10 Query Language](2.12 Query Language "2.12  Query Language")
+<a href="../0212/" title="2.12  Query Language">2.12 Query Language</a>
 
 </td>
 <td valign="top">
@@ -2103,7 +2083,7 @@ Apr 7, 2009
 BJ
 
 </td>
-<td valign="top">[4.5 Service Operation Definition](4.5 Service Operation and Named Query Definitions "4.5 Service Operation and Named Query Definitions")
+<td valign="top"><a href="../0405/" title="4.5 Service Operation and Named Query Definitions">4.5 Service Operation Definition</a>
 </td>
 <td valign="top">
 
@@ -2126,7 +2106,7 @@ Apr 20, 2009
 BJ
 
 </td>
-<td valign="top">[14 SData Registry](14 SData Registry "14 SData Registry")</td>
+<td valign="top"><a href="../1400/" title="14 SData Registry">14 SData Registry</a></td>
 <td valign="top">
 
 Added SData registry pages
@@ -2172,7 +2152,7 @@ Jul 13, 2009
 BJ
 
 </td>
-<td valign="top">[2.9 Query Parameters](2.11 Query Parameters "2.11  Query Parameters")</td>
+<td valign="top"><a href="../0211/" title="2.11  Query Parameters">2.11 Query Parameters</a></td>
 <td valign="top">
 
 Added select query parameter
@@ -2195,11 +2175,11 @@ BJ
 </td>
 <td valign="top">
 
-[2.9 Query Parameters](2.11 Query Parameters "2.11  Query Parameters")
+<a href="../0211/" title="2.11  Query Parameters">2.11 Query Parameters</a>
 
-[8.1 Create Example](8.1 Create Example "8.1 Create Example")
+<a href="../0801/" title="8.1 Create Example">8.1 Create Example</a>
 
-[9.2 Partial Updates](9.2 Update Payloads "9.2 Update Payloads")
+<a href="../0902/" title="9.2 Update Payloads">9.2 Partial Updates</a>
 
 </td>
 <td valign="top">
@@ -2222,7 +2202,7 @@ Jul 13, 2009
 BJ
 
 </td>
-<td valign="top">[2.13 Extensibility](2.15 Extensibility "2.15 Extensibility")</td>
+<td valign="top"><a href="../0215/" title="2.15 Extensibility">2.15 Extensibility</a></td>
 <td valign="top">
 
 Added section on URL extensibility
@@ -2243,11 +2223,11 @@ July 13, 2009
 BJ
 
 </td>
-<td valign="top">[11.7 Operation Template](11.7 Operation Template "11.7 Operation Template")
+<td valign="top"><a href="../1107/" title="11.7 Operation Template">11.7 Operation Template</a>
 
-[11.3 Operation Metadata](11.3 Operation Metadata "11.3 Operation Metadata")
+<a href="../1103/" title="11.3 Operation Metadata">11.3 Operation Metadata</a>
 
-[4.7 Simple Metadata Extensions Summary](4.8 Simple Metadata Extensions Summary "4.8 Simple Metadata Extensions Summary")
+<a href="../0408/" title="4.8 Simple Metadata Extensions Summary">4.8 Simple Metadata Extensions Summary</a>
 
 </td>
 <td valign="top">
@@ -2272,9 +2252,9 @@ BJ
 </td>
 <td valign="top">
 
-[12 Named Queries](12 Named Queries "12 Named Queries")
+<a href="../1200/" title="12 Named Queries">12 Named Queries</a>
 
-[2.5 Named Query URL](2.5 Named Query URL "2.5 Named Query URL")
+<a href="../0205/" title="2.5 Named Query URL">2.5 Named Query URL</a>
 
 </td>
 <td valign="top">
@@ -2291,7 +2271,7 @@ Added named query section
 <td valign="top"></td>
 <td valign="top">
 
-[4.7 Simple Metadata Extensions Summary](4.8 Simple Metadata Extensions Summary "4.8 Simple Metadata Extensions Summary")
+<a href="../0408/" title="4.8 Simple Metadata Extensions Summary">4.8 Simple Metadata Extensions Summary</a>
 
 + misc other pages
 
@@ -2308,7 +2288,7 @@ sme:mandatory has been renamed sme:isMandatory
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[15.3 Endpoint Resource](14.3 Endpoint Resource "14.3 Endpoint Resource")</td>
+<td valign="top"><a href="../1403/" title="14.3 Endpoint Resource">14.3 Endpoint Resource</a></td>
 <td valign="top">
 
 Added &lt;properties&gt; element to registry endpoints (simple extensibility
@@ -2330,9 +2310,9 @@ July 17, 2009
 BJ
 
 </td>
-<td valign="top">[2.9 Intermediate URLs](2.9 Intermediate URLs "2.9 Intermediate URLs")
+<td valign="top"><a href="../0209/" title="2.9 Intermediate URLs">2.9 Intermediate URLs</a>
 
-[Appendix D: categories.xml](Appendix D categories.xml "Appendix D: categories.xml")
+<a href="../AppendixD/" title="Appendix D: categories.xml">Appendix D: categories.xml</a>
 
 </td>
 <td valign="top">
@@ -2347,7 +2327,7 @@ Added intermediate URLs and categories for named queries
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[Appendix E: registry.xsd](Appendix E registry.xsd "Appendix E: registry.xsd")</td>
+<td valign="top"><a href="../AppendixE/" title="Appendix E: registry.xsd">Appendix E: registry.xsd</a></td>
 <td valign="top">
 
 Added registry.xsd appendix
@@ -2368,9 +2348,9 @@ July 20, 2009
 BJ
 
 </td>
-<td valign="top">[4.9 Inlined Schemas](Appendix B sdata.xsd "Appendix B: sdata.xsd")
+<td valign="top"><a href="../AppendixB/" title="Appendix B: sdata.xsd">Appendix B: sdata.xsd</a>
 
-[Appendix B: sdata.xsd](Appendix B sdata.xsd "Appendix B: sdata.xsd")
+<a href="../AppendixB/" title="Appendix B: sdata.xsd">Appendix B: sdata.xsd</a>
 
 </td>
 <td valign="top">
@@ -2386,8 +2366,7 @@ Inlined schema are now inside &lt;sdata:schema&gt; element, instead of
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[4.10 Importing and including
-schemas](4.11 Importing and including schemas "4.11 Importing and including schemas")</td>
+<td valign="top"><a href="../0411/" title="4.11 Importing and including schemas">4.11 Importing and including schemas</a></td>
 <td valign="top">
 
 Added section on schema import and include.
@@ -2400,7 +2379,7 @@ Added section on schema import and include.
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[8.4 Reliable Posting](8.4 Reliable Posting "8.4 Reliable Posting")</td>
+<td valign="top"><a href="../0804/" title="8.4 Reliable Posting">8.4 Reliable Posting</a></td>
 <td valign="top">
 
 Allow trackingID on regular POST operations.
@@ -2413,7 +2392,7 @@ Allow trackingID on regular POST operations.
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[2.15 Internationalized URLs](2.16 Internationalized URLs "2.16 Internationalized URLs")</td>
+<td valign="top"><a href="../0216/" title="2.16 Internationalized URLs">2.16 Internationalized URLs</a></td>
 <td valign="top">
 
 Added section to describe encoding of non ASCII characters in URLs
@@ -2426,7 +2405,7 @@ Added section to describe encoding of non ASCII characters in URLs
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[Versions Summary](Versions Summary "Versions Summary")</td>
+<td valign="top"><a href="../VersionsSummary/" title="Versions Summary">Versions Summary</a></td>
 <td valign="top">
 
 Added versions summary page
@@ -2447,9 +2426,9 @@ July 21, 2009
 BJ
 
 </td>
-<td valign="top">[3.9 Resource Linking and Embedding](3.9 Resource Linking and Embedding "3.9 Resource Linking and Embedding")
+<td valign="top"><a href="../0309/" title="3.9 Resource Linking and Embedding">3.9 Resource Linking and Embedding</a>
 
-[Appendix B: sdata.xsd](Appendix B sdata.xsd "Appendix B: sdata.xsd")
+<a href="../AppendixB/" title="Appendix B: sdata.xsd">Appendix B: sdata.xsd</a>
 
 </td>
 <td valign="top">
@@ -2464,7 +2443,7 @@ Introduced sdata attributes for resource linking (url, key, uuid)
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[14.6.1 Relationship Handling in Synchronization](/daisy/sdata/237-DSY.html)</td>
+<td valign="top"><a href="../../sync/0601/">6.1 Relationship Handling in Synchronization</a></td>
 <td valign="top">
 
 Wrote section on relationship handling in sync.
@@ -2481,8 +2460,7 @@ July 22, 2009
 
 </td>
 <td valign="top"></td>
-<td valign="top">[4.7 Simple Metadata Extensions
-Summary](4.8 Simple Metadata Extensions Summary "4.8 Simple Metadata Extensions Summary")</td>
+<td valign="top"><a href="../0408/" title="4.8 Simple Metadata Extensions Summary">4.8 Simple Metadata Extensions Summary</a></td>
 <td valign="top">
 
 Added sme:maxLength and sme:averageLength attributes
@@ -2495,9 +2473,9 @@ Added sme:maxLength and sme:averageLength attributes
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[8.4 Reliable Posting](8.4 Reliable Posting "8.4 Reliable Posting")
+<td valign="top"><a href="../0804/" title="8.4 Reliable Posting">8.4 Reliable Posting</a>
 
-[11.5 Asynchronous Operations](11.5 Asynchronous Operations "11.5 Asynchronous Operations")
+<a href="../1105/" title="11.5 Asynchronous Operations">11.5 Asynchronous Operations</a>
 
 </td>
 <td valign="top">
@@ -2515,7 +2493,7 @@ operations
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[4.4 Relationship Definitions](4.4 Relationship Definitions "4.4 Relationship Definitions")</td>
+<td valign="top"><a href="../0404/" title="4.4 Relationship Definitions">4.4 Relationship Definitions</a></td>
 <td valign="top">
 
 Added text to clarify the distinction between parent/child relationships and
@@ -2529,7 +2507,7 @@ associations
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[2.10 Query Parameters](2.11 Query Parameters "2.11  Query Parameters")</td>
+<td valign="top"><a href="../0211/" title="2.11  Query Parameters">2.11 Query Parameters</a></td>
 <td valign="top">
 
 Added includeUuid and includePayload parameters (used by linking protocol).
@@ -2542,7 +2520,7 @@ Added includeUuid and includePayload parameters (used by linking protocol).
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[2.7 Resource Schema URL](2.7 Resource Schema URL "2.7  Resource Schema URL")</td>
+<td valign="top"><a href="../0207/" title="2.7  Resource Schema URL">2.7 Resource Schema URL</a></td>
 <td valign="top">
 
 Added syntax with additional fragment, for imported/included schemas
@@ -2555,7 +2533,7 @@ Added syntax with additional fragment, for imported/included schemas
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[2.10 Miscellaneous URLs](2.10 Miscellaneous URLs "2.10 Miscellaneous URLs")</td>
+<td valign="top"><a href="../0210/" title="2.10 Miscellaneous URLs">2.10 Miscellaneous URLs</a></td>
 <td valign="top">
 
 Added page on miscellaneous URLs to cope with $post tracking URL
@@ -2591,7 +2569,7 @@ Added JSON mapping
 <td valign="top"></td>
 <td valign="top">
 
-[2.10 Query Parameters](2.11 Query Parameters "2.11  Query Parameters")
+<a href="../0211/" title="2.11  Query Parameters">2.11 Query Parameters</a>
 
 </td>
 <td valign="top">
@@ -2606,7 +2584,7 @@ Added * wildcard to select syntax.
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[3.2 Feed Elements](3.2 Feed Elements "3.2  Feed Elements")</td>
+<td valign="top"><a href="../0302/" title="3.2  Feed Elements">3.2 Feed Elements</a></td>
 <td valign="top">
 
 Added Atom &lt;author&gt; element to make SData feed conformant with Atom.
@@ -2619,7 +2597,7 @@ Added Atom &lt;author&gt; element to make SData feed conformant with Atom.
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[3.9 Resource Linking and Embedding](3.9 Resource Linking and Embedding "3.9 Resource Linking and Embedding")
+<td valign="top"><a href="../0309/" title="3.9 Resource Linking and Embedding">3.9 Resource Linking and Embedding</a>
 </td>
 <td valign="top">
 
@@ -2633,7 +2611,7 @@ Added sdata:lookup as optional attribute to payload reference
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[4 Metadata](4 Metadata "4  Metadata")</td>
+<td valign="top"><a href="../0400/" title="4  Metadata">4 Metadata</a></td>
 <td valign="top">
 
 Reviewed metadata section. Got rid of the "ID" elements in the example as
@@ -2651,7 +2629,7 @@ July 24, 2009
 
 </td>
 <td valign="top"></td>
-<td valign="top">[6.5 Query Payload Control](6.5 Query Payload Control "6.5 Query Payload Control")</td>
+<td valign="top"><a href="../0605/" title="6.5 Query Payload Control">6.5 Query Payload Control</a></td>
 <td valign="top">
 
 Added example of select parameter
@@ -2666,7 +2644,7 @@ Changed select syntax to use / rather than . for consistency with include.
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[6.7 Feed Rendering](6.7 Feed Rendering "6.7 Feed Rendering")</td>
+<td valign="top"><a href="../0607/" title="6.7 Feed Rendering">6.7 Feed Rendering</a></td>
 <td valign="top">
 
 Modified to direct people to use sdata:url rather than &lt;link&gt; elements
@@ -2709,11 +2687,11 @@ Aug 17, 2009
 BJ
 
 </td>
-<td valign="top">[14.4.4 Synchronization Feed](/daisy/sdata/176-DSY.html)
+<td valign="top"><a href="../../sync/0404/" title="4.4 Synchronization Feed">4.4 Synchronization Feed</a>
 
-[14.5.2 Querying Source Synchronization Feed](/daisy/sdata/177-DSY.html)
+<a href="../../sync/0502/">5.2 Querying Source Synchronization Feed</a>
 
-[14.5.8 Immediate Synchronization](/daisy/sdata/179-DSY.html)
+<a href="../../sync/0508/">5.8 Immediate Synchronization</a>
 
 </td>
 <td valign="top">
@@ -2740,9 +2718,9 @@ Aug 21, 2009
 BJ
 
 </td>
-<td valign="top">[14.1.3 Linking Protocol](/daisy/sdata/277-DSY.html)
+<td valign="top"><a href="../../sync/0103/" title="1.3 Linking Protocol">14.1.4 Protocol Elements for Linking</a>
 
-[2.11 Query Parameters](2.11 Query Parameters "2.11  Query Parameters")
+<a href="../0211/" title="2.11  Query Parameters">2.11 Query Parameters</a>
 
 </td>
 <td valign="top">
@@ -2766,11 +2744,11 @@ Sep 2, 2009
 BJ
 
 </td>
-<td valign="top">[3.9 Resource Linking and Embedding](3.9 Resource Linking and Embedding "3.9 Resource Linking and Embedding")
+<td valign="top"><a href="../0309/" title="3.9 Resource Linking and Embedding">3.9 Resource Linking and Embedding</a>
 
-[3.13 SData Atom Extensions](3.13 SData Atom Extensions "3.13 SData Atom Extensions")
+<a href="../0313/" title="3.13 SData Atom Extensions">3.13 SData Atom Extensions</a>
 
-[Appendix B: sdata.xsd](Appendix B sdata.xsd "Appendix B: sdata.xsd")
+<a href="../AppendixB/" title="Appendix B: sdata.xsd">Appendix B: sdata.xsd</a>
 
 </td>
 <td valign="top">
@@ -2788,7 +2766,7 @@ Removed sdata:payloadPath attribute from 3.13 and Appendix A.
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[4.6 Auxiliary Type Definitions](4.6 Auxiliary Type Definitions "4.6 Auxiliary Type Definitions")</td>
+<td valign="top"><a href="../0406/" title="4.6 Auxiliary Type Definitions">4.6 Auxiliary Type Definitions</a></td>
 <td valign="top">
 
 Added --enum convention for enumerated types.
@@ -2826,15 +2804,15 @@ Sep 3, 2009
 BJ
 
 </td>
-<td valign="top">[4.1 Typical SData Schema](4.8 Simple Metadata Extensions Summary "4.8 Simple Metadata Extensions Summary")
+<td valign="top"><a href="../0408/" title="4.8 Simple Metadata Extensions Summary">4.8 Simple Metadata Extensions Summary</a>
 
-[4.2 Resource Kind Definition](4.2 Resource Kind Definition "4.2 Resource Kind Definition")
+<a href="../0402/" title="4.2 Resource Kind Definition">4.2 Resource Kind Definition</a>
 
-[4.7 Simple Metadata ](4.8 Simple Metadata Extensions Summary "4.8 Simple Metadata Extensions Summary")
+<a href="../0408/" title="4.8 Simple Metadata Extensions Summary">4.8 Simple Metadata</a>
 
-[Extensions Summary](4.8 Simple Metadata Extensions Summary "4.8 Simple Metadata Extensions Summary")
+<a href="../0408/" title="4.8 Simple Metadata Extensions Summary">Extensions Summary</a>
 
-[Appendix A: sme.xsd](Appendix A sme.xsd "Appendix A: sme.xsd")
+<a href="../AppendixA/" title="Appendix A: sme.xsd">Appendix A: sme.xsd</a>
 
 </td>
 <td valign="top">
@@ -2849,7 +2827,7 @@ Added sme:hasUuid attribute
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[10.2 Delete Concurrency Handling](10.2 Delete Concurrency Handling "10.2 Delete Concurrency Handling")
+<td valign="top"><a href="../1002/" title="10.2 Delete Concurrency Handling">10.2 Delete Concurrency Handling</a>
 </td>
 <td valign="top">
 
@@ -2913,13 +2891,13 @@ Added MUST/SHOULD/MAY language and compliance paragraphs
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[2.11 Query Parameters](2.11 Query Parameters "2.11  Query Parameters")
+<td valign="top"><a href="../0211/" title="2.11  Query Parameters">2.11 Query Parameters</a>
 
-[3.13 SData Atom Extensions](3.13 SData Atom Extensions "3.13 SData Atom Extensions")
+<a href="../0313/" title="3.13 SData Atom Extensions">3.13 SData Atom Extensions</a>
 
-[6.5 Query Payload Control](6.5 Query Payload Control "6.5 Query Payload Control")
+<a href="../0605/" title="6.5 Query Payload Control">6.5 Query Payload Control</a>
 
-[Appendix B: sdata.xsd](Appendix B sdata.xsd "Appendix B: sdata.xsd")
+<a href="../AppendixB/" title="Appendix B: sdata.xsd">Appendix B: sdata.xsd</a>
 
 </td>
 <td valign="top">
@@ -2934,10 +2912,9 @@ Added include=$descriptors query parameter and sdata:descriptor attribute.
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[4.7 Simple Metadata
-](4.8 Simple Metadata Extensions Summary "4.8 Simple Metadata Extensions Summary")[Extensions Summary](4.8 Simple Metadata Extensions Summary "4.8 Simple Metadata Extensions Summary")
+<td valign="top"><a href="../0408/" title="4.8 Simple Metadata Extensions Summary">4.8 Simple Metadata Extensions Summary</a>
 
-[Appendix A: sme.xsd](Appendix A sme.xsd "Appendix A: sme.xsd")
+<a href="../AppendixA/" title="Appendix A: sme.xsd">Appendix A: sme.xsd</a>
 
 </td>
 <td valign="top">
@@ -2962,7 +2939,7 @@ Sep 28, 2009
 BJ
 
 </td>
-<td valign="top">[5.3 Single Sign-On](5.3 Single Sign-On "5.3 Single Sign-On")</td>
+<td valign="top"><a href="../0503/">5.3 Single Sign-On</a></td>
 <td valign="top">
 
 Replaced current SSO proposal by a statement about SData supporting the
@@ -2976,13 +2953,13 @@ upcoming SSO protocol.
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[9.2 Partial Updates](9.2 Update Payloads "9.2 Update Payloads")
+<td valign="top"><a href="../0902/" title="9.2 Update Payloads">9.2 Partial Updates</a>
 
-[3.13 SData Atom Extensions](3.13 SData Atom Extensions "3.13 SData Atom Extensions")
+<a href="../0313/" title="3.13 SData Atom Extensions">3.13 SData Atom Extensions</a>
 
-[6.5 Query Payload Control](6.5 Query Payload Control "6.5 Query Payload Control")
+<a href="../0605/" title="6.5 Query Payload Control">6.5 Query Payload Control</a>
 
-[Appendix B: sdata.xsd](Appendix B sdata.xsd "Appendix B: sdata.xsd")
+<a href="../AppendixB/" title="Appendix B: sdata.xsd">Appendix B: sdata.xsd</a>
 
 </td>
 <td valign="top">
@@ -3056,7 +3033,7 @@ Clarified the description of itemsPerPage
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[3.10 Error Payload](3.10 Error Payload "3.10  Error Payload")</td>
+<td valign="top"><a href="../0310/" title="3.10  Error Payload">3.10 Error Payload</a></td>
 <td valign="top">
 
 Converted the FIXME paragraph about the incomplete list of error codes into a
@@ -3085,7 +3062,7 @@ Added a compliance statement for the support of multiple criteria.
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[11.5 Asynchronous Operations](11.5 Asynchronous Operations "11.5 Asynchronous Operations")</td>
+<td valign="top"><a href="../1105/" title="11.5 Asynchronous Operations">11.5 Asynchronous Operations</a></td>
 <td valign="top">
 
 Fixed the rule for &lt;progress&gt; values (they MAY decrease now).
@@ -3098,7 +3075,7 @@ Fixed the rule for &lt;progress&gt; values (they MAY decrease now).
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[3.9 Resource Linking and Embedding](3.9 Resource Linking and Embedding "3.9 Resource Linking and Embedding")
+<td valign="top"><a href="../0309/" title="3.9 Resource Linking and Embedding">3.9 Resource Linking and Embedding</a>
 </td>
 <td valign="top">
 
@@ -3136,7 +3113,7 @@ Clarified the rules for multiple criteria
 <td valign="top"></td>
 <td valign="top">[2.16 Internationalized URLs
 
-](2.16 Internationalized URLs "2.16 Internationalized URLs")[6.4 Query Paging](6.4 Query Paging "6.4 Query Paging")</td>
+](2.16 Internationalized URLs "2.16 Internationalized URLs")<a href="../0604/" title="6.4 Query Paging">6.4 Query Paging</a></td>
 <td valign="top">
 
 Clarified who is responsible for percent encoding non ASCII characters in
@@ -3150,7 +3127,7 @@ URLs.
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[11.5 Asynchronous Operations](11.5 Asynchronous Operations "11.5 Asynchronous Operations")</td>
+<td valign="top"><a href="../1105/" title="11.5 Asynchronous Operations">11.5 Asynchronous Operations</a></td>
 <td valign="top">
 
 Fixed inconsistent MUST / SHOULD NOT combination in the paragraph that says
@@ -3197,10 +3174,9 @@ Oct 9, 2009
 BJ
 
 </td>
-<td valign="top">[4.7 Simple Metadata Extensions
-Summary](4.8 Simple Metadata Extensions Summary "4.8 Simple Metadata Extensions Summary")
+<td valign="top"><a href="../0408/" title="4.8 Simple Metadata Extensions Summary">4.8 Simple Metadata Extensions Summary</a>
 
-[Appendix A: sme.xsd](Appendix A sme.xsd "Appendix A: sme.xsd")
+<a href="../AppendixA/" title="Appendix A: sme.xsd">Appendix A: sme.xsd</a>
 
 </td>
 <td valign="top">
@@ -3236,9 +3212,9 @@ Added compliance summary page.
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[3.13 SData Atom Extensions](3.13 SData Atom Extensions "3.13 SData Atom Extensions")
+<td valign="top"><a href="../0313/" title="3.13 SData Atom Extensions">3.13 SData Atom Extensions</a>
 
-[Appendix B: sdata.xsd](Appendix B sdata.xsd "Appendix B: sdata.xsd")
+<a href="../AppendixB/" title="Appendix B: sdata.xsd">Appendix B: sdata.xsd</a>
 
 </td>
 <td valign="top">
@@ -3309,9 +3285,9 @@ New page for Postel's Law (not yet in navigation tree)
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[3.1 Typical Feed](3.1 Typical Feed "3.1 Typical Feed")
+<td valign="top"><a href="../0301/" title="3.1 Typical Feed">3.1 Typical Feed</a>
 
-[3.2 Feed Elements](3.2 Feed Elements "3.2  Feed Elements")
+<a href="../0302/" title="3.2  Feed Elements">3.2 Feed Elements</a>
 
 </td>
 <td valign="top">
@@ -3359,7 +3335,7 @@ Oct 29, 2009
 BJ
 
 </td>
-<td valign="top">[4.2 Resource Kind Definition](4.2 Resource Kind Definition "4.2 Resource Kind Definition")</td>
+<td valign="top"><a href="../0402/" title="4.2 Resource Kind Definition">4.2 Resource Kind Definition</a></td>
 <td valign="top">
 
 Fixed error in definition of sme:path (it is relative to dataset segment, not
@@ -3381,7 +3357,7 @@ Nov 2, 2009
 BJ
 
 </td>
-<td valign="top">[14 SData Registry](14 SData Registry "14 SData Registry")
+<td valign="top"><a href="../1400/" title="14 SData Registry">14 SData Registry</a>
 
 and following pages.
 
@@ -3449,13 +3425,13 @@ Dec 23, 2010
 BJ
 
 </td>
-<td valign="top">[3.13 SData Atom Extensions](3.13 SData Atom Extensions "3.13 SData Atom Extensions")
+<td valign="top"><a href="../0313/" title="3.13 SData Atom Extensions">3.13 SData Atom Extensions</a>
 
-[9 Update Operation](9 Update Operation "9 Update Operation")
+<a href="../0900/" title="9 Update Operation">9 Update Operation</a>
 
-[9.2 Update Payloads](9.2 Update Payloads "9.2 Update Payloads")
+<a href="../0902/" title="9.2 Update Payloads">9.2 Update Payloads</a>
 
-[Appendix B: sdata.xsd](Appendix B sdata.xsd "Appendix B: sdata.xsd")
+<a href="../AppendixB/" title="Appendix B: sdata.xsd">Appendix B: sdata.xsd</a>
 
 </td>
 <td valign="top">
@@ -3479,17 +3455,15 @@ Note: also added sdata:index as "reserved for future use" in sdata.xsd
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[4.2 Resource Kind Definition](4.2 Resource Kind Definition "4.2 Resource Kind Definition")
+<td valign="top"><a href="../0402/" title="4.2 Resource Kind Definition">4.2 Resource Kind Definition</a>
 
-[4.3 Property Definition](4.8 Simple Metadata Extensions Summary "4.8 Simple Metadata Extensions Summary")
+<a href="../0403/" title="4.3 Property Definition">4.3 Property Definition</a>
 
-[4.7 Simple Metadata Extensions ](4.8 Simple Metadata Extensions Summary "4.8 Simple Metadata Extensions Summary")
+<a href="../0408/" title="4.8 Simple Metadata Extensions Summary">4.8 Simple Metadata Extensions Summary</a>
 
-[Summary](4.8 Simple Metadata Extensions Summary "4.8 Simple Metadata Extensions Summary")
+<a href="../1103/" title="11.3 Operation Metadata">11.3 Operation Metadata</a>
 
-[11.3 Operation Metadata](11.3 Operation Metadata "11.3 Operation Metadata")
-
-[Appendix A: sme.xsd](Appendix A sme.xsd "Appendix A: sme.xsd")
+<a href="../AppendixA/" title="Appendix A: sme.xsd">Appendix A: sme.xsd</a>
 
 </td>
 <td valign="top">
@@ -3504,21 +3478,20 @@ Added sme:tags and sme:syncOrder
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[2.7 Resource Schema URL](2.7 Resource Schema URL "2.7  Resource Schema URL")
+<td valign="top"><a href="../0207/" title="2.7  Resource Schema URL">2.7 Resource Schema URL</a>
 
-[2.11 Query Parameters](2.11 Query Parameters "2.11  Query Parameters")
+<a href="../0211/" title="2.11  Query Parameters">2.11 Query Parameters</a>
 
-[2.14 Resource Versioning](2.14 Resource Versioning "2.14 Resource Versioning")
+<a href="../0214/" title="2.14 Resource Versioning">2.14 Resource Versioning</a>
 
-[4.1 Typical SData Schema](4.1 Typical SData Schema "4.1 Typical SData Schema")
+<a href="../0401/" title="4.1 Typical SData Schema">4.1 Typical SData Schema</a>
 
-[4.8 Schema Rules](4.9 Schema Rules "4.9 Schema Rules")
+<a href="../0409/" title="4.9 Schema Rules">4.9 Schema Rules</a>
 
 </td>
 <td valign="top">
 
-Added schema version. Main description is in [4.8
-Schema Rules](4.9 Schema Rules "4.9 Schema Rules")
+Added schema version. Main description is in <a href="../0409/" title="4.9 Schema Rules">4.9 Schema Rules</a>
 
 </td>
 
@@ -3532,17 +3505,13 @@ Schema Rules](4.9 Schema Rules "4.9 Schema Rules")
 
 Synchronization Protocol
 
-[2.2
-Tick Management](4.4 Synchronization Feed)
+<a href="../../sync/0202/" title="2.2 Tick Management">2.2 Tick Management</a>
 
-[4.2
-Synchronization Digest](4.2 Synchronization Digest)
+<a href="../../sync/0402/" title="4.2 Synchronization Digest">4.2 Synchronization Digest</a>
 
-[4.4
-Synchronization Feed](4.4 Synchronization Feed)
+<a href="../../sync/0404/" title="4.4 Synchronization Feed">4.4 Synchronization Feed</a>
 
-[4.5
-Synchronization Metadata](4.5 Synchronization Metadata)
+<a href="../../sync/0405/" title="4.5 Synchronization Metadata">4.5 Synchronization Metadata</a>
 
 </td>
 <td valign="top">
@@ -3572,7 +3541,7 @@ Jan 21, 2011
 BJ
 
 </td>
-<td valign="top">[9.2 Update Payloads](9.2 Update Payloads "9.2 Update Payloads")</td>
+<td valign="top"><a href="../0902/" title="9.2 Update Payloads">9.2 Update Payloads</a></td>
 <td valign="top">
 
 Clarified description of delete on associations
@@ -3585,11 +3554,11 @@ Clarified description of delete on associations
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[4.2 Resource Kind Definition](4.2 Resource Kind Definition "4.2 Resource Kind Definition")
+<td valign="top"><a href="../0402/" title="4.2 Resource Kind Definition">4.2 Resource Kind Definition</a>
 
-[4.3 Property Definition](4.3 Property Definition "4.3 Property Definition")
+<a href="../0403/" title="4.3 Property Definition">4.3 Property Definition</a>
 
-[4.7 Polymophic relations](4.7 Polymophic relations "4.7 Polymophic relations")
+<a href="../0407/" title="4.7 Polymophic relations">4.7 Polymophic relations</a>
 
 </td>
 <td valign="top">
@@ -3609,8 +3578,7 @@ existing SME attributes, but only as an extension mechanism
 
 Synchronization Protocol
 
-[4.5 Synchronization
-Metadata](../../../../sdataSync-1_1/SyncProt/556-DSY.html)
+<a href="../../sync/0405/" title="4.5 Synchronization Metadata">4.5 Synchronization Metadata</a>
 
 </td>
 <td valign="top">
@@ -3650,7 +3618,7 @@ Jan 24, 2011
 BJ
 
 </td>
-<td valign="top">[4.7 Polymophic relations](4.7 Polymophic relations "4.7 Polymophic relations")</td>
+<td valign="top"><a href="../0407/" title="4.7 Polymophic relations">4.7 Polymophic relations</a></td>
 <td valign="top">
 
 Added section on polymorphic relations.
@@ -3669,11 +3637,9 @@ Renumbered 4.x sections with x &gt;=7
 
 Synchronization Protocol
 
-[4.2 Synchronization
-Digest](../../../../sdataSync-1_1/SyncProt/550-DSY.html)
+<a href="../../sync/0402/" title="4.2 Synchronization Digest">4.2 Synchronization Digest</a>
 
-[4.3
-Per-resource Synchronization State](4.3 Per-resource Synchronization State)
+<a href="../../sync/0403/" title="4.3 Per-resource Synchronization State">4.3 Per-resource Synchronization State</a>
 
 </td>
 <td valign="top">
@@ -3692,7 +3658,7 @@ Added data types in tables
 
 Synchronization Protocol
 
-[Appendix A: sdatasync.xsd](Appendix A. sdatasync.xsd)
+<a href="../../sync/AppendixA/" title="Appendix A: sdatasync.xsd">Appendix A: sdatasync.xsd</a>
 
 </td>
 <td valign="top">
@@ -3715,7 +3681,7 @@ Jan 27, 2011
 BJ
 
 </td>
-<td valign="top">[Appendix B: sdata.xsd](Appendix B sdata.xsd "Appendix B: sdata.xsd")</td>
+<td valign="top"><a href="../AppendixB/" title="Appendix B: sdata.xsd">Appendix B: sdata.xsd</a></td>
 <td valign="top">
 
 Added isDeleted flag which was missing in XSD file.
@@ -3728,7 +3694,7 @@ Added isDeleted flag which was missing in XSD file.
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[4.7 Polymophic relations](4.7 Polymophic relations "4.7 Polymophic relations")</td>
+<td valign="top"><a href="../0407/" title="4.7 Polymophic relations">4.7 Polymophic relations</a></td>
 <td valign="top">
 
 Added examples of payloads for polymorphic relations
@@ -3749,13 +3715,13 @@ Feb 7, 2011
 BJ
 
 </td>
-<td valign="top">[2.12 Query Language](2.12 Query Language "2.12  Query Language")
+<td valign="top"><a href="../0212/" title="2.12  Query Language">2.12 Query Language</a>
 
-[4.2 Resource Kind Definition](4.2 Resource Kind Definition "4.2 Resource Kind Definition")
+<a href="../0402/" title="4.2 Resource Kind Definition">4.2 Resource Kind Definition</a>
 
-[4.8 Simple Metadata Extensions Summary](4.8 Simple Metadata Extensions Summary "4.8 Simple Metadata Extensions Summary")
+<a href="../0408/" title="4.8 Simple Metadata Extensions Summary">4.8 Simple Metadata Extensions Summary</a>
 
-[Appendix A: sme.xsd](Appendix A sme.xsd "Appendix A: sme.xsd")
+<a href="../AppendixA/" title="Appendix A: sme.xsd">Appendix A: sme.xsd</a>
 
 </td>
 <td valign="top">
@@ -3774,10 +3740,9 @@ Added protocol filter variables
 
 Synchronization Protocol
 
-[4.3 Per-resource Synchronization State](4.3 Per-resource Synchronization State)
+<a href="../../sync/0403/" title="4.3 Per-resource Synchronization State">4.3 Per-resource Synchronization State</a>
 
-[Appendix
-A: sdatasync.xsd](Appendix A. sdatasync.xsd)
+<a href="../../sync/AppendixA/" title="Appendix A: sdatasync.xsd">Appendix A: sdatasync.xsd</a>
 
 </td>
 <td valign="top">
@@ -3800,9 +3765,9 @@ Feb 9, 2011
 BJ
 
 </td>
-<td valign="top">[12.2 Named Query URL](12.2 Named Query URL "12.2 Named Query URL")
+<td valign="top"><a href="../1202/" title="12.2 Named Query URL">12.2 Named Query URL</a>
 
-[12.3 Named Query Metadata](12.3 Named Query Metadata "12.3 Named Query Metadata")
+<a href="../1203/" title="12.3 Named Query Metadata">12.3 Named Query Metadata</a>
 
 </td>
 <td valign="top">
@@ -3829,8 +3794,7 @@ BJ
 
 Synchronization Prototocol
 
-[4.4
-Synchronization Feed](4.4 Synchronization Feed)
+<a href="../../sync/0404/" title="4.4 Synchronization Feed">4.4 Synchronization Feed</a>
 
 </td>
 <td valign="top">
@@ -3858,8 +3822,7 @@ BJ
 
 Synchronization Prototocol
 
-[Appendix
-A: sdatasync.xsd](Appendix A. sdatasync.xsd)
+<a href="../../sync/AppendixA/" title="Appendix A: sdatasync.xsd">Appendix A: sdatasync.xsd</a>
 
 </td>
 <td valign="top">

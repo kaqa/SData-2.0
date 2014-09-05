@@ -32,7 +32,7 @@ The following table summaries the compliance levels for SData providers:
 
 <tr>
 
-<td valign="top"><a title="2.1  Resource Collection URL" href="/daisy/sdata/AnatomyOfAnSDataURL/ResourceCollectionURL.html">Collection URL</a></td>
+<td valign="top"><a title="2.1  Resource Collection URL" href="../0201/">Collection URL</a></td>
 <td valign="top">
 
 <p>MUST</p>
@@ -42,7 +42,7 @@ The following table summaries the compliance levels for SData providers:
 
 <p>There is a tolerance on the /sdata segment, which applies to all sdata URLs.
 <br>
-See <a title="2.1  Resource Collection URL" href="/daisy/sdata/AnatomyOfAnSDataURL/ResourceCollectionURL.html">Collection URL</a> section.</p>
+See <a title="2.1  Resource Collection URL" href="../0201/">Collection URL</a> section.</p>
 
 </td>
 
@@ -53,7 +53,7 @@ See <a title="2.1  Resource Collection URL" href="/daisy/sdata/AnatomyOfAnSDataU
 <td valign="top">
 
 <p>
-<a title="2.2  Single Resource URL" href="/daisy/sdata/AnatomyOfAnSDataURL/SingleResourceURL.html">Resource URL</a>
+<a title="2.2  Single Resource URL" href="../0202/">Resource URL</a>
 </p>
 
 </td>
@@ -76,7 +76,7 @@ Selector with predicate SHOULD be supported.</p>
 <td valign="top">
 
 <p>
-<a title="2.3 Resource Property URL" href="/daisy/sdata/AnatomyOfAnSDataURL/187-DSY.html">Property URL</a>
+<a title="2.3 Resource Property URL" href="../0203/">Property URL</a>
 </p>
 
 </td>
@@ -94,7 +94,7 @@ Selector with predicate SHOULD be supported.</p>
 <td valign="top">
 
 <p>
-<a title="2.3 Resource Property URL" href="/daisy/sdata/AnatomyOfAnSDataURL/187-DSY.html">Service Operation URL</a>
+<a title="2.4 Service Operation URL" href="../0204/">Service Operation URL</a>
 </p>
 
 </td>
@@ -112,7 +112,7 @@ Selector with predicate SHOULD be supported.</p>
 <td valign="top">
 
 <p>
-<a title="2.5 Named Query URL" href="/daisy/sdata/AnatomyOfAnSDataURL/597-DSY.html">Named Query URL</a>
+<a title="2.5 Named Query URL" href="../0205/">Named Query URL</a>
 </p>
 
 </td>
@@ -130,7 +130,7 @@ Selector with predicate SHOULD be supported.</p>
 <td valign="top">
 
 <p>
-<a title="2.6 Template Resource URL" href="/daisy/sdata/AnatomyOfAnSDataURL/TemplateResourceURL.html">Template URL</a>
+<a title="2.6 Template Resource URL" href="../0206/">Template URL</a>
 </p>
 
 </td>
@@ -154,7 +154,7 @@ Template URL MAY be supported on service operations and named queries.</p>
 <td valign="top">
 
 <p>
-<a title="2.7  Resource Schema URL" href="/daisy/sdata/AnatomyOfAnSDataURL/ResourceSchemaURL.html">Schema URL</a>
+<a title="2.7  Resource Schema URL" href="../0207/">Schema URL</a>
 </p>
 
 </td>
@@ -172,7 +172,7 @@ Template URL MAY be supported on service operations and named queries.</p>
 <td valign="top">
 
 <p>
-<a title="2.8  System and Registry URL" href="/daisy/sdata/AnatomyOfAnSDataURL/SystemURL.html">System URL</a>
+<a title="2.8  System and Registry URL" href="../0208/">System URL</a>
 </p>
 
 </td>
@@ -190,7 +190,7 @@ Template URL MAY be supported on service operations and named queries.</p>
 <td valign="top">
 
 <p>
-<a title="2.9 Intermediate URLs" href="/daisy/sdata/AnatomyOfAnSDataURL/211-DSY.html">Intermediate URL</a>
+<a title="2.9 Intermediate URLs" href="../0209/">Intermediate URL</a>
 </p>
 
 </td>
@@ -208,7 +208,7 @@ Template URL MAY be supported on service operations and named queries.</p>
 <td valign="top">
 
 <p>
-<a title="2.11  Query Parameters" href="/daisy/sdata/AnatomyOfAnSDataURL/QueryParameters.html">Query Parameters</a>
+<a title="2.11  Query Parameters" href="../0211/">Query Parameters</a>
 </p>
 
 </td>
@@ -240,7 +240,7 @@ Template URL MAY be supported on service operations and named queries.</p>
 <td valign="top">
 
 <p>
-<a title="2.12  Query Language" href="/daisy/sdata/AnatomyOfAnSDataURL/QueryLanguage.html">Query Language</a>
+<a title="2.12  Query Language" href="../0212/">Query Language</a>
 </p>
 
 </td>
@@ -263,7 +263,7 @@ Other levels MAY be supported.</p>
 <td valign="top">
 
 <p>
-<a title="2.13 Naming Conventions for URLs" href="/daisy/sdata/AnatomyOfAnSDataURL/NamingConventionsForURLs.html">Naming Conventions</a>
+<a title="2.13 Naming Conventions for URLs" href="../0213/">Naming Conventions</a>
 </p>
 
 </td>
@@ -281,7 +281,7 @@ Other levels MAY be supported.</p>
 <td valign="top">
 
 <p>
-<a title="2.14 Resource Versioning" href="/daisy/sdata/AnatomyOfAnSDataURL/204-DSY.html">Resource Versioning</a>
+<a title="2.14 Resource Versioning" href="../0214/">Resource Versioning</a>
 </p>
 
 </td>
@@ -299,7 +299,7 @@ Other levels MAY be supported.</p>
 <td valign="top">
 
 <p>
-<a title="2.15 Extensibility" href="/daisy/sdata/AnatomyOfAnSDataURL/589-DSY.html">Extensibility</a>
+<a title="2.15 Extensibility" href="../0215/">Extensibility</a>
 </p>
 
 </td>
@@ -317,7 +317,7 @@ Other levels MAY be supported.</p>
 <td valign="top">
 
 <p>
-<a title="2.16 Internationalized URLs" href="/daisy/sdata/AnatomyOfAnSDataURL/600-DSY.html">Internationalized URLs</a>
+<a title="2.16 Internationalized URLs" href="../0216/">Internationalized URLs</a>
 </p>
 
 </td>
@@ -335,7 +335,7 @@ Other levels MAY be supported.</p>
 <td valign="top">
 
 <p>
-<a title="3.1 Typical Feed" href="/daisy/sdata/AnatomyOfAnSDataFeed/TypicalFeed.html">Atom feed</a>
+<a title="3.1 Typical Feed" href="../0301/">Atom feed</a>
 </p>
 
 </td>
@@ -379,7 +379,7 @@ MUST if indexed paging is supported.</p>
 <td valign="top">
 
 <p>
-<a title="3.7  Typical Feed Entry" href="/daisy/sdata/AnatomyOfAnSDataFeed/TypicalFeedEntry.html">Atom entry</a>
+<a title="3.7  Typical Feed Entry" href="../0307/">Atom entry</a>
 </p>
 
 </td>
@@ -421,7 +421,7 @@ inside a feed.</p>
 <td valign="top">
 
 <p>
-<a title="3.8  Resource Payload" href="/daisy/sdata/AnatomyOfAnSDataFeed/ResourcePayload.html">SData payload</a>
+<a title="3.8  Resource Payload" href="../0308/">SData payload</a>
 </p>
 
 </td>
@@ -456,7 +456,7 @@ inside a feed.</p>
 <td valign="top">
 
 <p>
-<a title="3.9 Resource Linking and Embedding" href="/daisy/sdata/AnatomyOfAnSDataFeed/190-DSY.html">Resource linking and embedding</a>
+<a title="3.9 Resource Linking and Embedding" href="../0309/">Resource linking and embedding</a>
 </p>
 
 </td>
@@ -474,7 +474,7 @@ inside a feed.</p>
 <td valign="top">
 
 <p>
-<a title="3.10  Error Payload" href="/daisy/sdata/AnatomyOfAnSDataFeed/ErrorPayload.html">Error payload</a>
+<a title="3.10  Error Payload" href="../0310/">Error payload</a>
 </p>
 
 </td>
@@ -492,7 +492,7 @@ inside a feed.</p>
 <td valign="top">
 
 <p>
-<a title="3.11 Tracking Payload" href="/daisy/sdata/AnatomyOfAnSDataFeed/TrackingPayload.html">Tracking payload</a>
+<a title="3.11 Tracking Payload" href="../0311/">Tracking payload</a>
 </p>
 
 </td>
@@ -514,7 +514,7 @@ inside a feed.</p>
 <td valign="top">
 
 <p>
-<a title="3.14 Localization" href="/daisy/sdata/AnatomyOfAnSDataFeed/188-DSY.html">Localized feeds and entries</a>
+<a title="3.14 Localization" href="../0314/">Localized feeds and entries</a>
 </p>
 
 </td>
@@ -532,7 +532,7 @@ inside a feed.</p>
 <td valign="top">
 
 <p>
-<a title="4.1 Typical SData Schema" href="/daisy/sdata/Metadata/TypicalSDataSchema.html">Schema</a>
+<a title="4.1 Typical SData Schema" href="../0401/">Schema</a>
 </p>
 
 </td>
@@ -599,7 +599,7 @@ named query), <tt>sme:syncXxx</tt> (MUST if synchronizable)</li>
 <td valign="top">
 
 <p>
-<a title="4.9 Schema Rules" href="/daisy/sdata/Metadata/XSDStructure.html">Schema Structure</a>
+<a title="4.9 Schema Rules" href="../0409/">Schema Structure</a>
 </p>
 
 </td>
@@ -617,7 +617,7 @@ named query), <tt>sme:syncXxx</tt> (MUST if synchronizable)</li>
 <td valign="top">
 
 <p>
-<a title="4.5 Service Operation and Named Query Definitions" href="/daisy/sdata/Metadata/194-DSY.html">Service operation and named query definitions</a>
+<a title="4.5 Service Operation and Named Query Definitions" href="../0405/">Service operation and named query definitions</a>
 </p>
 
 </td>
@@ -639,7 +639,7 @@ named query), <tt>sme:syncXxx</tt> (MUST if synchronizable)</li>
 <td valign="top">
 
 <p>
-<a title="4.6 Auxiliary Type Definitions" href="/daisy/sdata/Metadata/195-DSY.html">Auxiliary type definitions</a>
+<a title="4.6 Auxiliary Type Definitions" href="../0406/">Auxiliary type definitions</a>
 </p>
 
 </td>
@@ -657,7 +657,7 @@ named query), <tt>sme:syncXxx</tt> (MUST if synchronizable)</li>
 <td valign="top">
 
 <p>
-<a title="4.10 Inlined Schemas" href="/daisy/sdata/Metadata/203-DSY.html">Inlined Schemas</a>
+<a title="4.10 Inlined Schemas" href="../0410/">Inlined Schemas</a>
 </p>
 
 </td>
@@ -675,7 +675,7 @@ named query), <tt>sme:syncXxx</tt> (MUST if synchronizable)</li>
 <td valign="top">
 
 <p>
-<a title="4.11 Importing and including schemas" href="/daisy/sdata/Metadata/599-DSY.html">Imported Schemas</a>
+<a title="4.11 Importing and including schemas" href="../0411/">Imported Schemas</a>
 </p>
 
 </td>
@@ -693,7 +693,7 @@ named query), <tt>sme:syncXxx</tt> (MUST if synchronizable)</li>
 <td valign="top">
 
 <p>
-<a title="5.1 Encryption" href="/daisy/sdata/Security/Encryption.html">HTTPS Encryption</a>
+<a title="5.1 Encryption" href="../0501/">HTTPS Encryption</a>
 </p>
 
 </td>
@@ -711,7 +711,7 @@ named query), <tt>sme:syncXxx</tt> (MUST if synchronizable)</li>
 <td valign="top">
 
 <p>
-<a title="5.2 Authentication" href="/daisy/sdata/Security/Authentication.html">HTTP Authentication</a>
+<a title="5.2 Authentication" href="../0502/">HTTP Authentication</a>
 </p>
 
 </td>
@@ -734,7 +734,7 @@ Digest mode MAY be used over HTTP</p>
 <td valign="top">
 
 <p>
-<a title="5.3 Single Sign-On" href="/daisy/sdata/Security/424-DSY.html">Sage SSO</a>
+<a title="5.3 Single Sign-On" href="../0503/">Sage SSO</a>
 </p>
 
 </td>
@@ -756,7 +756,7 @@ Digest mode MAY be used over HTTP</p>
 <td valign="top">
 
 <p>
-<a title="6.1 Query Example" href="/daisy/sdata/Queries/Example.html">Query</a>/<a title="7.1 Read Example" href="/daisy/sdata/ReadOperation/Example.html">Read </a>operation
+<a title="6.1 Query Example" href="../0601/">Query</a> / <a title="7.1 Read Example" href="../0701/">Read </a>operation
 </p>
 
 </td>
@@ -774,7 +774,7 @@ Digest mode MAY be used over HTTP</p>
 <td valign="top">
 
 <p>
-<a title="6.2 Query Filtering" href="/daisy/sdata/Queries/Filtering.html">Query Filtering</a>
+<a title="6.2 Query Filtering" href="../0602/">Query Filtering</a>
 </p>
 
 </td>
@@ -797,7 +797,7 @@ Extended query language MAY be supported.</p>
 <td valign="top">
 
 <p>
-<a title="6.2 Query Filtering" href="/daisy/sdata/Queries/Filtering.html">Query Sorting</a>
+<a title="6.3 Query Sorting" href="../0603/">Query Sorting</a>
 </p>
 
 </td>
@@ -819,7 +819,7 @@ Extended query language MAY be supported.</p>
 <td valign="top">
 
 <p>
-<a title="6.4 Query Paging" href="/daisy/sdata/Queries/Paging.html">Query Paging</a>
+<a title="6.4 Query Paging" href="../0604/">Query Paging</a>
 </p>
 
 </td>
@@ -844,8 +844,7 @@ Backwards and indexed paging SHOULD be supported.</p>
 
 <p>
 
-<a title="6.5 Query Payload Control" href="/daisy/sdata/Queries/ControllingThePayload.html">Query</a><a title="6.5 Query Payload Control" href="/daisy/sdata/Queries/ControllingThePayload.html">/</a><a title="7.2 Read Payload Control" href="/daisy/sdata/ReadOperation/ControllingThePayload.html">Read
-</a><a title="6.5 Query Payload Control" href="/daisy/sdata/Queries/ControllingThePayload.html">Payload Control</a>
+<a title="6.5 Query Payload Control" href="../0605/">Query</a> / <a title="7.2 Read Payload Control" href="../0702/">Read</a>Payload Control
 </p>
 
 </td>
@@ -863,7 +862,7 @@ Backwards and indexed paging SHOULD be supported.</p>
 <td valign="top">
 
 <p>
-<a title="6.6 Query Caching" href="/daisy/sdata/Queries/Caching.html">Query</a><a title="6.6 Query Caching" href="/daisy/sdata/Queries/Caching.html">/Read Caching</a>
+<a title="6.6 Query Caching" href="../0606/">Query</a> / <a title="7.3 Read Caching" href="../0703/">Read</a> Caching
 </p>
 
 </td>
@@ -881,7 +880,7 @@ Backwards and indexed paging SHOULD be supported.</p>
 <td valign="top">
 
 <p>
-<a title="6.8 Query on Property URL" href="/daisy/sdata/Queries/196-DSY.html">Query/Read on Property URL</a>
+<a title="6.8 Query on Property URL" href="../0608/">Query</a> / <a title="7.4 Read on Property URL" href="../0704/">Read</a> on Property URL
 </p>
 
 </td>
@@ -903,7 +902,7 @@ Backwards and indexed paging SHOULD be supported.</p>
 <td valign="top">
 
 <p>
-<a title="6.9 Query on Intermediate URL" href="/daisy/sdata/Queries/221-DSY.html">Query on Intermediate URL</a>
+<a title="6.9 Query on Intermediate URL" href="../0609">Query on Intermediate URL</a>
 </p>
 
 </td>
@@ -921,7 +920,7 @@ Backwards and indexed paging SHOULD be supported.</p>
 <td valign="top">
 
 <p>
-<a title="6.10 Query Error Handling" href="/daisy/sdata/Queries/ErrorHandling.html">Error Handling</a> (all operations)</p>
+<a title="6.10 Query Error Handling" href="../0610/">Error Handling</a> (all operations)</p>
 
 </td>
 <td valign="top">
@@ -938,7 +937,7 @@ Backwards and indexed paging SHOULD be supported.</p>
 <td valign="top">
 
 <p>
-<a title="8.1 Create Example" href="/daisy/sdata/CreateOperation/Example.html">Create operation</a>
+<a title="8.1 Create Example" href="../0801/">Create operation</a>
 </p>
 
 </td>
@@ -956,7 +955,7 @@ Backwards and indexed paging SHOULD be supported.</p>
 <td valign="top">
 
 <p>
-<a title="8.2 Use of $template URL" href="/daisy/sdata/CreateOperation/UseOfTemplateURL.html">Template for create</a>
+<a title="8.2 Use of $template URL" href="../0802/">Template for create</a>
 </p>
 
 </td>
@@ -974,7 +973,7 @@ Backwards and indexed paging SHOULD be supported.</p>
 <td valign="top">
 
 <p>
-<a title="8.3 Create on Property URL" href="/daisy/sdata/CreateOperation/198-DSY.html">Create on Property URL</a>
+<a title="8.3 Create on Property URL" href="../0803/">Create on Property URL</a>
 </p>
 
 </td>
@@ -996,7 +995,7 @@ Backwards and indexed paging SHOULD be supported.</p>
 <td valign="top">
 
 <p>
-<a title="8.4 Reliable Posting" href="/daisy/sdata/CreateOperation/ReliablePosting.html">Reliable Posting</a>
+<a title="8.4 Reliable Posting" href="../0804/">Reliable Posting</a>
 </p>
 
 </td>
@@ -1014,7 +1013,7 @@ Backwards and indexed paging SHOULD be supported.</p>
 <td valign="top">
 
 <p>
-<a title="9.1 Update Example" href="/daisy/sdata/UpdateOperation/Example.html">Update operation</a>
+<a title="9.1 Update Example" href="../0901/">Update operation</a>
 </p>
 
 </td>
@@ -1032,7 +1031,7 @@ Backwards and indexed paging SHOULD be supported.</p>
 <td valign="top">
 
 <p>
-<a title="9.2 Update Payloads" href="/daisy/sdata/UpdateOperation/199-DSY.html">Partial update</a>
+<a title="9.2 Update Payloads" href="../0902/">Partial update</a>
 </p>
 
 </td>
@@ -1050,7 +1049,7 @@ Backwards and indexed paging SHOULD be supported.</p>
 <td valign="top">
 
 <p>
-<a title="9.2 Update Payloads" href="/daisy/sdata/UpdateOperation/199-DSY.html">Update of child resources</a>
+<a title="9.2 Update Payloads" href="../0902/">Update of child resources</a>
 </p>
 
 </td>
@@ -1073,7 +1072,7 @@ Backwards and indexed paging SHOULD be supported.</p>
 <td valign="top">
 
 <p>
-<a title="9.2 Update Payloads" href="/daisy/sdata/UpdateOperation/199-DSY.html">Partial return</a>
+<a title="9.2 Update Payloads" href="../0902/">Partial return</a>
 </p>
 
 </td>
@@ -1095,7 +1094,7 @@ Backwards and indexed paging SHOULD be supported.</p>
 <td valign="top">
 
 <p>
-<a title="9.4 Update on Property URL" href="/daisy/sdata/UpdateOperation/200-DSY.html">Update on property URL</a>
+<a title="9.4 Update on Property URL" href="../0904/">Update on property URL</a>
 </p>
 
 </td>
@@ -1117,7 +1116,7 @@ Backwards and indexed paging SHOULD be supported.</p>
 <td valign="top">
 
 <p>
-<a title="10.1 Delete Example" href="/daisy/sdata/DeleteOperation/Example.html">Delete operation</a>
+<a title="10.1 Delete Example" href="../1001/">Delete operation</a>
 </p>
 
 </td>
@@ -1135,7 +1134,7 @@ Backwards and indexed paging SHOULD be supported.</p>
 <td valign="top">
 
 <p>
-<a title="10.2 Delete Concurrency Handling" href="/daisy/sdata/DeleteOperation/ConcurrencyHandling.html">Delete Concurrency control with ETag</a>
+<a title="10.2 Delete Concurrency Handling" href="../1002/">Delete Concurrency control with ETag</a>
 </p>
 
 </td>
@@ -1157,7 +1156,7 @@ Backwards and indexed paging SHOULD be supported.</p>
 <td valign="top">
 
 <p>
-<a title="10.3 Delete on Property URL" href="/daisy/sdata/DeleteOperation/201-DSY.html">Delete on Property URL</a>
+<a title="10.3 Delete on Property URL" href="../1003/">Delete on Property URL</a>
 </p>
 
 </td>
@@ -1179,7 +1178,7 @@ Backwards and indexed paging SHOULD be supported.</p>
 <td valign="top">
 
 <p>
-<a title="9.1 Update Example" href="/daisy/sdata/UpdateOperation/Example.html">X-HTTP-Method-Override</a>
+<a title="9.1 Update Example" href="../0901/">X-HTTP-Method-Override</a>
 </p>
 
 </td>
@@ -1197,8 +1196,8 @@ Backwards and indexed paging SHOULD be supported.</p>
 <td valign="top">
 
 <p>
-<a title="11.1 Overview of Service Operations" href="/daisy/sdata/ServiceOperations/OverviewOfServiceOperations.html">Service Operations</a> and
-<a title="12.1 Example of Named Query" href="/daisy/sdata/596-DSY/591-DSY.html">Named Queries</a>
+<a title="11.1 Overview of Service Operations" href="../1101/">Service Operations</a> and
+<a title="12.1 Example of Named Query" href="../1201/">Named Queries</a>
 </p>
 
 </td>
@@ -1220,7 +1219,7 @@ Backwards and indexed paging SHOULD be supported.</p>
 <td valign="top">
 
 <p>
-<a title="13 Batch Operations" href="/daisy/sdata/165-DSY.html">Batch Operations</a>
+<a title="13 Batch Operations" href="../1300/">Batch Operations</a>
 </p>
 
 </td>
@@ -1243,7 +1242,7 @@ Backwards and indexed paging SHOULD be supported.</p>
 <td valign="top">
 
 <p>
-<a title="14 SData Registry" href="/daisy/sdata/423-DSY.html">Registry</a>
+<a title="14 SData Registry" href="../1400/">Registry</a>
 </p>
 
 </td>

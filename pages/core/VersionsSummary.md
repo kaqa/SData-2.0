@@ -67,7 +67,7 @@ Reserved sdata:index for future use in the XSD (no mention in the wiki)
 Clarification
 
 </td>
-<td>[9.2 Update Payloads](9.2 Update Payloads "9.2 Update Payloads")</td>
+<td><a href="../0902/" title="9.2 Update Payloads">9.2 Update Payloads</a></td>
 
 </tr>
 
@@ -89,7 +89,7 @@ schema elements
 New Feature
 
 </td>
-<td>[4.8 Simple Metadata Extensions Summary](4.8 Simple Metadata Extensions Summary "4.8 Simple Metadata Extensions Summary")</td>
+<td><a href="../0408/" title="4.8 Simple Metadata Extensions Summary">4.8 Simple Metadata Extensions Summary</a></td>
 
 </tr>
 
@@ -111,7 +111,7 @@ _<tt>major.minor.revision</tt>_, with associated compatibility rules.
 New Feature
 
 </td>
-<td>[4.9 Schema Rules](4.9 Schema Rules "4.9 Schema Rules")</td>
+<td><a href="../0409/" title="4.9 Schema Rules">4.9 Schema Rules</a></td>
 
 </tr>
 
@@ -134,8 +134,7 @@ Clarification
 </td>
 <td valign="top">
 
-[2.2
-Tick Management](2.2 Tick Management)
+<a href="../0202/" title="2.2 Tick Management">2.2 Tick Management</a>
 
 </td>
 
@@ -160,8 +159,7 @@ Clarification
 </td>
 <td valign="top">
 
-[4.4
-Synchronization Feed](4.4 Synchronization Feed)
+<a href="../../sync/0404/" title="4.4 Synchronization Feed">4.4 Synchronization Feed</a>
 
 </td>
 
@@ -187,8 +185,7 @@ New Convention
 </td>
 <td valign="top">
 
-[4.2
-Synchronization Digest](4.2 Synchronization Digest)
+<a href="../../sync/0402/" title="4.2 Synchronization Digest">4.2 Synchronization Digest</a>
 
 </td>
 
@@ -214,8 +211,7 @@ New Feature
 </td>
 <td valign="top">
 
-[4.5
-Synchronization Metadata](4.5 Synchronization Metadata)
+<a href="../../sync/0405/" title="4.5 Synchronization Metadata">4.5 Synchronization Metadata</a>
 
 </td>
 
@@ -238,7 +234,7 @@ Added schema rules for polymorphic relations
 New Feature
 
 </td>
-<td valign="top">[4.7 Polymophic relations](4.7 Polymophic relations "4.7 Polymophic relations")</td>
+<td valign="top"><a href="../0407/" title="4.7 Polymophic relations">4.7 Polymophic relations</a></td>
 
 </tr>
 
@@ -260,7 +256,7 @@ query language and <tt>sme:protocolFilters</tt> attribute
 New Feature
 
 </td>
-<td valign="top">[2.12 Query Language](2.12 Query Language "2.12  Query Language")</td>
+<td valign="top"><a href="../0212/" title="2.12  Query Language">2.12 Query Language</a></td>
 
 </tr>
 
@@ -282,7 +278,7 @@ Named queries can take query paramters (<tt>where</tt>, <tt>orderBy</tt>,
 New Feature
 
 </td>
-<td valign="top">[12.2 Named Query URL](12.2 Named Query URL "12.2 Named Query URL")</td>
+<td valign="top"><a href="../1202/" title="12.2 Named Query URL">12.2 Named Query URL</a></td>
 
 </tr>
 
@@ -338,7 +334,7 @@ Clarified the rules for case handling in URLs
 Clarification
 
 </td>
-<td>[2.12 Naming Conventions for URLs](2.13 Naming Conventions for URLs "2.13 Naming Conventions for URLs")</td>
+<td><a href="../0213/" title="2.13 Naming Conventions for URLs">2.13 Naming Conventions for URLs</a></td>
 
 </tr>
 
@@ -359,7 +355,7 @@ The registry contract is used to register and discover application endpoints
 New Feature
 
 </td>
-<td valign="top">[14 SData Registry](14 SData Registry "14 SData Registry")</td>
+<td valign="top"><a href="../1400/" title="14 SData Registry">14 SData Registry</a></td>
 
 </tr>
 
@@ -380,7 +376,7 @@ New parameter to control the properties returned in SData payloads.
 New Feature
 
 </td>
-<td valign="top">[2.11 Query Parameters](2.11 Query Parameters "2.11  Query Parameters")</td>
+<td valign="top"><a href="../0211/" title="2.11  Query Parameters">2.11 Query Parameters</a></td>
 
 </tr>
 
@@ -402,7 +398,7 @@ return the delta instead of the full payload.
 New Feature
 
 </td>
-<td valign="top">[2.11 Query Parameters](2.11 Query Parameters "2.11  Query Parameters")</td>
+<td valign="top"><a href="../0211/" title="2.11  Query Parameters">2.11 Query Parameters</a></td>
 
 </tr>
 
@@ -423,7 +419,7 @@ Convention that applications should use to extend the SData URL syntax
 New Feature
 
 </td>
-<td valign="top">[2.15 Extensibility](2.15 Extensibility "2.15 Extensibility")</td>
+<td valign="top"><a href="../0215/" title="2.15 Extensibility">2.15 Extensibility</a></td>
 
 </tr>
 
@@ -445,7 +441,7 @@ service operations.
 New Feature
 
 </td>
-<td valign="top">[11.7 Operation Template](11.7 Operation Template "11.7 Operation Template")</td>
+<td valign="top"><a href="../1107/" title="11.7 Operation Template">11.7 Operation Template</a></td>
 
 </tr>
 
@@ -467,7 +463,7 @@ return a feed.
 New Feature
 
 </td>
-<td valign="top">[12 Named Queries](12 Named Queries "12 Named Queries")</td>
+<td valign="top"><a href="../1200/" title="12 Named Queries">12 Named Queries</a></td>
 
 </tr>
 
@@ -484,8 +480,7 @@ sme:mandatory has been renamed sme:isMandatory for consistency.
 
 </td>
 <td valign="top">**Breaking Change**</td>
-<td valign="top">[4.7 Simple Metadata Extensions
-Summary](4.8 Simple Metadata Extensions Summary "4.8 Simple Metadata Extensions Summary")</td>
+<td valign="top"><a href="../0408/" title="4.8 Simple Metadata Extensions Summary">4.8 Simple Metadata Extensions Summary</a></td>
 
 </tr>
 
@@ -504,7 +499,7 @@ cannot contain elements)
 
 </td>
 <td valign="top">**Breaking Change**</td>
-<td valign="top">[4.9 Inlined Schemas](4.10 Inlined Schemas "4.10 Inlined Schemas")</td>
+<td valign="top"><a href="../0410/" title="4.10 Inlined Schemas">4.10 Inlined Schemas</a></td>
 
 </tr>
 
@@ -525,8 +520,7 @@ Schemas may import or include other schemas.
 New Feature
 
 </td>
-<td valign="top">[4.10 Importing and including
-schemas](4.11 Importing and including schemas "4.11 Importing and including schemas")</td>
+<td valign="top"><a href="../0411/" title="4.11 Importing and including schemas">4.11 Importing and including schemas</a></td>
 
 </tr>
 
@@ -551,7 +545,7 @@ This limitation has been lifted
 Restriction lifted.
 
 </td>
-<td valign="top">[8.4 Reliable Posting](8.4 Reliable Posting "8.4 Reliable Posting")</td>
+<td valign="top"><a href="../0804/" title="8.4 Reliable Posting">8.4 Reliable Posting</a></td>
 
 </tr>
 
@@ -600,7 +594,7 @@ sdata:uuid attribute or not.
 <td valign="top">**Breaking Change
 
 **</td>
-<td valign="top">[3.9 Resource Linking and Embedding](3.9 Resource Linking and Embedding "3.9 Resource Linking and Embedding")
+<td valign="top"><a href="../0309/" title="3.9 Resource Linking and Embedding">3.9 Resource Linking and Embedding</a>
 </td>
 
 </tr>
@@ -623,7 +617,7 @@ the old protocol.
 
 </td>
 <td valign="top">**Breaking Change**</td>
-<td valign="top">[9.2 Partial Updates](9.2 Update Payloads "9.2 Update Payloads")</td>
+<td valign="top"><a href="../0902/" title="9.2 Update Payloads">9.2 Partial Updates</a></td>
 
 </tr>
 
@@ -650,8 +644,7 @@ New attributes to advertise type constraints in the schema.
 New Feature
 
 </td>
-<td valign="top">[4.7 Simple Metadata Extensions
-Summary](4.8 Simple Metadata Extensions Summary "4.8 Simple Metadata Extensions Summary")</td>
+<td valign="top"><a href="../0408/" title="4.8 Simple Metadata Extensions Summary">4.8 Simple Metadata Extensions Summary</a></td>
 
 </tr>
 
@@ -673,7 +666,7 @@ relationships from reference and association relationships
 Clarification
 
 </td>
-<td valign="top">[4.4 Relationship Definitions](4.4 Relationship Definitions "4.4 Relationship Definitions")</td>
+<td valign="top"><a href="../0404/" title="4.4 Relationship Definitions">4.4 Relationship Definitions</a></td>
 
 </tr>
 
@@ -740,7 +733,7 @@ Added the --enum suffix convention for enum types
 New Feature
 
 </td>
-<td valign="top">[4.6 Auxiliary Type Definitions](4.6 Auxiliary Type Definitions "4.6 Auxiliary Type Definitions")</td>
+<td valign="top"><a href="../0406/" title="4.6 Auxiliary Type Definitions">4.6 Auxiliary Type Definitions</a></td>
 
 </tr>
 
@@ -794,7 +787,7 @@ Provider should not return an error if the ETag value is absent.
 Relaxed existing rule
 
 </td>
-<td valign="top">[10.2 Delete Concurrency Handling](10.2 Delete Concurrency Handling "10.2 Delete Concurrency Handling")
+<td valign="top"><a href="../1002/" title="10.2 Delete Concurrency Handling">10.2 Delete Concurrency Handling</a>
 </td>
 
 </tr>
@@ -817,7 +810,7 @@ Sign-On protocol. Technical details will be provided later.
 Placeholder for upcoming feature
 
 </td>
-<td valign="top">[5.3 Single Sign-On](5.3 Single Sign-On "5.3 Single Sign-On")</td>
+<td valign="top"><a href="../0503/">5.3 Single Sign-On</a></td>
 
 </tr>
 

@@ -8,17 +8,17 @@ $(document).ready(function(){
 	//console.log(active.length);
 
 	$('ul.navigation ul').not(active).hide();
+	active.parent().addClass('active-top');
   
 	$('ul.navigation > li > a.childs-only').click(function(){
-		//$(this).find('ul').show();
-		$(this).parent().find('ul').slideToggle(200);
+		$('ul.navigation ul').not(active).hide();
+		$(this).parent().find('ul').not(active).slideToggle(200);
 	});
   
 });
 </script>
 <ul class="navigation">
 
-{% assign pages_list = site.pages %}
 {% assign menuitem = 'top' %}
 {% assign isToplevelOpen = false %}
 

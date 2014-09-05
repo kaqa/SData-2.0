@@ -5,7 +5,6 @@ level: 1
 title: Appendix A&colon; sme.xsd
 ---
 
-<code>
 <pre xmlns:jx="http://apache.org/cocoon/templates/jx/1.0" xmlns:ns="http://outerx.org/daisy/1.0">&lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;xs:schema 
   xmlns="http://schemas.sage.com/sdata/sme/2007" 
@@ -287,5 +286,5 @@ title: Appendix A&colon; sme.xsd
     &lt;/xs:restriction&gt;
   &lt;/xs:simpleType&gt;
 &lt;/xs:schema&gt;</pre>
-</code>
+
 * * *

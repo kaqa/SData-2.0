@@ -7,9 +7,9 @@ title: Appendix D&colon; categories.xml
 
 <pre xmlns:jx="http://apache.org/cocoon/templates/jx/1.0" xmlns:ns="http://outerx.org/daisy/1.0">&lt;?xml version="1.0" ?&gt;
 &lt;app:categories
-&nbsp;&nbsp;&nbsp; xmlns:app="[http://purl.org/atom/app](http://purl.org/atom/app)#"
-&nbsp;&nbsp;&nbsp; xmlns="[http://www.w3.org/2005/Atom](http://www.w3.org/2005/Atom)"
-&nbsp;&nbsp;&nbsp; fixed="yes" scheme="[http://schemas.sage.com/sdata/categories](http://schemas.sage.com/sdata/categories)"&gt;
+&nbsp;&nbsp;&nbsp; xmlns:app="<a href="http://purl.org/atom/app">http://purl.org/atom/app</a>#"
+&nbsp;&nbsp;&nbsp; xmlns="<a href="http://www.w3.org/2005/Atom">http://www.w3.org/2005/Atom</a>"
+&nbsp;&nbsp;&nbsp; fixed="yes" scheme="<a href="http://schemas.sage.com/sdata/categories">http://schemas.sage.com/sdata/categories</a>"&gt;
 &nbsp; &lt;category term="provider" /&gt;
 &nbsp; &lt;category term="application" /&gt;
 &nbsp; &lt;category term="contract" /&gt;

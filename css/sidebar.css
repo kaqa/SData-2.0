@@ -4,12 +4,13 @@ div#sidemenu ul {list-style:none;margin:0;padding:0px;line-height: 1.2em;}
 div#sidemenu ul li {float:left;width:100%;margin:0px;}
 div#sidemenu a {display:block;text-decoration:none;padding-top:0.23em;padding-bottom:0.33em;background-position: left center;}
 /*div#sidemenu a SPAN {float:left;height:1.5em;width:14px;background-repeat:no-repeat;}*/
-div#sidemenu ul {list-style:none;margin:0;	padding:0px;}
+div#sidemenu ul {list-style:none;margin:0;	padding:0px;display:table;width: 100%;}
+div#sidemenu > ul > li {display:table-cell;text-align:center;vertical-align:middle;min-height: 40px;}
 div#sidemenu ul li {float:left;width:100%;margin:0px;}
 /*div#sidemenu a SPAN {float:left;height:1.5em;width:14px;background-repeat:no-repeat;}*/
 /*#sidemenu {margin: 0px;width: 160px;float: left;position: absolute;padding-top: 25px;padding-right: 0px;padding-bottom: 10px;padding-left: 10px;}*/
 /* changed */
-#sidemenu {margin: 0px;width: 160px;float: left;/* position: absolute; *//* padding-top: 25px; */padding-right: 0px;padding-bottom: 10px;padding-left: 10px;top: 0;/* text-align: right; */xxposition: absolute;}
+#sidemenu {margin: 26px 0 0;width: /*160px*/18%;float: left;/* position: absolute; *//* padding-top: 25px; */padding-right: 0px;padding-bottom: 10px;padding-left: 10px;top: 0;/* text-align: right; */xxposition: absolute;}
 
 #sidemenu a {
 	text-decoration:none;
@@ -32,21 +33,32 @@ div#sidemenu ul li {float:left;width:100%;margin:0px;}
 	/*color: #675c53;*/
 	color: #008469;
 }
-#sidemenu a.L0sel {
+/*#sidemenu a.L0sel {
 	color: #00338d;
 }
 #sidemenu a.L0sel:hover {
 	color: #00338d;
 }
-
+*/
 #sidemenu > ul > li > a {
-color: #008469;
+/*color: #008469;
 padding: 0.5em;
-background-image: none;
+background-image: none;-
 border: #c1d59f dotted 1px;
-background: #E0EBCF;
+background: #E0EBCF;*/
+padding: 0.5em;
+background: #69923a;
+background: -moz-linear-gradient(top, #93a914, #69923a);
+background: -webkit-linear-gradient(top, #93a914, #69923a);
+background: -ms-linear-gradient(top, #93a914, #69923a);
+background: -o-linear-gradient(top, #93a914, #69923a);
+background: linear-gradient(top, #93a914, #69923a);
+background: linear-gradient(top, #93a914, #69923a);
+color: #fff;
+padding: 7% 10px;
 }
 
+#sidemenu li.active-top > a {background: #69923a;}
 #sidemenu a.active {color: #008066;font-weight: bold;font-size: 1.1em !important;text-decoration: underline !important;}
 
 div#sidemenu ul li ul li {padding: 0 0 0.5em 2em;}
