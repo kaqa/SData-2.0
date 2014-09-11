@@ -10,7 +10,7 @@ presented in reverse chronological version (most recent version first).
 
 Minor edits to the wiki are not reflected here. On the other hand, any change
 that may break compatiblity is listed in this page. The
-[History of Changes](History of Changes "History of Changes") page gives detailed information
+<a href="../HistoryOfChanges/" title="History of Changes">History of Changes</a> page gives detailed information
 on the pages that have been modified between versions.
 
 ## Version 1.1
@@ -566,7 +566,7 @@ Precise rules have been given for non-ASCII characters in URLs
 Clarification
 
 </td>
-<td valign="top">[2.16 Internationalized URLs](2.16 Internationalized URLs "2.16 Internationalized URLs")</td>
+<td valign="top"><a href="../0216/" title="2.16 Internationalized URLs">2.16 Internationalized URLs</a></td>
 
 </tr>
 
@@ -689,7 +689,7 @@ New Feature
 </td>
 <td valign="top">
 
-[Link &amp; Sync](SData Linking & Synchronisation)
+<a href="../../sync/0000/" title="SData Linking & Synchronisation">Link &amp; Sync</a>
 
 </td>
 
@@ -712,7 +712,7 @@ More precise rules to make SData feeds fully conformant with Atom rules
 Clarification
 
 </td>
-<td valign="top">[3.2 Feed Elements](3.2 Feed Elements "3.2 Feed Elements")</td>
+<td valign="top"><a href="../0302/" title="3.2 Feed Elements">3.2 Feed Elements</a></td>
 
 </tr>
 

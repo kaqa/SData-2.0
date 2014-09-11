@@ -12,7 +12,7 @@ Sage Data Specification (“SData Spec”) is licensed under the Creative Common
 
 You will attribute the SData Spec in the following format. This attribution must be clearly displayed in any implementation including any on-line help material and ABOUT areas: 
 
- "_Product Name_ conforms to the Sage Data Specification developed by Sage Technologies Limited, a subsidiary of The Sage Group plc.  Further information including licensing conditions on the Sage Data Specification can be found at [http://sdata.sage.com/sdatacore_licensing.html](http://sdata.sage.com/20_licensing.html)”
+> "_Product Name_ conforms to the Sage Data Specification developed by Sage Technologies Limited, a subsidiary of The Sage Group plc.  Further information including licensing conditions on the Sage Data Specification can be found at [http://sdata.sage.com/sdatacore_licensing.html](http://sdata.sage.com/20_licensing.html)”
 
 If You wish to graphically indicate the use of the SData Spec in Your implementation or in any documentation (electronic or otherwise), You may use the logo [available here](/sdata11/downloads/SDataLogo.zip "Download SData Logo").
 

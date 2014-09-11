@@ -25,13 +25,15 @@ div#sidemenu ul li {float:left;width:100%;margin:0px;}
 	margin-bottom: 2px;
 	margin-left: 0px;
 	/* color: #00a1de; */
-	color: #024731;
+	/*color: #024731;*/
+	color: #62ac2e;
 	/*font-size: 1.4em;*/
 	/*font-weight:bold;*/
 }
 #sidemenu a:hover {
 	/*color: #675c53;*/
-	color: #008469;
+	/*color: #41a940;*/
+	text-decoration: underline;
 }
 /*#sidemenu a.L0sel {
 	color: #00338d;
@@ -47,18 +49,21 @@ background-image: none;-
 border: #c1d59f dotted 1px;
 background: #E0EBCF;*/
 padding: 0.5em;
-background: #69923a;
-background: -moz-linear-gradient(top, #93a914, #69923a);
+background: #41a940;
+background: #62ac2e;
+/*background: -moz-linear-gradient(top, #93a914, #69923a);
 background: -webkit-linear-gradient(top, #93a914, #69923a);
 background: -ms-linear-gradient(top, #93a914, #69923a);
 background: -o-linear-gradient(top, #93a914, #69923a);
 background: linear-gradient(top, #93a914, #69923a);
-background: linear-gradient(top, #93a914, #69923a);
+background: linear-gradient(top, #93a914, #69923a);*/
 color: #fff;
 padding: 7% 10px;
 }
 
-#sidemenu li.active-top > a {background: #69923a;}
-#sidemenu a.active {color: #008066;font-weight: bold;font-size: 1.1em !important;text-decoration: underline !important;}
+#sidemenu li.active-top > a {background: #39845a;}
+#sidemenu a.active {font-weight: bold;font-size: 1.1em !important;text-decoration: underline !important;}
+#sidemenu > ul > li > a.active {color: #fff;}
+#sidemenu > ul ul a.active {color: #39845a;}
 
-div#sidemenu ul li ul li {padding: 0 0 0.5em 2em;}
+div#sidemenu ul li ul li {padding: 0 0 0.5em 1.5em; /*2em;*/}

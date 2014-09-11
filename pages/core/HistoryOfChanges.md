@@ -2718,7 +2718,7 @@ Aug 21, 2009
 BJ
 
 </td>
-<td valign="top"><a href="../../sync/0103/" title="1.3 Linking Protocol">14.1.4 Protocol Elements for Linking</a>
+<td valign="top"><a href="../../sync/0103/" title="1.3 Linking Protocol">1.3 Protocol Elements for Linking</a>
 
 <a href="../0211/" title="2.11  Query Parameters">2.11 Query Parameters</a>
 
@@ -3020,7 +3020,7 @@ Fixed typos spotted by Bill Medlands
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[3.5 Paging Information](3.5 Paging Information "3.5 Paging Information")</td>
+<td valign="top"><a href="../0305/" title="3.5 Paging Information">3.5 Paging Information</a></td>
 <td valign="top">
 
 Clarified the description of itemsPerPage
@@ -3047,7 +3047,7 @@ warning, with a different wording.
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[6.3 Query Sorting](6.3 Query Sorting "6.3 Query Sorting")</td>
+<td valign="top"><a href="../0603/" title="6.3 Query Sorting">6.3 Query Sorting</a></td>
 <td valign="top">
 
 Added an example with a list of criteria.
@@ -3098,7 +3098,7 @@ Oct 1, 2009
 BJ
 
 </td>
-<td valign="top">[6.3 Query Sorting](6.3 Query Sorting "6.3 Query Sorting")</td>
+<td valign="top"><a href="../0603/" title="6.3 Query Sorting">6.3 Query Sorting</a></td>
 <td valign="top">
 
 Clarified the rules for multiple criteria
@@ -3111,9 +3111,7 @@ Clarified the rules for multiple criteria
 
 <td valign="top"></td>
 <td valign="top"></td>
-<td valign="top">[2.16 Internationalized URLs
-
-](2.16 Internationalized URLs "2.16 Internationalized URLs")<a href="../0604/" title="6.4 Query Paging">6.4 Query Paging</a></td>
+<td valign="top"><a href="../0216/" title="2.16 Internationalized URLs">2.16 Internationalized URLs</a><a href="../0604/" title="6.4 Query Paging">6.4 Query Paging</a></td>
 <td valign="top">
 
 Clarified who is responsible for percent encoding non ASCII characters in
@@ -3199,7 +3197,7 @@ Oct 12, 2009
 BJ
 
 </td>
-<td valign="top">[Compliance Summary](Compliance Summary "Compliance Summary")</td>
+<td valign="top"><a href="../ComplianceSummary/" title="Compliance Summary">Compliance Summary</a></td>
 <td valign="top">
 
 Added compliance summary page.
@@ -3272,7 +3270,7 @@ Oct 16, 2009
 
 </td>
 <td valign="top"></td>
-<td valign="top">[1.2 General Principles](1.2 General Principles "1.2 General Principles")</td>
+<td valign="top"><a href="../0102/" title="1.2 General Principles">1.2 General Principles</a></td>
 <td valign="top">
 
 New page for Postel's Law (not yet in navigation tree)
@@ -3400,9 +3398,9 @@ Nov 26, 2009
 BJ
 
 </td>
-<td valign="top">[14.2 Contract Resource](14.2 Contract Resource "14.2 Contract Resource")
+<td valign="top"><a href="../1402/" title="14.2 Contract Resource">14.2 Contract Resource</a>
 
-[14.3 Endpoint Resource](14.3 Endpoint Resource "14.3 Endpoint Resource")
+<a href="../1403/" title="14.3 Endpoint Resource">14.3 Endpoint Resource</a>
 
 </td>
 <td valign="top">

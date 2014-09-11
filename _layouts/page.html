@@ -7,6 +7,14 @@ layout: default
         $('pre, code').each(function(i, block) {
             hljs.highlightBlock(block);
         });
+		
+		// add watermarks to blocks
+		$('.compliance').prepend('<div>compliance</div>');
+		$('.note').prepend('<div>note</div>');
+		$('.warning').prepend('<div>warning</div>');
+		
+		//set subblock backgroundColor from parent block
+		$('blockquote').parent('blockquote').find('blockquote').css('backgroundColor', $('blockquote').parent('blockquote').css('backgroundColor'));
     });
 </script>
 
@@ -49,20 +57,20 @@ layout: default
 		
 			<div id="breadcrumb">
 				<a href="{{site.baseurl}}/" title="Home">SData Home</a>
-				{% if page.group == 'core' %} / <a href="{{site.baseurl}}/pages/core/0100/">SData Core Specification - version 1.1</a>{% endif %}
-				{% if page.group == 'sync' %} / <a href="{{site.baseurl}}/pages/sync/LinkAndSync/">SData Synchronization - version 1.1</a>{% endif %}
-				{% if page.title %} / {{page.title}}{% endif %}
+				{% if page.group == 'core' %} > <a href="{{site.baseurl}}/pages/core/0100/">SData Core Specification - version 1.1</a>{% endif %}
+				{% if page.group == 'sync' %} > <a href="{{site.baseurl}}/pages/sync/LinkAndSync/">SData Synchronization - version 1.1</a>{% endif %}
+				{% if page.title %} > {{page.title}}{% endif %}
 			</div>
 		
 			<div id="contentBorderTop">
 			
 				<div style="float: right; clear: none;" id="prevNextTop">
 					{% if prevPage != null %}
-					<a style="padding-right: 15px;" href="{{site.baseurl}}{{prevPage}}"><img border="0" src="{{site.baseurl}}/img/button_previousPage.png" alt="Previous Page Arrow" title="Previous Page"></a>
+					<a style="padding-right: 15px;" href="{{site.baseurl}}{{prevPage}}"><img border="0" src="{{site.baseurl}}/img/button-prev.png" alt="Previous Page Arrow" title="Previous Page"></a>
 					{% endif %}
 					<space></space><space></space>
 					{% if nextPage != null %}
-					<a href="{{site.baseurl}}{{nextPage}}"><img border="0" src="{{site.baseurl}}/img/button_nextPage.png" alt="Next Page Arrow" title="Next Page"></a>
+					<a href="{{site.baseurl}}{{nextPage}}"><img border="0" src="{{site.baseurl}}/img/button-next.png" alt="Next Page Arrow" title="Next Page"></a>
 					{% endif %}
 				</div>
 				
@@ -82,11 +90,11 @@ layout: default
 			
 				<div style="float: right; clear: none;" id="prevNextBottom">
 				{% if prevPage != null %}
-				<a style="padding-right: 15px;" href="{{site.baseurl}}{{prevPage}}"><img border="0" src="{{site.baseurl}}/img/button_previousPage.png" alt="Previous Page Arrow" title="Previous Page"></a>
+				<a style="padding-right: 15px;" href="{{site.baseurl}}{{prevPage}}"><img border="0" src="{{site.baseurl}}/img/button-prev.png" alt="Previous Page Arrow" title="Previous Page"></a>
 				{% endif %}
 				<space></space><space></space>
 				{% if nextPage %}
-				<a href="{{site.baseurl}}{{nextPage}}"><img border="0" src="{{site.baseurl}}/img/button_nextPage.png" alt="Next Page Arrow" title="Next Page"></a>
+				<a href="{{site.baseurl}}{{nextPage}}"><img border="0" src="{{site.baseurl}}/img/button-next.png" alt="Next Page Arrow" title="Next Page"></a>
 				{% endif %}
 			</div>
 			
