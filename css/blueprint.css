@@ -38,7 +38,7 @@ p {color: #4D4F53;margin: 0.5em 0px;font-size: small;}
 
 /*** blocks ***/
 pre, blockquote {word-wrap: break-word;word-break: break-word;margin: 20px 0;padding: 2px 40px;}
-pre {background-color: #212121;color: #f2f2f2;padding: 10px 10px;white-space: pre;}
+pre {background-color: #212121;color: #f2f2f2;font-size:initial;padding: 10px 10px;white-space: pre;}
 blockquote {background-color: #E0E1DD} /* will be changed on the fly with jquery for sub blocks */
 blockquote.compliance, pre.compliance, blockquote.note, pre.note, p.note, p.compliance, blockquote.warning {
 	font-size: small;
