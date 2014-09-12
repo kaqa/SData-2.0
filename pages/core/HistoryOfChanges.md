@@ -2554,7 +2554,7 @@ July 23, 2009
 BJ
 
 </td>
-<td valign="top">[3.15 JSON Mapping](/daisy/sdata/619-DSY.html)</td>
+<td valign="top"><a href="../0315/" title="3.15 JSON Mapping">3.15 JSON Mapping</a></td>
 <td valign="top">
 
 Added JSON mapping
@@ -2982,7 +2982,7 @@ both protocols.
 BJ
 
 </td>
-<td valign="top">[3.15 JSON Mapping](/daisy/sdata/619-DSY.html)</td>
+<td valign="top"><a href="../0315/" title="3.15 JSON Mapping">3.15 JSON Mapping</a></td>
 <td valign="top">
 
 Hid JSON page as it is not ready for prime time.
