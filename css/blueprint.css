@@ -32,7 +32,8 @@ h4 {font-size: 21px;color: #41A940;}
 
 header {background-color: #212121;}
 
-img {border: none}
+img {border: none;}
+.inner-content img {display: block;margin-left: auto;margin-right: auto;}
 img.info {padding: 0 15px 15px 0; float: left;}
 p {color: #4D4F53;margin: 0.5em 0px;font-size: small;}
 
