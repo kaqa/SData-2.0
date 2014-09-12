@@ -5,7 +5,7 @@
 html, body {height: 100%;}
 body {
 	background-attachment: scroll;
-	background-image: url({{site.baseurl}}/img/greenBackLarge.png);
+	/*background-image: url({{site.baseurl}}/img/greenBackLarge.png);*/
 	background-repeat: no-repeat;
 	background-position: center 45px;
 	background-size: 100%;
