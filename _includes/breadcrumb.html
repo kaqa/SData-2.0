@@ -1,0 +1,7 @@
+<div id="breadcrumb">
+    <a href="{{site.baseurl}}/" title="Home">SData Home</a>
+	{% if page.group == 'core' %} > <a href="{{site.baseurl}}/pages/core/0100/">SData Core Specification - version 1.1</a>{% endif %}
+	{% if page.group == 'sync' %} > <a href="{{site.baseurl}}/pages/sync/LinkAndSync/">SData Synchronization - version 1.1</a>{% endif %}
+	{% if page.group == 20 %} > <a href="{{site.baseurl}}/pages/20/0100/">SData 2.0</a>{% endif %}
+	{% if page.title %} > {{page.title}}{% endif %}
+</div>

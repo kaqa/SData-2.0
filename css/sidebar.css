@@ -22,9 +22,8 @@ div#sidemenu ul li {float:left;width:100%;margin:0px;}
 #sidemenu a:hover {text-decoration: underline;}
 #sidemenu > ul > li > a {padding: 0.5em;background: #41a940;background: #62ac2e;color: #fff;padding: 7% 10px;}
 
-#sidemenu li.active-top > a {background: #39845a;}
+#sidemenu > ul > li > a.active, #sidemenu li.active-top > a {background: #39845a;color: #fff;}
 #sidemenu > ul > li > a.active {font-weight: bold;font-size: 1.1em !important;text-decoration: underline !important;}
-#sidemenu > ul > li > a.active {color: #fff;}
 #sidemenu > ul ul a.active {color: #39845a;}
 
 div#sidemenu ul li ul li {padding: 0 0 0.5em 1.5em;}
