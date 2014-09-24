@@ -771,5 +771,5 @@ sdata/choice type)
 </table>
 
 ***
-<a name="12">12</a>. This should not be confused with client-side AJAX requests. The mechanism corresponds to the sme:invocationMethod 
+<a name="12" href="#12">12</a>. This should not be confused with client-side AJAX requests. The mechanism corresponds to the sme:invocationMethod 
 described in section [11.4](../../core/1104/) and [11.5](../../core/1105/) of the SData 1.1 standard
