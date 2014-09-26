@@ -10,10 +10,30 @@ $(document).ready(function(){
 	$('ul.navigation ul').not(active).hide();
 	active.parent().addClass('active-top');
   
+	/*$('ul.navigation > li > a.childs-only').click(function(){
+		//$('ul.navigation ul').not(active).hide();
+		//$(this).parent().find('ul').not(active).slideToggle(200);
+		$(this).parent().find('ul').slideToggle("slow");
+	});*/
+	
+	/* 26.09.2014 *
 	$('ul.navigation > li > a.childs-only').click(function(){
-		$('ul.navigation ul').not(active).hide();
-		$(this).parent().find('ul').not(active).slideToggle(200);
-	});
+		current = $(this).parent().find('ul');
+		
+		//$('ul.navigation ul').not(active).not(current).slideUp();
+		
+		//$('ul.navigation ul').slideUp("slow");
+		
+		//$(this).parent().find('ul').not(active).slideToggle(200);
+		
+		$(this).parent().find('ul').slideToggle(200, function() {
+			// Animation complete => go to 1st page
+			id = $(this).parent().find('ul > li > a:first-of-type').attr('id');
+			console.log(id.substring(0,id.indexOf('.')));
+			window.location.href = "{{site.baseurl}}/pages/{{page.group}}/"+id.substring(0,id.indexOf('.'))+"/";
+		});
+		
+	});**/
   
 });
 </script>
@@ -28,16 +48,16 @@ $(document).ready(function(){
 			{% if isToplevelOpen %} {% if menuitem == 'sub' %} </ul> {% endif %} </li> {% endif %}
 			{% assign isToplevelOpen = true %}
 			{% assign menuitem = 'top' %}
-			<li class="navigation active-navnode navnode-open">
+			<li {% if p.url == page.url %}class="activeli"{% endif %}>
 				
 				<a {% if p.layout != null %}href="{{site.baseurl}}{{p.url}}"{% else %}class="childs-only" style="cursor: pointer;"{% endif %} {% if p.url == page.url %}class="active"{% endif %}>{{p.title}}</a>
 		{% endif %}
 		{% if p.level > 0 %}
-			{% if menuitem == 'top' %} <ul> {% endif %}
+			{% if menuitem == 'top' %} <ul class="sub"> {% endif %}
 			{% assign menuitem = 'sub' %}
 			
-				<li class="navigation active-navnode navnode-open">
-					<a href="{{site.baseurl}}{{p.url}}" {% if p.url == page.url %}class="active"{% endif %}>{{p.title}}</a>
+				<li {% if p.url == page.url %}class="activeli"{% endif %}>
+					<a id="{{p.name}}" href="{{site.baseurl}}{{p.url}}" {% if p.url == page.url %}class="active"{% endif %}>{{p.title}}</a>
 				</li>
 			
 		{% endif %}
@@ -47,4 +67,91 @@ $(document).ready(function(){
 <!-- close tag(s) for last menu item -->
 {% if isToplevelOpen %} {% if menuitem == 'sub' %} </ul> {% endif %} </li> {% endif %}
 </ul>
+
+<script type="text/javascript">
+
+jQuery(document).ready(function($) {
+    //var siteUrl = 'http://'+(document.location.hostname||document.location.host);
+	var siteUrl = '{{site.baseurl}}/pages/';
+
+    // Make sure that all clicked links that link to your internal website
+    // don't just reload the page but execute a History.pushState call
+    $(document).delegate('#sidemenu a[href^="'+siteUrl+'"], .inner-content a[href^="'+siteUrl+'"], a.ajax[href^="'+siteUrl+'"], a.childs-only', "click", function(e) {
+		
+		if($(this).hasClass('childs-only'))
+			$(this).attr('href', $(this).parent().find('ul > li > a:first-of-type').attr('href'));
+		
+        e.preventDefault();
+		History.pushState({}, "", this.pathname);
+		
+		// sidemenu link?
+		var ulType = $(this).parent().parent().is('ul') ? ($(this).parent().parent().hasClass('navigation') ? 'navigation' : $(this).parent().parent().hasClass('sub') ? 'sub' : 'content') : 'content';
+		/*if($(this).parent().parent().is('ul'))
+		{
+			ulType = $(this).parent().parent().hasClass('navigation') ? 'navigation' : 'content';
+			ulType = $(this).parent().parent().hasClass('sub') ? 'sub' : 'content';
+		}*/
+		// top
+		//if($(this).parent().parent().hasClass('navigation'))
+		
+		//console.log(ulType);
+		switch(ulType)
+		{
+			case 'navigation':
+				
+		
+				$('ul.navigation > li').removeClass('active-top').find('a.active').removeClass('active');
+				
+				$('ul.navigation > li > ul').slideUp('slow');
+				// top with subitems
+				if($(this).parent().find('ul').length > 0)
+				{
+					//console.log('full top');
+					$('#sidemenu ul > li > ul > li > a').removeClass('active');
+					/*$('ul.navigation > li').removeClass('active-top').find('a.active').removeClass('active');
+					$('ul.navigation > li > ul').slideUp('slow');*/
+					$(this).parent().addClass('active-top').find('ul').slideToggle('slow');
+					if($(this).hasClass('childs-only')) $(this).parent().find('ul.sub').children(':first').find('a').addClass('active');
+				}
+				else // empty top
+				{				
+					//console.log('empty top');
+				}
+				$(this).addClass('active');
+				break;
+			case 'sub':
+				//console.log('SUB');
+				$('#sidemenu ul > li > ul > li > a').removeClass('active');
+				$(this).addClass('active');
+				break;
+			default:
+				//console.log('QQQ');
+		}
+    });
+
+    // Catch all History stateChange events
+    History.Adapter.bind(window, 'statechange', function(){
+        var State = History.getState();
+
+        // Load the new state's URL via an Ajax Call
+        $.get(State.url, function(data){
+            // Replace the "<title>" tag's content
+            document.title = $(data).find("title").text();
+
+			// Replace previous/next buttons on page
+			$('#contentBorderTop').html($(data).find('#prevNextTop'));
+			$('#contentBorderBottom').html($(data).find('#prevNextBottom'));
+			
+            // Replace the content
+            $('.outer-content').html($(data).find('.inner-content'));
+
+            // If you're using Google analytics, make sure the pageview is registered!
+            /*ga('send', 'pageview', {
+                'page': State.url,
+                'title': document.title
+            });*/
+        });
+    });
+});
+</script>
 

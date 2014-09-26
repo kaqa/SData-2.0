@@ -13,7 +13,7 @@ that may break compatiblity is listed in this page. The
 <a href="../HistoryOfChanges/" title="History of Changes">History of Changes</a> page gives detailed information
 on the pages that have been modified between versions.
 
-## Version 1.1
+## <a name="version11" href="#version11">Version 1.1</a>
 
 <table class="content" print-width="100%" width="100%">
 <tbody>
@@ -285,7 +285,7 @@ New Feature
 </tbody>
 </table>
 
-## Version 1.0
+## <a name="version10" href="#version10">Version 1.0</a>
 
 Released Nov 2, 2009
 
@@ -817,7 +817,7 @@ Placeholder for upcoming feature
 </tbody>
 </table>
 
-## Version 0.9
+## <a name="version09" href="#version09">Version 0.9</a>
 
 Released Feb 1st, 2009
 
