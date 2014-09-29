@@ -50,14 +50,14 @@ $(document).ready(function(){
 			{% assign menuitem = 'top' %}
 			<li {% if p.url == page.url %}class="activeli"{% endif %}>
 				
-				<a {% if p.layout != null %}href="{{site.baseurl}}{{p.url}}"{% else %}class="childs-only" style="cursor: pointer;"{% endif %} {% if p.url == page.url %}class="active"{% endif %}>{{p.title}}</a>
+				<a {% if p.layout != null %}id="{{p.name | replace:'.','_' }}" href="{{site.baseurl}}{{p.url}}"{% else %}class="childs-only" style="cursor: pointer;"{% endif %} {% if p.url == page.url %}class="active"{% endif %}>{{p.title}}</a>
 		{% endif %}
 		{% if p.level > 0 %}
 			{% if menuitem == 'top' %} <ul class="sub"> {% endif %}
 			{% assign menuitem = 'sub' %}
 			
 				<li {% if p.url == page.url %}class="activeli"{% endif %}>
-					<a id="{{p.name}}" href="{{site.baseurl}}{{p.url}}" {% if p.url == page.url %}class="active"{% endif %}>{{p.title}}</a>
+					<a id="{{p.name | replace:'.','_' }}" href="{{site.baseurl}}{{p.url}}" {% if p.url == page.url %}class="active"{% endif %}>{{p.title}}</a>
 				</li>
 			
 		{% endif %}
@@ -70,91 +70,179 @@ $(document).ready(function(){
 
 <script type="text/javascript">
 
+function getInternetExplorerVersion()
+// Returns the version of Internet Explorer or a -1
+// (indicating the use of another browser).
+{
+  var rv = -1; // Default value assumes failure. 
+  var ua = navigator.userAgent;
+
+  // If user agent string contains "MSIE x.y", assume
+  // Internet Explorer and use "x.y" to determine the
+  // version.
+ 
+  var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+  if (re.exec(ua) != null) 
+    rv = parseFloat( RegExp.$1 );
+  return rv;
+
+}
+
 jQuery(document).ready(function($) {
-    //var siteUrl = 'http://'+(document.location.hostname||document.location.host);
-	var siteUrl = '{{site.baseurl}}/pages/';
 
-    // Make sure that all clicked links that link to your internal website
-    // don't just reload the page but execute a History.pushState call
-    $(document).delegate('#sidemenu a[href^="'+siteUrl+'"], .inner-content a[href^="'+siteUrl+'"], a.ajax[href^="'+siteUrl+'"], a.childs-only', "click", function(e) {
-		
-		if($(this).hasClass('childs-only'))
-			$(this).attr('href', $(this).parent().find('ul > li > a:first-of-type').attr('href'));
-		
-        e.preventDefault();
-		History.pushState({}, "", this.pathname);
-		
-		// sidemenu link?
-		var ulType = $(this).parent().parent().is('ul') ? ($(this).parent().parent().hasClass('navigation') ? 'navigation' : $(this).parent().parent().hasClass('sub') ? 'sub' : 'content') : 'content';
-		/*if($(this).parent().parent().is('ul'))
-		{
-			ulType = $(this).parent().parent().hasClass('navigation') ? 'navigation' : 'content';
-			ulType = $(this).parent().parent().hasClass('sub') ? 'sub' : 'content';
-		}*/
-		// top
-		//if($(this).parent().parent().hasClass('navigation'))
-		
-		//console.log(ulType);
-		switch(ulType)
-		{
-			case 'navigation':
-				
-		
-				$('ul.navigation > li').removeClass('active-top').find('a.active').removeClass('active');
-				
-				$('ul.navigation > li > ul').slideUp('slow');
-				// top with subitems
-				if($(this).parent().find('ul').length > 0)
-				{
-					//console.log('full top');
+alert(getInternetExplorerVersion());
+
+	switch(getInternetExplorerVersion())
+	{
+		case 7:
+		case 8:
+		case 9:
+		case 11:
+		$('ul.navigation > li > a.childs-only').click(function(){
+			//$('ul.navigation ul').not(active).hide();
+			//$(this).parent().find('ul').not(active).slideToggle(200);
+			$(this).parent().find('ul').slideToggle("slow");
+		});
+		break;
+	/*}
+	else
+	{*/
+		default: 
+		//var siteUrl = 'http://'+(document.location.hostname||document.location.host);
+		var siteUrl = '{{site.baseurl}}/pages/';
+
+		// Make sure that all clicked links that link to your internal website
+		// don't just reload the page but execute a History.pushState call
+		$(document).delegate('#sidemenu a[href^="'+siteUrl+'"], .inner-content a[href^="'+siteUrl+'"], a.ajax[href^="'+siteUrl+'"], a.childs-only', "click", function(e) {
+			
+			if($(this).hasClass('childs-only'))
+				$(this).attr('href', $(this).parent().find('ul > li > a:first-of-type').attr('href'));
+			
+			//console.log(e);
+			//console.log($(this));
+			
+			e.preventDefault();
+			History.pushState({}, "", this.pathname);
+			
+			// sidemenu link?
+			var ulType = $(this).parent().parent().is('ul') ? ($(this).parent().parent().hasClass('navigation') ? 'navigation' : $(this).parent().parent().hasClass('sub') ? 'sub' : 'content') : 'content';
+			/*if($(this).parent().parent().is('ul'))
+			{
+				ulType = $(this).parent().parent().hasClass('navigation') ? 'navigation' : 'content';
+				ulType = $(this).parent().parent().hasClass('sub') ? 'sub' : 'content';
+			}*/
+			// top
+			//if($(this).parent().parent().hasClass('navigation'))
+			
+			//console.log(ulType);
+			switch(ulType)
+			{
+				case 'navigation':
+
+					$('ul.navigation > li').removeClass('active-top').find('a.active').removeClass('active');
+					
+					$('ul.navigation > li > ul').slideUp('slow');
+					// top with subitems
+					if($(this).parent().find('ul').length > 0)
+					{
+						//console.log('full top');
+						$('#sidemenu ul > li > ul > li > a').removeClass('active');
+						/*$('ul.navigation > li').removeClass('active-top').find('a.active').removeClass('active');
+						$('ul.navigation > li > ul').slideUp('slow');*/
+						$(this).parent().addClass('active-top').find('ul').slideToggle('slow');
+						if($(this).hasClass('childs-only')) $(this).parent().find('ul.sub').children(':first').find('a').addClass('active');
+					}
+					else // empty top
+					{				
+						//console.log('empty top');
+					}
+					$(this).addClass('active');
+					break;
+				case 'sub':
+					//console.log('SUB');
 					$('#sidemenu ul > li > ul > li > a').removeClass('active');
-					/*$('ul.navigation > li').removeClass('active-top').find('a.active').removeClass('active');
-					$('ul.navigation > li > ul').slideUp('slow');*/
-					$(this).parent().addClass('active-top').find('ul').slideToggle('slow');
-					if($(this).hasClass('childs-only')) $(this).parent().find('ul.sub').children(':first').find('a').addClass('active');
-				}
-				else // empty top
-				{				
-					//console.log('empty top');
-				}
-				$(this).addClass('active');
-				break;
-			case 'sub':
-				//console.log('SUB');
-				$('#sidemenu ul > li > ul > li > a').removeClass('active');
-				$(this).addClass('active');
-				break;
-			default:
-				//console.log('QQQ');
-		}
-    });
+					$(this).addClass('active');
+					break;
+				default:
+					var containerId = ($(this).parent().parent().length > 0) ? $(this).parent().parent().attr('id') : '';
+					// clicked prev/next button
+					if(containerId == 'contentBorderTop' || containerId == 'contentBorderBottom')
+					{
+						//console.log('PrevNext');
+						cutLastSlash = this.pathname.substring(0, this.pathname.lastIndexOf('/'));
+						//console.log("?: " + cutLastSlash.substring(cutLastSlash.lastIndexOf('/') + 1) + '_md');
+						id = cutLastSlash.substring(cutLastSlash.lastIndexOf('/') + 1) + "_md";
+						//console.log($('#' + id));
+						
+						currentPos = $('#' + id).parent().parent().is('ul') ? ($('#' + id).parent().parent().hasClass('navigation') ? 'navigation' : $('#' + id).parent().parent().hasClass('sub') ? 'sub' : 'content') : 'content';
+						//console.log('ul-class: ' + $('#' + id).parent().parent().attr('class'));
+						//console.log($('#' + id).parent().parent().is(':visible'));
+						
+						$('#sidemenu ul > li > ul > li > a').removeClass('active');
+						
+						if(!$('#' + id).parent().parent().is(':visible'))
+						{
+							//console.log('invisible');
+							$('ul.navigation > li').removeClass('active-top').find('a.active').removeClass('active');
+							$('ul.navigation > li > ul').slideUp('slow');
+							if($('#' + id).parent().parent().hasClass('sub'))
+							{
+								$('#' + id).parent().parent().parent().addClass('active-top');
+								$('#' + id).parent().parent().slideDown('slow');
+								//$('#sidemenu ul > li > ul > li > a').removeClass('active');
+								//$('#' + id).parent().addClass('active-top').find('ul').slideToggle('slow');
+								//if($('#' + id).hasClass('childs-only')) $('#' + id).parent().find('ul.sub').children(':first').find('a').addClass('active');
+							}
+							//else if($('#' + id).parent().parent().hasClass('navigation')) {}
+							
+						}
+						else if($('#' + id).parent().parent().hasClass('navigation'))
+						{
+							//console.log('aaa');
+							$('ul.navigation > li > ul').slideUp('slow');
+							// check has ul child => open 
+							if ($('#' + id).parent().find('ul').length > 0)
+								$('#' + id).parent().find('ul').slideDown('slow');
+							$('ul.navigation > li').removeClass('active-top').find('a.active').removeClass('active');
+							
+						}
+						$('#' + id).addClass('active');					
+						
+					}
+					//console.log($(this).parent().parent().attr('id'));
+					//console.log("pathname: " + this.pathname);
+					
+			}
+		});
 
-    // Catch all History stateChange events
-    History.Adapter.bind(window, 'statechange', function(){
-        var State = History.getState();
+		// Catch all History stateChange events
+		History.Adapter.bind(window, 'statechange', function(){
+			var State = History.getState();
 
-        // Load the new state's URL via an Ajax Call
-        $.get(State.url, function(data){
-            // Replace the "<title>" tag's content
-			//console.log($(data).find('#prevNextTop'));
-            //document.title = $(data).find('title').text();
+			// Load the new state's URL via an Ajax Call
+			$.get(State.url, function(data){
+				// Replace the "<title>" tag's content
+				//console.log($(data).find('#prevNextTop'));
+				//document.title = $(data).find('title').text();
+				document.title = "{{site.title}}";
 
-			// Replace previous/next buttons on page
-			$('#contentBorderTop').html($(data).find('#prevNextTop'));
-			$('#contentBorderBottom').html($(data).find('#prevNextBottom'));
-			
-            // Replace the content
-            $('.outer-content').html($(data).find('.inner-content'));
+				// Replace previous/next buttons on page
+				$('#contentBorderTop').html($(data).find('#prevNextTop'));
+				$('#contentBorderBottom').html($(data).find('#prevNextBottom'));
+				
+				// Replace the content
+				$('.outer-content').html($(data).find('.inner-content'));
 
-			//console.log($(data).find('head'));
-			
-            // If you're using Google analytics, make sure the pageview is registered!
-            /*ga('send', 'pageview', {
-                'page': State.url,
-                'title': document.title
-            });*/
-        });
-    });
+				//console.log($(data).find('head'));
+				
+				// If you're using Google analytics, make sure the pageview is registered!
+				/*ga('send', 'pageview', {
+					'page': State.url,
+					'title': document.title
+				});*/
+			});
+		});
+	}
 });
 </script>
 
