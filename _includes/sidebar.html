@@ -90,23 +90,18 @@ function getInternetExplorerVersion()
 
 jQuery(document).ready(function($) {
 
-alert(getInternetExplorerVersion());
-
 	switch(getInternetExplorerVersion())
 	{
 		case 7:
 		case 8:
 		case 9:
-		case 11:
-		$('ul.navigation > li > a.childs-only').click(function(){
-			//$('ul.navigation ul').not(active).hide();
-			//$(this).parent().find('ul').not(active).slideToggle(200);
-			$(this).parent().find('ul').slideToggle("slow");
-		});
-		break;
-	/*}
-	else
-	{*/
+			$('ul.navigation > li > a.childs-only').click(function(){
+				//$('ul.navigation ul').not(active).hide();
+				//$(this).parent().find('ul').not(active).slideToggle(200);
+				$(this).parent().find('ul').slideToggle("slow");
+			});
+			break;
+		
 		default: 
 		//var siteUrl = 'http://'+(document.location.hostname||document.location.host);
 		var siteUrl = '{{site.baseurl}}/pages/';
