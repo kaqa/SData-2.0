@@ -72,9 +72,9 @@ blockquote a, pre a {color: #007f64 !important;}
 /* BLOCKS BACKGROUND */
 .compliance, .note, .warning {color: #fff;}
 .compliance a, .note a, .warning a {color: #fff !important;}
-blockquote.compliance, p.compliance  {background-color: #4d4f53;}
-blockquote.note, p.note {background-color: #39845a}
-blockquote.warning {background-color: #fc581d;}
+blockquote.compliance, p.compliance, blockquote.compliance > blockquote, p.compliance > blockquote {background-color: #4d4f53;}
+blockquote.note, p.note, blockquote.note > blockquote, p.note > blockquote {background-color: #39845a}
+blockquote.warning, blockquote.warning > blockquote {background-color: #fc581d;}
 blockquote.compliance, pre.compliance, p.compliance {border-color: #4D4F53;}
 blockquote.note, pre.note, p.note {border-color: #39845a}
 blockquote.warning {border-color: #fc581d;}
