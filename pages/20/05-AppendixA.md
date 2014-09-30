@@ -538,7 +538,7 @@ Expected remaining time, in seconds.
         <td>
         Contains either 
 		<ol start="3">
-<li>  URL of a prototype (see <a href="../05-0900/">Section 9</a>)</li>
+<li>  URL of a prototype (see <a href="../05-0900/">Embedded metadata Section</a>)</li>
 <li>  JSON object containing the description of request's </li>
 </ol>
 individual parameters. 
@@ -573,7 +573,7 @@ contains the following properties:
         <td>
         Contains either
 		<ol>
-<li>  URL of a prototype (see <a href="../05-0900/">Section 9</a>)</li>
+<li>  URL of a prototype (see <a href="../05-0900/">Embedded metadata Section</a>)</li>
 <li>  JSON object containing the description of request's </li>
 </ol>
 expected response. The description of the 

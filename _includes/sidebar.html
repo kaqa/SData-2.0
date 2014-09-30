@@ -1,7 +1,9 @@
 <!--span>{{page.title}} - {{page.group}}</span-->
 <script>
 $(document).ready(function(){
-  
+
+	document.title = "{{site.title}} - " + $('#breadcrumb > div > span.bc-page-title').text();
+	
 	var path = window.location.pathname;
 	var active = $("ul.navigation ul a[href*='"+path+"']").parent().parent();
 	if(active.length == 0) active = $("ul.navigation > li > a[href*='"+path+"']").parent().find('ul');
@@ -88,6 +90,34 @@ function getInternetExplorerVersion()
 
 }
 
+function navigateTo (id)
+{
+	$('#sidemenu ul > li > ul > li > a').removeClass('active');
+	/*$('ul.navigation > li').removeClass('active-top').find('a.active').removeClass('active');
+	$('ul.navigation > li > ul').slideUp(100, 'swing');
+	*/
+	if(!$('#' + id).parent().parent().is(':visible'))
+	{
+		$('ul.navigation > li').removeClass('active-top').find('a.active').removeClass('active');
+		$('ul.navigation > li > ul').slideUp(100, 'swing');
+		if($('#' + id).parent().parent().hasClass('sub'))
+		{
+			$('#' + id).parent().parent().parent().addClass('active-top');
+			$('#' + id).parent().parent().slideDown(600);
+		}
+	}
+	else if($('#' + id).parent().parent().hasClass('navigation'))
+	{
+		$('ul.navigation > li > ul').slideUp(100, 'swing');
+		
+		if ($('#' + id).parent().find('ul').length > 0)
+			$('#' + id).parent().find('ul').slideDown(600);
+		
+		$('ul.navigation > li').removeClass('active-top').find('a.active').removeClass('active');
+	}
+	$('#' + id).addClass('active');	
+}
+
 jQuery(document).ready(function($) {
 
 	switch(getInternetExplorerVersion())
@@ -121,13 +151,6 @@ jQuery(document).ready(function($) {
 			
 			// sidemenu link?
 			var ulType = $(this).parent().parent().is('ul') ? ($(this).parent().parent().hasClass('navigation') ? 'navigation' : $(this).parent().parent().hasClass('sub') ? 'sub' : 'content') : 'content';
-			/*if($(this).parent().parent().is('ul'))
-			{
-				ulType = $(this).parent().parent().hasClass('navigation') ? 'navigation' : 'content';
-				ulType = $(this).parent().parent().hasClass('sub') ? 'sub' : 'content';
-			}*/
-			// top
-			//if($(this).parent().parent().hasClass('navigation'))
 			
 			//console.log(ulType);
 			switch(ulType)
@@ -136,7 +159,7 @@ jQuery(document).ready(function($) {
 
 					$('ul.navigation > li').removeClass('active-top').find('a.active').removeClass('active');
 					
-					$('ul.navigation > li > ul').slideUp('slow');
+					$('ul.navigation > li > ul').slideUp(100, 'swing');
 					// top with subitems
 					if($(this).parent().find('ul').length > 0)
 					{
@@ -144,7 +167,7 @@ jQuery(document).ready(function($) {
 						$('#sidemenu ul > li > ul > li > a').removeClass('active');
 						/*$('ul.navigation > li').removeClass('active-top').find('a.active').removeClass('active');
 						$('ul.navigation > li > ul').slideUp('slow');*/
-						$(this).parent().addClass('active-top').find('ul').slideToggle('slow');
+						$(this).parent().addClass('active-top').find('ul').slideToggle(600);
 						if($(this).hasClass('childs-only')) $(this).parent().find('ul.sub').children(':first').find('a').addClass('active');
 					}
 					else // empty top
@@ -159,7 +182,7 @@ jQuery(document).ready(function($) {
 					$(this).addClass('active');
 					break;
 				default:
-					var containerId = ($(this).parent().parent().length > 0) ? $(this).parent().parent().attr('id') : '';
+					/*var containerId = ($(this).parent().parent().length > 0) ? $(this).parent().parent().attr('id') : '';
 					// clicked prev/next button
 					if(containerId == 'contentBorderTop' || containerId == 'contentBorderBottom')
 					{
@@ -179,7 +202,7 @@ jQuery(document).ready(function($) {
 						{
 							//console.log('invisible');
 							$('ul.navigation > li').removeClass('active-top').find('a.active').removeClass('active');
-							$('ul.navigation > li > ul').slideUp('slow');
+							$('ul.navigation > li > ul').slideUp('fast', 'swing');
 							if($('#' + id).parent().parent().hasClass('sub'))
 							{
 								$('#' + id).parent().parent().parent().addClass('active-top');
@@ -194,7 +217,7 @@ jQuery(document).ready(function($) {
 						else if($('#' + id).parent().parent().hasClass('navigation'))
 						{
 							//console.log('aaa');
-							$('ul.navigation > li > ul').slideUp('slow');
+							$('ul.navigation > li > ul').slideUp('fast', 'swing');
 							// check has ul child => open 
 							if ($('#' + id).parent().find('ul').length > 0)
 								$('#' + id).parent().find('ul').slideDown('slow');
@@ -206,7 +229,7 @@ jQuery(document).ready(function($) {
 					}
 					//console.log($(this).parent().parent().attr('id'));
 					//console.log("pathname: " + this.pathname);
-					
+					*/
 			}
 		});
 
@@ -216,10 +239,6 @@ jQuery(document).ready(function($) {
 
 			// Load the new state's URL via an Ajax Call
 			$.get(State.url, function(data){
-				// Replace the "<title>" tag's content
-				//console.log($(data).find('#prevNextTop'));
-				//document.title = $(data).find('title').text();
-				document.title = "{{site.title}}";
 
 				// Replace previous/next buttons on page
 				$('#contentBorderTop').html($(data).find('#prevNextTop'));
@@ -227,8 +246,19 @@ jQuery(document).ready(function($) {
 				
 				// Replace the content
 				$('.outer-content').html($(data).find('.inner-content'));
+				
+				// refresh breadcrumb
+				$('#breadcrumb').html($(data).find('#breadcrumb > div'));
 
-				//console.log($(data).find('head'));
+				// refresh side menu
+				navigateTo($(data).find('#content').attr('class'));
+				
+				// refresh site title
+				document.title = "{{site.title}} - " + $('#breadcrumb > div > span.bc-page-title').text();
+				
+				$('pre, code').each(function(i, block) {
+					hljs.highlightBlock(block);
+				});
 				
 				// If you're using Google analytics, make sure the pageview is registered!
 				/*ga('send', 'pageview', {
