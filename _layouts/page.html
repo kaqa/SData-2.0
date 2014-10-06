@@ -10,7 +10,7 @@ layout: default
 		
 		$("#search_input").jekyllSearch({
 			jsonFile: "{{site.baseurl}}/search.json",
-			template: "<a href='{url}' title=''>{title}</a><br />",
+			template: "<a href='{{site.baseurl}}{url}' title=''>{title}</a><br />",
 			searchResults : "#content"
 			//fuzzy: true
 		});
