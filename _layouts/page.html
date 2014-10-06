@@ -8,6 +8,13 @@ layout: default
             hljs.highlightBlock(block);
         });
 		
+		$("#search_input").jekyllSearch({
+			jsonFile: "{{site.baseurl}}/search.json",
+			template: "<a href='{url}' title=''>{title}</a><br />",
+			searchResults : "#content"
+			//fuzzy: true
+		});
+		
 		// add watermarks to blocks
 		$('.compliance').prepend('<div>compliance</div>');
 		$('.note').prepend('<div>note</div>');
