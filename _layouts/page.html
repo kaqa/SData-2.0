@@ -10,10 +10,25 @@ layout: default
 		
 		$("#search_input").jekyllSearch({
 			jsonFile: "{{site.baseurl}}/search.json",
-			template: "<a href='{{site.baseurl}}{url}' title=''>{title}</a><br />",
-			searchResults : "#content"
+			baseUrl: "{{site.baseurl}}",
+			searchResultsTitle: "<h1>Search results:</h1>",
+			template: "<a class='search-result' href='{{site.baseurl}}{url}'>{title}</a><br />",
+			searchResults : "#content",
+			limit: '25',
+			noResults: "<h2>Nothing found.</h2>"
 			//fuzzy: true
 		});
+		/*JekyllSearch.init({
+			searchInput: document.getElementById("search_input"),
+			jsonFile: "{{site.baseurl}}/search.json",
+			searchResultsHeader: "<h1>Search results:</h1>",
+			template: "<a class='search-result' href='{{site.baseurl}}{url}'>{title}</a><br />",
+			searchResults : document.getElementById("content"),
+			limit: '25',
+			noResults: "<h2>Nothing found.</h2>",
+			fuzzy: true
+		});*/
+		
 		
 		// add watermarks to blocks
 		$('.compliance').prepend('<div>compliance</div>');
@@ -56,8 +71,12 @@ layout: default
 	<!-- breadcrumb's old position -->
 	
 	<div id="contentBorder">
+		
 		<div id="sidemenu">
-		{% include sidebar.html %}
+		
+			<input type="text" name="q" id="search_input" class="search-field" placeholder="Search.." autocomplete="off" required>
+			{% include sidebar.html %}
+		
 		</div>
 		
 		<div id="content" class="{{ page.name | replace:'.','_' }}">

@@ -2,6 +2,7 @@
     $.fn.jekyllSearch = function(options) {
         var settings = $.extend({
             jsonFile            : '/search.json',
+			baseUrl				: '/SData-2.0',
             template            : '<a href="{url}" title="{desc}">{title}</a>',
             searchResults       : '.results',
             searchResultsTitle  : '<h4>Search results</h4>',
@@ -38,7 +39,7 @@
             origThis.keyup(function(e){
                 if(e.which === 13){
                     if(matches)
-                        window.location = matches[0].url;
+                        window.location = settings.baseUrl + matches[0].url;
                         
                     //follow the first link
                     // if(searchResults.children().length)

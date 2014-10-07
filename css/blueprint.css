@@ -162,6 +162,7 @@ margin: auto;
 
 #content a {color: #62ac2e;text-decoration: underline;}
 #content a:hover {color: #41a940;text-decoration: none;}
+#content a.search-result {line-height: 24px;margin-left: 30px;}
 #content ul {list-style: url({{site.baseurl}}/img/box-selected.png);padding-top: 5px;}
 #content li {margin-bottom: 1em;}
 

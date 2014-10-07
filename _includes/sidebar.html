@@ -146,6 +146,12 @@ jQuery(document).ready(function($) {
 			//console.log(e);
 			//console.log($(this));
 			
+			// if search-result page => redirect to clicked page
+			if($('#content').find('a.search-result').length > 0 || $('#content').find('.outer-content').length == 0)
+			{
+				window.location.href = $(this).attr('href');
+			}
+			
 			e.preventDefault();
 			History.pushState({}, "", this.pathname);
 			
