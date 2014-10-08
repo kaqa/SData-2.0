@@ -91,9 +91,13 @@
                     output = output.replace(/\{(.*?)\}/g, function(match, property) {
                         return obj[property];
                     });
-                    searchResults.append($(output));
-					if(settings.body.length > 0)
-						searchResults.append($('<div class="search-result">'+obj[settings.body].replace(/(<([^>]+)>)/ig,"").slice(0, settings.bodyLen)+'&hellip;</div>'));
+					// show result pages only with content (can be found in url or in top page title without content)
+					if(obj[settings.body].trim().length > 0)
+					{
+						searchResults.append($(output));
+						if(settings.body.length > 0)
+							searchResults.append($('<div class="search-result">'+obj[settings.body].replace(/(<([^>]+)>)/ig,"").slice(0, settings.bodyLen)+'&hellip;</div>'));
+					}
                 }
             }else{
                 searchResults.append( settings.noResults );
