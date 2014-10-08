@@ -13,10 +13,11 @@ layout: default
 			baseUrl: "{{site.baseurl}}",
 			searchResultsTitle: "<h1>Search results:</h1>",
 			template: "<a class='search-result' href='{{site.baseurl}}{url}'>{title}</a><br />",
+			body: "content",	// show content
+			bodyLen: 400,
 			searchResults : "#content",
 			limit: '25',
-			noResults: "<h2>Nothing found.</h2>"
-			//fuzzy: true
+			noResults: "<h2>No results.</h2>"
 		});
 		/*JekyllSearch.init({
 			searchInput: document.getElementById("search_input"),

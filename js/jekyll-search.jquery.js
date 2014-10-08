@@ -4,6 +4,8 @@
             jsonFile            : '/search.json',
 			baseUrl				: '/SData-2.0',
             template            : '<a href="{url}" title="{desc}">{title}</a>',
+			body				: '',	// body name expected (if used content/body in search.json file, then can you do output in result)
+			bodyLen				: '200',
             searchResults       : '.results',
             searchResultsTitle  : '<h4>Search results</h4>',
             limit               : '10',
@@ -90,6 +92,8 @@
                         return obj[property];
                     });
                     searchResults.append($(output));
+					if(settings.body.length > 0)
+						searchResults.append($('<div class="search-result">'+obj[settings.body].replace(/(<([^>]+)>)/ig,"").slice(0, settings.bodyLen)+'&hellip;</div>'));
                 }
             }else{
                 searchResults.append( settings.noResults );
