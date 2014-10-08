@@ -6,9 +6,9 @@ div#sidemenu a {display:block;text-decoration:none;padding-top:0.23em;padding-bo
 div#sidemenu ul {list-style:none;margin:0;	padding:0px;display:table;width: 100%;}
 div#sidemenu > ul > li {display:table-cell;text-align:center;vertical-align:middle;min-height: 40px;}
 div#sidemenu ul li {float:left;width:100%;margin:0px;}
-#sidemenu {margin: 0px 0 0;width: /*160px*/18%;float: left;padding-right: 0px;padding-bottom: 10px;padding-left: 10px;top: 0;xxposition: absolute;}
+#sidemenu {margin: 26px 0 0;width: /*160px*/18%;float: left;padding-right: 0px;padding-bottom: 10px;padding-left: 10px;top: 0;xxposition: absolute;}
 
-#search_input {margin: 3px 0 1px; width: 98%;}
+/*#search_input {margin: 3px 0 1px; width: 98%;}*/
 
 #sidemenu a {
 	text-decoration:none;

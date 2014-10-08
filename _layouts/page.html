@@ -8,11 +8,11 @@ layout: default
             hljs.highlightBlock(block);
         });
 		
-		$("#search_input").jekyllSearch({
+		$("#search").jekyllSearch({
 			jsonFile: "{{site.baseurl}}/search.json",
 			baseUrl: "{{site.baseurl}}",
 			searchResultsTitle: "<h1>Search results:</h1>",
-			template: "<a class='search-result' href='{{site.baseurl}}{url}'>{title}</a><br />",
+			template: "<a target='_blank' class='search-result' href='{{site.baseurl}}{url}'>{title}</a><br />",
 			body: "content",	// show content
 			bodyLen: 400,
 			searchResults : "#content",
@@ -75,7 +75,7 @@ layout: default
 		
 		<div id="sidemenu">
 		
-			<input type="text" name="q" id="search_input" class="search-field" placeholder="Search.." autocomplete="off" required>
+			<!--input type="text" name="q" id="search_input" class="search-field" placeholder="Search.." autocomplete="off" required-->
 			{% include sidebar.html %}
 		
 		</div>

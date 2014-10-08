@@ -11,7 +11,9 @@
 		{% endif %}
 	</h1>
 
-		
+	{% assign test = page.url | truncate: 9 %}
+	{% assign test = test | remove_first:'/' %}
+	{% if test == 'pages...' %}<div class="search"><input type="text" name="q" id="search" class="search-field" placeholder="Search..." autocomplete="off" required></div>{% endif %}
   </div>
 
 </header>
