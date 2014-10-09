@@ -8,7 +8,8 @@ layout: default
             hljs.highlightBlock(block);
         });
 		
-		$("#search").jekyllSearch({
+		/*** Dynamic search ***/
+		$("#search_input").jekyllSearch({
 			jsonFile: "{{site.baseurl}}/search.json",
 			baseUrl: "{{site.baseurl}}",
 			searchResultsTitle: "<h1>Search results:</h1>",
@@ -20,7 +21,7 @@ layout: default
 			noResults: "<h2>No results.</h2>"
 		});
 		/*JekyllSearch.init({
-			searchInput: document.getElementById("search_input"),
+			searchInput: document.getElementById("search"),
 			jsonFile: "{{site.baseurl}}/search.json",
 			searchResultsHeader: "<h1>Search results:</h1>",
 			template: "<a class='search-result' href='{{site.baseurl}}{url}'>{title}</a><br />",
@@ -74,8 +75,9 @@ layout: default
 	<div id="contentBorder">
 		
 		<div id="sidemenu">
-		
-			<!--input type="text" name="q" id="search_input" class="search-field" placeholder="Search.." autocomplete="off" required-->
+			
+			<input type="text" name="q" id="search_input" class="search-field" placeholder="Search.." autocomplete="off" required>
+			
 			{% include sidebar.html %}
 		
 		</div>

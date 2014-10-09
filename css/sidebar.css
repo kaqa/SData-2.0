@@ -8,7 +8,7 @@ div#sidemenu > ul > li {display:table-cell;text-align:center;vertical-align:midd
 div#sidemenu ul li {float:left;width:100%;margin:0px;}
 #sidemenu {margin: 26px 0 0;width: /*160px*/18%;float: left;padding-right: 0px;padding-bottom: 10px;padding-left: 10px;top: 0;xxposition: absolute;}
 
-/*#search_input {margin: 3px 0 1px; width: 98%;}*/
+#search_input {margin: 3px 0 1px; width: 98%;}
 
 #sidemenu a {
 	text-decoration:none;

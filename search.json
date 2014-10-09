@@ -5,7 +5,6 @@
     {
       "title"   : "{{ page.title }}",
       "content" : {{ page.content | jsonify }},
-      "group"   : "{{ page.group }}",
       "url"     : "{{ page.url }}"
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
