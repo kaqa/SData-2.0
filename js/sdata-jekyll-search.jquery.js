@@ -98,7 +98,9 @@
             if(m && m.length){
                 for (var i = 0; i < m.length && i < settings.limit; i++) {
                     var obj = m[i];
-                    output = settings.template;
+					output = "<li>";
+					output += (obj["group"] == "20") ? "<span class='search-result-group'>Sdata 2.0: </span>" : ( (obj["group"] == "sync") ? "<span class='search-result-group'>SData 1.1 Sync: </span>" : "<span class='search-result-group'>SData 1.1 Core: </span>" );
+                    output += settings.template;
                     output = output.replace(/\{(.*?)\}/g, function(match, property) {
                         return obj[property];
                     });

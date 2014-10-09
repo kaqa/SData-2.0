@@ -13,9 +13,9 @@
 
 	{% assign layout = page.url | truncate: 9 %}
 	{% assign layout = layout | remove:'/' %}
-	{% if (layout == 'pages...') or (layout == 'search') %}
+	{% if (layout == 'pages...') %}
 		<div class="search">
-			<form name="search-form" action="{{site.baseurl}}/search/" method="get">
+			<form name="search-form" action="{{site.baseurl}}/search/" method="get" target="_blank">
 				<input type="text" name="q" id="search" class="search-field" placeholder="Search..." autocomplete="off" required><input type="submit" value="" style="background-image: url({{site.baseurl}}/img/button-next.png);border: solid 0px #000000;" onclick="if(document.getElementById('search').value.trim().length > 3) document.forms['search-form'].submit(); else return false;" />
 			</form>
 		</div>

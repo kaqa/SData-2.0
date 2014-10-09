@@ -170,6 +170,7 @@ margin: auto;
 #content a.search-result {line-height: 24px;}
 #content  div.search-result {margin-bottom: 10px;display: inline-block;margin-left: 30px;width: 95%}
 #content .search-result {margin-left: 30px;}
+span.search-result-group {color: #693;}
 
 /*** static search ***/
 ul#search-results li {padding-bottom: 20px;}

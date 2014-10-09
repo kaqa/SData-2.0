@@ -1,6 +1,6 @@
 ---
 layout: info
-title: Search for
+title: Show search results for
 ---
 
 <script>
@@ -22,7 +22,7 @@ title: Search for
 		jsonFile: "{{site.baseurl}}/search.json",
 		baseUrl: "{{site.baseurl}}",
 		searchResultsTitle: "",	// without title
-		template: "<li><a target='_blank' class='search-result' href='{{site.baseurl}}{url}'>{title}</a><br />",
+		template: "<a target='_blank' class='search-result' href='{{site.baseurl}}{url}'>{title}</a><br />",
 		body: "content",	// show content
 		bodyLen: 400,
 		searchResults : "#search-results",
