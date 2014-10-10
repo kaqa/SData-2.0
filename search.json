@@ -5,7 +5,7 @@
     {
       "title"   : "{{ page.title }}",
       "content" : {{ page.content | jsonify }},
-      "group"   : "{{ page.group }}",
+      "group"   : {% if (page.group == "core") or (page.group == "sync") %}"{{ page.group }}"{% else %}"sdata-20"{% endif %},
       "url"     : "{{ page.url }}"
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}

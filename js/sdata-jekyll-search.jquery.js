@@ -96,10 +96,25 @@
 				searchResults.append( $(settings.searchResultsTitle) );
 
             if(m && m.length){
+				var coreCounter = 0, syncCounter = 0, sdata20Counter = 0;
                 for (var i = 0; i < m.length && i < settings.limit; i++) {
                     var obj = m[i];
-					output = "<li>";
-					output += (obj["group"] == "20") ? "<span class='search-result-group'>Sdata 2.0: </span>" : ( (obj["group"] == "sync") ? "<span class='search-result-group'>SData 1.1 Sync: </span>" : "<span class='search-result-group'>SData 1.1 Core: </span>" );
+					if (obj["group"] == "core")
+					{
+						//coreCounter++;
+						output = "<li class='"+obj["group"]+"' count='"+(coreCounter++)+"'>";
+					}
+					else if (obj["group"] == "sync")
+					{
+						output = "<li class='"+obj["group"]+"' count='"+(syncCounter++)+"'>";
+					}
+					else
+					{
+						output = "<li class='"+obj["group"]+"' count='"+(sdata20Counter++)+"'>";
+						//output = "<li class='"+obj["group"]+"'>";
+					}
+					output += "<a class='sort "+obj["group"]+"' href='#'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>";
+					//output += (obj["group"] == "20") ? "<span class='search-result-group'>Sdata 2.0: </span>" : ( (obj["group"] == "sync") ? "<span class='search-result-group'>SData 1.1 Sync: </span>" : "<span class='search-result-group'>SData 1.1 Core: </span>" );
                     output += settings.template;
                     output = output.replace(/\{(.*?)\}/g, function(match, property) {
                         return obj[property];
@@ -108,7 +123,7 @@
 					if(obj[settings.body].trim().length > 0)
 					{
 						if(settings.body.length > 0)
-							output = output + '<div class="search-result">'+obj[settings.body].replace(/(<([^>]+)>)/ig,"").slice(0, settings.bodyLen)+'&hellip;</div>';
+							output = output + '<div class="search-result-body">'+obj[settings.body].replace(/(<([^>]+)>)/ig,"").slice(0, settings.bodyLen)+'&hellip;</div>';
 						output += '</li>';
 						
 						searchResults.append($(output));

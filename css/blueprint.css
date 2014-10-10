@@ -173,7 +173,7 @@ margin: auto;
 span.search-result-group {color: #693;}
 
 /*** static search ***/
-ul#search-results li {padding-bottom: 20px;}
+/*ul#search-results li {padding-bottom: 20px;}*/
 .search input[type=submit] {
 	background-image: url(/SData-2.0/img/button-next.png);
 	background-repeat: no-repeat;
