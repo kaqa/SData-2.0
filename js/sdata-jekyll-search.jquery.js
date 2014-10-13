@@ -113,7 +113,7 @@
 						output = "<li class='"+obj["group"]+"' count='"+(sdata20Counter++)+"'>";
 						//output = "<li class='"+obj["group"]+"'>";
 					}
-					output += "<a class='sort "+obj["group"]+"' href='#'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>";
+					output += "<a class='sort "+obj["group"]+"' href='#'></a>";
 					//output += (obj["group"] == "20") ? "<span class='search-result-group'>Sdata 2.0: </span>" : ( (obj["group"] == "sync") ? "<span class='search-result-group'>SData 1.1 Sync: </span>" : "<span class='search-result-group'>SData 1.1 Core: </span>" );
                     output += settings.template;
                     output = output.replace(/\{(.*?)\}/g, function(match, property) {
@@ -130,6 +130,32 @@
 						
 					}
                 }
+				
+				{	// group pages by category
+					var groups = {
+						"sync" : {},
+						"core" : {},
+						"sdata-20" : {}
+					};
+
+					$('ul#search-results > li[class]').each(function(i, el){
+						group = $(el).attr('class');
+						count = $(el).attr('count');
+						
+						groups[group][count] = el;
+					});
+
+					ul = $('ul#search-results');
+					for(var key in groups)
+					{
+						for(i in groups[key])
+						{
+							//console.log('['+key+']['+i+']' + ' (' + groups[key][i] + ')');
+							ul.append(groups[key][i]);
+						}
+					}
+				}
+		
             }else{
                 searchResults.append( settings.noResults );
             }

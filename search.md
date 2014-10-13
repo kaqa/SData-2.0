@@ -33,9 +33,9 @@ title: Show search results for
 	
 	$('#project_title_subp').html($('#project_title_subp').text() + " <span class='query'>" + window.location.search.substring(1).split('=')[1] + "</span>");
 	
-	$('#search-results').delegate( "a.sort", "click", function(){
+	/*$('#search-results').delegate( "a.sort", "click", function(){
 
-		liclass = $(this).parent().attr('class');
+		//liclass = $(this).parent().attr('class');
 		
 		var groups = {
 			"sync" : {},
@@ -61,7 +61,7 @@ title: Show search results for
 		}
 		//console.log(ul.children().length);
 
-	});
+	});*/
  });
 </script>
 
