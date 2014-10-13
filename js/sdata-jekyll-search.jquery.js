@@ -113,7 +113,7 @@
 						output = "<li class='"+obj["group"]+"' count='"+(sdata20Counter++)+"'>";
 						//output = "<li class='"+obj["group"]+"'>";
 					}
-					output += "<a class='sort "+obj["group"]+"' href='#'></a>";
+					output += "<span class='sort "+obj["group"]+"' href='#'></span>";
 					//output += (obj["group"] == "20") ? "<span class='search-result-group'>Sdata 2.0: </span>" : ( (obj["group"] == "sync") ? "<span class='search-result-group'>SData 1.1 Sync: </span>" : "<span class='search-result-group'>SData 1.1 Core: </span>" );
                     output += settings.template;
                     output = output.replace(/\{(.*?)\}/g, function(match, property) {

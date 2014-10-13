@@ -8,13 +8,13 @@ a.search-result {font-size: 18px;text-decoration:underline;}
 
 .search-result-body {font-size: 14px;color: #4D4F53;margin-top: 5px;}
 
-a.sdata-20 {
+#search-results span.sdata-20 {
 	background-image: url({{site.baseurl}}/img/sdata20.png);
 	/*padding-left: 70px;*/
 }
-a.core {background-image: url({{site.baseurl}}/img/sdata11core.png);}
-a.sync {background-image: url({{site.baseurl}}/img/sdata11sync.png);}
-a.sort {
+#search-results span.core {background-image: url({{site.baseurl}}/img/sdata11core.png);}
+#search-results span.sync {background-image: url({{site.baseurl}}/img/sdata11sync.png);}
+#search-results .sort {
 	display: block;
 	background-repeat: no-repeat;
 	float: left;
