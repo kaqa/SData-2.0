@@ -23,7 +23,7 @@ title: Show search results for
 		jsonFile: "{{site.baseurl}}/search.json",
 		baseUrl: "{{site.baseurl}}",
 		searchResultsTitle: "",	// without title
-		template: "<a target='_blank' class='search-result' href='{{site.baseurl}}{url}'>{title}</a><br />",
+		template: "<a class='search-result' href='{{site.baseurl}}{url}'>{title}</a><br />",
 		body: "content",	// show content
 		bodyLen: 500,
 		searchResults : "#search-results",
