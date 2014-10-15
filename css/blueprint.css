@@ -13,7 +13,7 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	line-height: 1.1em;
 	margin:0;
-	min-width: 900px;
+	min-width: 1000px;
 }
 a {
 	text-decoration: none;
@@ -32,7 +32,8 @@ h3 {font-size: 24px;color: #41A940;padding: 0.5em 0;}
 h4 {font-size: 21px;color: #41A940;padding: 0.5em 0;}
 h1 > a, h2 > a, h3 > a, h4 > a, h5 > a {color: inherit !important;text-decoration: none !important;}
 
-header {background-color: #212121;}
+header {background-color: #212121;height: 145px;}
+header a.logo {float: left;}
 
 img {border: none;}
 .inner-content img {display: block;margin-left: auto;margin-right: auto;}
@@ -131,7 +132,7 @@ p {margin: 10px 0 15px 0;}
 /************ CONTENT ************/
 #content, #breadcrumb {color: #675c53;font-size: small;}
 
-#bodyContainer {width: /*987px*/ 85%;margin-top: 0px;margin-right: auto;margin-bottom: 0px;margin-left: auto;padding-bottom:50px;}
+#bodyContainer {/*width: 85%;*/margin-top: 0px;margin-right: auto;margin-bottom: 0px;margin-left: auto;padding-bottom:50px;}
 #bodyContainer {	min-height: 100%;height: auto !important;height: 100%;margin: 0 auto -74px;}
 
 #breadcrumb {border-bottom: 1px solid #41a940;padding-top: 5px;padding-bottom:5px;/*font-weight: bold;*/}
@@ -191,17 +192,43 @@ span.search-result-group {color: #693;}
 line-height: 20px;
 font-size: 14px;
 margin-bottom: 5px;}
-div.search {display: block; /*margin-top: -25px;*/float: right;margin: -32px 146px 0 0;}
+div.search {display: block; /*margin-top: -25px;*/float: right;margin: 0px 12% 0 0;}
 /* --- search --- */
 
 #content {
-width: 80%;
+/*width: 75%;*/
 margin-right: auto;
 margin-left: auto;
 float: right;
 background-color: #fff;
 margin-bottom: 20px;
 }
+@media screen and (max-width: 1920px) {
+	div#bodyContainer {width: 85%;}
+	div#content {width: 81%;}
+	div#sidemenu {width: 19%;}
+}
+@media screen and (max-width: 1600px) {
+	div#bodyContainer {width: 85%;}
+    div#content {width: 77%;}
+	div#sidemenu {width: 23%;}
+}
+@media screen and (max-width: 1280px) {
+	div#bodyContainer {width: 90%;}
+    div#content {width: 73%;}
+	div#sidemenu {width: 27%;}
+}
+@media screen and (max-width: 1024px) {
+	div#bodyContainer {width: 99%;}
+    div#content {width: 71%;}
+	div#sidemenu {width: 29%;}
+}
+/* weil min-width fuer body 1000px
+@media screen and (max-width: 640px) {
+	div#bodyContainer {width: 99%;}
+    div#content {width: 80%;}
+	div#sidemenu {width: 20%;}
+}*/
 
 .inner-content {	background-color: #fff;	padding: 0 30px 10px 20px;}
 

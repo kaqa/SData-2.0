@@ -17,49 +17,40 @@ $(document).ready(function(){
 		//$(this).parent().find('ul').not(active).slideToggle(200);
 		$(this).parent().find('ul').slideToggle("slow");
 	});*/
-	
-	/* 26.09.2014 *
-	$('ul.navigation > li > a.childs-only').click(function(){
-		current = $(this).parent().find('ul');
-		
-		//$('ul.navigation ul').not(active).not(current).slideUp();
-		
-		//$('ul.navigation ul').slideUp("slow");
-		
-		//$(this).parent().find('ul').not(active).slideToggle(200);
-		
-		$(this).parent().find('ul').slideToggle(200, function() {
-			// Animation complete => go to 1st page
-			id = $(this).parent().find('ul > li > a:first-of-type').attr('id');
-			console.log(id.substring(0,id.indexOf('.')));
-			window.location.href = "{{site.baseurl}}/pages/{{page.group}}/"+id.substring(0,id.indexOf('.'))+"/";
-		});
-		
-	});**/
   
 });
 </script>
-<ul class="navigation">
+
+{% assign categories = "core|sync|sdata-20" | split: "|" %}
+
+<ul class="top-nav">
+	<li><a id="core" class="{% if page.group == 'core' %}active{% endif %}" href="{{site.baseurl}}/pages/core/0100/">SData 1.1 Core</a></li>
+	<li><a id="sync" class="{% if page.group == 'sync' %}active{% endif %}" href="{{site.baseurl}}/pages/sync/0000/">SData 1.1 Sync</a></li>
+	<li><a id="sdata-20" class="{% if page.group == 'sdata-20' %}active{% endif %}" href="{{site.baseurl}}/pages/20/01-0000/">SData 2.0</a></li>
+</ul>
+
+{% for category in categories %}
+<ul class="navigation {{category}}" style="display:{% if category != page.group %}none{% else %}inline-block{% endif %}">
 
 {% assign menuitem = 'top' %}
 {% assign isToplevelOpen = false %}
 
 {% for p in site.pages %}
-    {% if p.group == page.group %}
+    {% if p.group == category %}
 		{% if p.level == 0 %}
 			{% if isToplevelOpen %} {% if menuitem == 'sub' %} </ul> {% endif %} </li> {% endif %}
 			{% assign isToplevelOpen = true %}
 			{% assign menuitem = 'top' %}
 			<li {% if p.url == page.url %}class="activeli"{% endif %}>
 				
-				<a {% if p.layout != null %}id="{{p.name | replace:'.','_' }}" href="{{site.baseurl}}{{p.url}}"{% else %}class="childs-only" style="cursor: pointer;"{% endif %} {% if p.url == page.url %}class="active"{% endif %}>{{p.title}}</a>
+				<a {% if p.layout != null %}id="{{p.group}}_{{p.name | replace:'.','_' }}" href="{{site.baseurl}}{{p.url}}"{% else %}class="childs-only" style="cursor: pointer;"{% endif %} {% if p.url == page.url %}class="active"{% endif %}>{{p.title}}</a>
 		{% endif %}
 		{% if p.level > 0 %}
 			{% if menuitem == 'top' %} <ul class="sub"> {% endif %}
 			{% assign menuitem = 'sub' %}
 			
 				<li {% if p.url == page.url %}class="activeli"{% endif %}>
-					<a id="{{p.name | replace:'.','_' }}" href="{{site.baseurl}}{{p.url}}" {% if p.url == page.url %}class="active"{% endif %}>{{p.title}}</a>
+					<a id="{{p.group}}_{{p.name | replace:'.','_' }}" href="{{site.baseurl}}{{p.url}}" {% if p.url == page.url %}class="active"{% endif %}>{{p.title}}</a>
 				</li>
 			
 		{% endif %}
@@ -69,6 +60,7 @@ $(document).ready(function(){
 <!-- close tag(s) for last menu item -->
 {% if isToplevelOpen %} {% if menuitem == 'sub' %} </ul> {% endif %} </li> {% endif %}
 </ul>
+{% endfor %}
 
 <script type="text/javascript">
 
@@ -92,7 +84,9 @@ function getInternetExplorerVersion()
 
 function navigateTo (id)
 {
-	$('#sidemenu ul > li > ul > li > a').removeClass('active');
+	//# $('#sidemenu ul > li > ul > li > a').removeClass('active');
+	$('#sidemenu ul.navigation:visible').find('li > ul > li > a').removeClass('active');
+	
 	/*$('ul.navigation > li').removeClass('active-top').find('a.active').removeClass('active');
 	$('ul.navigation > li > ul').slideUp(100, 'swing');
 	*/
@@ -156,11 +150,25 @@ jQuery(document).ready(function($) {
 			History.pushState({}, "", this.pathname);
 			
 			// sidemenu link?
-			var ulType = $(this).parent().parent().is('ul') ? ($(this).parent().parent().hasClass('navigation') ? 'navigation' : $(this).parent().parent().hasClass('sub') ? 'sub' : 'content') : 'content';
+			var ulType = $(this).parent().parent().is('ul') ? ($(this).parent().parent().hasClass('navigation') ? 'navigation' : $(this).parent().parent().hasClass('sub') ? 'sub' : $(this).parent().parent().hasClass('top-nav') ? 'top-nav' : 'content') : 'content';
 			
 			//console.log(ulType);
 			switch(ulType)
 			{
+				case 'top-nav':
+					
+					group = $(this).attr('id');
+					if(!$(this).hasClass('active'))
+					{
+						$('ul.navigation:visible').hide("slide", { direction: "left" }, 1000, function(){
+							$('ul.'+group).show("slide", { direction: "left" }, 600);
+						});
+					}
+					
+					$('ul.top-nav > li').find('a.active').removeClass('active');
+					$(this).addClass('active');
+					break;
+				
 				case 'navigation':
 
 					$('ul.navigation > li').removeClass('active-top').find('a.active').removeClass('active');
@@ -169,73 +177,22 @@ jQuery(document).ready(function($) {
 					// top with subitems
 					if($(this).parent().find('ul').length > 0)
 					{
-						//console.log('full top');
 						$('#sidemenu ul > li > ul > li > a').removeClass('active');
-						/*$('ul.navigation > li').removeClass('active-top').find('a.active').removeClass('active');
-						$('ul.navigation > li > ul').slideUp('slow');*/
 						$(this).parent().addClass('active-top').find('ul').slideToggle(600);
 						if($(this).hasClass('childs-only')) $(this).parent().find('ul.sub').children(':first').find('a').addClass('active');
 					}
-					else // empty top
-					{				
-						//console.log('empty top');
-					}
+					else {} // empty top
+
 					$(this).addClass('active');
 					break;
+				
 				case 'sub':
-					//console.log('SUB');
 					$('#sidemenu ul > li > ul > li > a').removeClass('active');
 					$(this).addClass('active');
 					break;
+				
 				default:
-					/*var containerId = ($(this).parent().parent().length > 0) ? $(this).parent().parent().attr('id') : '';
-					// clicked prev/next button
-					if(containerId == 'contentBorderTop' || containerId == 'contentBorderBottom')
-					{
-						//console.log('PrevNext');
-						cutLastSlash = this.pathname.substring(0, this.pathname.lastIndexOf('/'));
-						//console.log("?: " + cutLastSlash.substring(cutLastSlash.lastIndexOf('/') + 1) + '_md');
-						id = cutLastSlash.substring(cutLastSlash.lastIndexOf('/') + 1) + "_md";
-						//console.log($('#' + id));
-						
-						currentPos = $('#' + id).parent().parent().is('ul') ? ($('#' + id).parent().parent().hasClass('navigation') ? 'navigation' : $('#' + id).parent().parent().hasClass('sub') ? 'sub' : 'content') : 'content';
-						//console.log('ul-class: ' + $('#' + id).parent().parent().attr('class'));
-						//console.log($('#' + id).parent().parent().is(':visible'));
-						
-						$('#sidemenu ul > li > ul > li > a').removeClass('active');
-						
-						if(!$('#' + id).parent().parent().is(':visible'))
-						{
-							//console.log('invisible');
-							$('ul.navigation > li').removeClass('active-top').find('a.active').removeClass('active');
-							$('ul.navigation > li > ul').slideUp('fast', 'swing');
-							if($('#' + id).parent().parent().hasClass('sub'))
-							{
-								$('#' + id).parent().parent().parent().addClass('active-top');
-								$('#' + id).parent().parent().slideDown('slow');
-								//$('#sidemenu ul > li > ul > li > a').removeClass('active');
-								//$('#' + id).parent().addClass('active-top').find('ul').slideToggle('slow');
-								//if($('#' + id).hasClass('childs-only')) $('#' + id).parent().find('ul.sub').children(':first').find('a').addClass('active');
-							}
-							//else if($('#' + id).parent().parent().hasClass('navigation')) {}
-							
-						}
-						else if($('#' + id).parent().parent().hasClass('navigation'))
-						{
-							//console.log('aaa');
-							$('ul.navigation > li > ul').slideUp('fast', 'swing');
-							// check has ul child => open 
-							if ($('#' + id).parent().find('ul').length > 0)
-								$('#' + id).parent().find('ul').slideDown('slow');
-							$('ul.navigation > li').removeClass('active-top').find('a.active').removeClass('active');
-							
-						}
-						$('#' + id).addClass('active');					
-						
-					}
-					//console.log($(this).parent().parent().attr('id'));
-					//console.log("pathname: " + this.pathname);
-					*/
+					/* moved to navigateTo(id) function */
 			}
 		});
 
@@ -257,7 +214,7 @@ jQuery(document).ready(function($) {
 				$('#breadcrumb').html($(data).find('#breadcrumb > div'));
 
 				// refresh side menu
-				navigateTo($(data).find('#content').attr('class'));
+				navigateTo($(data).find('#content').attr('class'));	// menu item id is in class of content container every page
 				
 				// refresh site title
 				document.title = "{{site.title}} - " + $('#breadcrumb > div > span.bc-page-title').text();

@@ -82,7 +82,7 @@ layout: default
 		
 		</div>
 		
-		<div id="content" class="{{ page.name | replace:'.','_' }}">
+		<div id="content" class="{{page.group}}_{{ page.name | replace:'.','_' }}">
 
 			{% include breadcrumb.html %}
 		

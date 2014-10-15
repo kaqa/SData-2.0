@@ -1,9 +1,8 @@
 <header class="site-header">
 
   <div class="wrap">
-
-	<h1>
-		<a href="{{site.baseurl}}/" title="Home"><img style="margin-right: 15px;" align="absmiddle" alt="Sage Data" src="{{ site.baseurl }}/img/sage_logo_negative_white_120h.png"></a>
+	<a class="logo" href="{{site.baseurl}}/" title="Home"><img style="margin-right: 15px;" align="absmiddle" alt="Sage Data" src="{{ site.baseurl }}/img/sage_logo_negative_white_120h.png"></a>
+	<h1 style="padding-top: 32px;">
 		{% if page.group == 'core' %}SData Core Specification - version 1.1 
 		{% elsif page.group == 'sync' %}SData Synchronization - version 1.1
 		{% else %}
