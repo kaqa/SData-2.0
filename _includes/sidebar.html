@@ -161,7 +161,14 @@ jQuery(document).ready(function($) {
 					if(!$(this).hasClass('active'))
 					{
 						$('ul.navigation:visible').hide("slide", { direction: "left" }, 1000, function(){
-							$('ul.'+group).show("slide", { direction: "left" }, 600);
+							$('ul.'+group).show("slide", { direction: "left" }, 600, function(){
+								if($(this).children().first().find('ul').length > 0)
+								{
+									$('#sidemenu ul > li > ul > li > a').removeClass('active');
+									$(this).children().first().addClass('active-top').find('ul').slideToggle(600);
+									if($(this).hasClass('childs-only')) $(this).children().first().find('ul.sub').children(':first').find('a').addClass('active');
+								}
+							});
 						});
 					}
 					
