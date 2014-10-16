@@ -207,23 +207,27 @@ margin-bottom: 20px;
 	div#bodyContainer {width: 85%;}
 	div#content {width: 81%;}
 	div#sidemenu {width: 19%;}
+	div.search {margin: 0px 10.5% 0 0;}
 }
 @media screen and (max-width: 1600px) {
 	div#bodyContainer {width: 85%;}
     div#content {width: 77%;}
 	div#sidemenu {width: 23%;}
+	div.search {margin: 0px 11.5% 0 0;}
 }
 @media screen and (max-width: 1280px) {
 	div#bodyContainer {width: 90%;}
     div#content {width: 73%;}
 	div#sidemenu {width: 27%;}
+	div.search {margin: 0px 9.5% 0 0;}
 }
 @media screen and (max-width: 1024px) {
 	div#bodyContainer {width: 99%;}
     div#content {width: 71%;}
 	div#sidemenu {width: 29%;}
+	div.search {margin: 0px 5.5% 0 0;}
 }
-/* weil min-width fuer body 1000px
+/* weil min-width fuer body ist 1000px
 @media screen and (max-width: 640px) {
 	div#bodyContainer {width: 99%;}
     div#content {width: 80%;}
