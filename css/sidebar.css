@@ -31,4 +31,4 @@ div#sidemenu ul li {float:left;width:100%;margin:0px;}
 div#sidemenu ul li ul li {padding: 0 0 0.5em 1.5em;}
 
 ul.top-nav {/* clear: both; */float: left;/*width: 110px !important;*/width: 43% !important;margin-right: 2px !important;}
-ul.top-nav a {min-height: 20px;padding: 12% 4px; /*width: 110px !important;*/width: 80% !important;}
+ul.top-nav a {min-height: 20px;padding: 12% 4px; /*width: 110px !important;*//*width: 80% !important;*/}
