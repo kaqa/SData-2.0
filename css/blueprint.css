@@ -139,9 +139,9 @@ p {margin: 10px 0 15px 0;}
 #breadcrumb, .interop-forum {margin: 0 31px 0 20px;}
 #breadcrumb a {color: #39845a !important;text-decoration: underline;}
 
-div#sidemenu ul li ul li a {background-image: url({{site.baseurl}}/img/box-standard.png);background-position-y: 6px;font-weight: bold;}
-div#sidemenu ul li ul li a:hover {background-image: url({{site.baseurl}}/img/box-hover.png);background-position-y: 6px;}
-div#sidemenu ul li ul li a.active {background-image: url({{site.baseurl}}/img/box-selected.png);background-position-y: 6px;}
+div#sidemenu ul ul li a {background-image: url({{site.baseurl}}/img/box-standard.png);background-position-y: 6px;font-weight: bold;}
+div#sidemenu ul ul li a:hover {background-image: url({{site.baseurl}}/img/box-hover.png);background-position-y: 6px;}
+div#sidemenu ul ul li a.active {background-image: url({{site.baseurl}}/img/box-selected.png);background-position-y: 6px;}
 
 #contentBorderTop {
 padding: 0px;

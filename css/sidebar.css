@@ -1,12 +1,12 @@
 ﻿div#sidemenu {font-size:83%;}
 div#sidemenu .head {font-weight:bold;height:1.75em;padding-left:0.6em;padding-top:0.5em;margin-bottom:0.01px;margin-top:0.01px;}
-div#sidemenu ul {float:right;line-height: 1.2em;list-style:none;margin:0;	padding:0px;display:table;width: 50%;/*width: 152px;*/}
-div#sidemenu ul.sync {margin-top: 45px;}
-div#sidemenu ul.sdata-20 {margin-top: 90px;}
-div#sidemenu ul li {float:left;width:100%;margin:0px;}
+div#sidemenu ul {float:right;line-height: 1.2em;list-style:none;margin:0;	padding:0px;/*display:table;*/width: 56.6%;/*width: 152px;*/}
+div#sidemenu ul.sync {margin-top: 71px;}
+div#sidemenu ul.sdata-20 {margin-top: 142px;}
+div#sidemenu ul li {float:left;width:100%;margin:1px 0;}
 
-div#sidemenu a {display:block;text-decoration:none;padding-top:0.23em;padding-bottom:0.33em;background-position: left center;}
-div#sidemenu > ul > li {display:table-cell;text-align:center;vertical-align:middle;min-height: 40px;}
+div#sidemenu a {/*display:block;*/text-decoration:none;padding-top:0.23em;padding-bottom:0.33em;background-position: left center;}
+div#sidemenu > ul > li {display:table;text-align:center;vertical-align:middle;min-height: 69px;}
 
 #sidemenu {margin: 26px 0 0;width: 27%;/*width: 295px;*/float: left;padding-right: 0px;padding-bottom: 10px;/*padding-left: 10px;*/top: 0;xxposition: absolute;}
 
@@ -18,20 +18,21 @@ div#sidemenu > ul > li {display:table-cell;text-align:center;vertical-align:midd
 	padding-bottom:0.33em;
 	background-repeat:no-repeat;
 	text-align: left;
-	display: block;
+	display: table-cell;
 	padding: 0 20px 0 16px;
 	margin: 2px 0;
 	color: #62ac2e;
 }
 #sidemenu a:hover {text-decoration: underline;}
-#sidemenu > ul > li > a {padding: 0.5em;background: #41a940;background: #62ac2e;color: #fff;padding: 7% 10px; /*width: 100%;*/}
+#sidemenu > ul > li > a {padding: 0.5em;background: #41a940;background: #62ac2e;color: #fff;padding: 7% 10px;vertical-align: middle; /*width: 100%;*/}
 
-#sidemenu > ul > li > a.active, #sidemenu li.active-top > a {background: #39845a;color: #fff;}
+#sidemenu > ul > li > a.active, #sidemenu ul.navigation > li.active-top > a {background: #39845a;color: #fff;}
 #sidemenu > ul > li > a.active {font-weight: bold;font-size: 1.1em !important;/*text-decoration: underline !important;*/}
 #sidemenu > ul ul.sub {width: 100% !important;}
 #sidemenu > ul ul a.active {color: #39845a;}
 
-div#sidemenu ul li ul li {padding: 0 0 0.5em 1.0em;}
+/*div#sidemenu ul li ul li {padding: 0 0 0.5em 1.0em;}*/
+#sidemenu ul ul li {padding: 0 0 0.5em 1.0em;}
 
-ul.top-nav {/* clear: both; */float: left !important;/*width: 110px !important;*/width: 49% !important;margin-right: 2px !important;}
+ul.top-nav {/* clear: both; */float: left !important;/*width: 110px !important;*/width: 43% !important;margin-right: 1px !important;}
 ul.top-nav a {min-height: 20px;padding: 12% 4px; /*width: 110px !important;*//*width: 80% !important;*/}

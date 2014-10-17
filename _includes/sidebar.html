@@ -6,11 +6,16 @@ $(document).ready(function(){
 	
 	var path = window.location.pathname;
 	var active = $("ul.navigation ul a[href*='"+path+"']").parent().parent();
-	if(active.length == 0) active = $("ul.navigation > li > a[href*='"+path+"']").parent().find('ul');
+	//if(active.length == 0) active = $("ul.navigation > li > a[href*='"+path+"']").parent().find('ul');
+	{% assign id = {{page.name | replace:'.','_'}} %}
+	{% assign tmp = {{page.group | append:'_'}} %}
+	{% assign id = {{id | prepend:tmp}} %}
+
+	if(active.length == 0) active = $("a#{{id}}").parent().parent().find('ul.{{id}}');
 	//console.log(active.length);
 
-	$('ul.navigation ul').not(active).hide();
-	active.parent().addClass('active-top');
+	$('ul.navigation ul').not(active).hide(); // hide all not active sub items
+	active.prev().addClass('active-top');	// set active to top level menu item
   
 	/*$('ul.navigation > li > a.childs-only').click(function(){
 		//$('ul.navigation ul').not(active).hide();
@@ -33,20 +38,24 @@ $(document).ready(function(){
 <ul class="navigation {{category}}" style="display:{% if category != page.group %}none{% else %}inline-block{% endif %}">
 
 {% assign menuitem = 'top' %}
+{% assign id = '' %}
 {% assign isToplevelOpen = false %}
 
 {% for p in site.pages %}
     {% if p.group == category %}
 		{% if p.level == 0 %}
-			{% if isToplevelOpen %} {% if menuitem == 'sub' %} </ul> {% endif %} </li> {% endif %}
+			{% if isToplevelOpen %} {% if menuitem == 'sub' %} </ul> {% endif %} <!--/li--> {% endif %}
 			{% assign isToplevelOpen = true %}
 			{% assign menuitem = 'top' %}
-			<li {% if p.url == page.url %}class="activeli"{% endif %}>
-				
+			{% assign id = {{p.name | replace:'.','_'}} %}
+			{% assign tmp = {{p.group | append:'_'}} %}
+			{% assign id = {{id | prepend:tmp}} %}
+			<li {% if p.url == page.url %}class="activeli {{id}}"{% endif %}>
 				<a {% if p.layout != null %}id="{{p.group}}_{{p.name | replace:'.','_' }}" href="{{site.baseurl}}{{p.url}}"{% else %}class="childs-only" style="cursor: pointer;"{% endif %} {% if p.url == page.url %}class="active"{% endif %}>{{p.title}}</a>
+			</li>
 		{% endif %}
 		{% if p.level > 0 %}
-			{% if menuitem == 'top' %} <ul class="sub"> {% endif %}
+			{% if menuitem == 'top' %} <ul class="sub {{id}}"> {% endif %}
 			{% assign menuitem = 'sub' %}
 			
 				<li {% if p.url == page.url %}class="activeli"{% endif %}>
@@ -84,32 +93,33 @@ function getInternetExplorerVersion()
 
 function navigateTo (id)
 {
-	//# $('#sidemenu ul > li > ul > li > a').removeClass('active');
-	$('#sidemenu ul.navigation:visible').find('li > ul > li > a').removeClass('active');
+	$('#sidemenu ul.navigation:visible').find('ul > li > a').removeClass('active');
 	
-	/*$('ul.navigation > li').removeClass('active-top').find('a.active').removeClass('active');
-	$('ul.navigation > li > ul').slideUp(100, 'swing');
-	*/
-	if(!$('#' + id).parent().parent().is(':visible'))
+	var ul = $('#' + id).parent().parent();	// <ul><li><a id="id"></a></li></ul>
+	
 	{
-		$('ul.navigation > li').removeClass('active-top').find('a.active').removeClass('active');
-		$('ul.navigation > li > ul').slideUp(100, 'swing');
-		if($('#' + id).parent().parent().hasClass('sub'))
+		if(!ul.is(':visible'))	// is sub items slided up? / invisible?
 		{
-			$('#' + id).parent().parent().parent().addClass('active-top');
-			$('#' + id).parent().parent().slideDown(600);
+			$('ul.navigation > li').removeClass('active-top').find('a.active').removeClass('active');
+			$('ul.navigation > ul').slideUp(100, 'swing');
+			
+			if(ul.hasClass('sub'))	// is target in sub menu?
+			{
+				ul.prev().addClass('active-top').find('a').addClass('active');	// set active top level menu item
+				ul.slideDown(600);
+			}
+		}
+		else if(ul.hasClass('navigation'))	// is target a top level menu item?
+		{
+			$('ul.navigation > ul').not('.' + id).slideUp(100, 'swing'); // slide up all sub menus instead target //??? not for navigation clicks, but for paging ???
+			
+			if ($('ul.' + id).length > 0)
+				$('ul.' + id).slideDown(600);
+			
+			$('ul.navigation > li').removeClass('active-top').find('a.active').removeClass('active');
 		}
 	}
-	else if($('#' + id).parent().parent().hasClass('navigation'))
-	{
-		$('ul.navigation > li > ul').slideUp(100, 'swing');
-		
-		if ($('#' + id).parent().find('ul').length > 0)
-			$('#' + id).parent().find('ul').slideDown(600);
-		
-		$('ul.navigation > li').removeClass('active-top').find('a.active').removeClass('active');
-	}
-	$('#' + id).addClass('active');	
+	$('#' + id).addClass('active');	// set active target menu item
 }
 
 jQuery(document).ready(function($) {
@@ -120,9 +130,8 @@ jQuery(document).ready(function($) {
 		case 8:
 		case 9:
 			$('ul.navigation > li > a.childs-only').click(function(){
-				//$('ul.navigation ul').not(active).hide();
-				//$(this).parent().find('ul').not(active).slideToggle(200);
-				$(this).parent().find('ul').slideToggle("slow");
+				//$(this).parent().find('ul').slideToggle("slow");
+				$(this).parent().parent().find('ul.'+$(this).attr('id')).slideToggle("slow");
 			});
 			break;
 		
@@ -135,7 +144,8 @@ jQuery(document).ready(function($) {
 		$(document).delegate('#sidemenu a[href^="'+siteUrl+'"], .inner-content a[href^="'+siteUrl+'"], a.ajax[href^="'+siteUrl+'"], a.childs-only', "click", function(e) {
 			
 			if($(this).hasClass('childs-only'))
-				$(this).attr('href', $(this).parent().find('ul > li > a:first-of-type').attr('href'));
+				//$(this).attr('href', $(this).parent().find('ul > li > a:first-of-type').attr('href'));
+				$(this).attr('href', $(this).parent().next().children(':first').find('a:first-of-type').attr('href'));
 			
 			//console.log(e);
 			//console.log($(this));
@@ -162,11 +172,18 @@ jQuery(document).ready(function($) {
 					{
 						$('ul.navigation:visible').hide("slide", { direction: "left" }, 1000, function(){
 							$('ul.'+group).show("slide", { direction: "left" }, 600, function(){
-								if($(this).children().first().find('ul').length > 0)
+								$(this).find('ul').slideUp(100);	// close all sub items
+								$(this).children('li').removeClass('active-top');	// remove all active flags from top level menu items
+								
+								if($(this).find('ul.'+$(this).children().first().find('a').attr('id')).length > 0) // if found <ul class="x"> with class of 1st top level menu item's <a id="x"> id (1st item has sub items)
 								{
-									$('#sidemenu ul > li > ul > li > a').removeClass('active');
-									$(this).children().first().addClass('active-top').find('ul').slideToggle(600);
-									if($(this).hasClass('childs-only')) $(this).children().first().find('ul.sub').children(':first').find('a').addClass('active');
+									sub = $(this).find('ul.'+$(this).children().first().find('a').attr('id'));
+									$('#sidemenu ul > ul > li > a').removeClass('active');
+									$(this).children().first().addClass('active-top'); // set active 1st top level menu item (TODO: somewhere it does too)
+									sub.slideDown(600); // open sub menu items
+									
+									if($(this).children().first().hasClass('childs-only')) 
+										sub.children(':first').find('a').addClass('active');
 								}
 							});
 						});
@@ -180,13 +197,17 @@ jQuery(document).ready(function($) {
 
 					$('ul.navigation > li').removeClass('active-top').find('a.active').removeClass('active');
 					
-					$('ul.navigation > li > ul').slideUp(100, 'swing');
+					$('ul.navigation > ul').slideUp(100, 'swing');
+					
 					// top with subitems
-					if($(this).parent().find('ul').length > 0)
+					if($(this).parent().next().is('ul'))
 					{
-						$('#sidemenu ul > li > ul > li > a').removeClass('active');
-						$(this).parent().addClass('active-top').find('ul').slideToggle(600);
-						if($(this).hasClass('childs-only')) $(this).parent().find('ul.sub').children(':first').find('a').addClass('active');
+						$(this).parent().next().
+						children().children().removeClass('active');
+						
+						$(this).parent().addClass('active-top');
+						$(this).parent().next().slideToggle(600);
+						if($(this).hasClass('childs-only')) $(this).parent().next().children(':first').find('a').addClass('active');
 					}
 					else {} // empty top
 
