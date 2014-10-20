@@ -131,7 +131,7 @@ jQuery(document).ready(function($) {
 		case 9:
 			$('ul.navigation > li > a.childs-only').click(function(){
 				//$(this).parent().find('ul').slideToggle("slow");
-				$(this).parent().parent().find('ul.'+$(this).attr('id')).slideToggle("slow");
+				$(this).parent().next().slideToggle("slow");
 			});
 			break;
 		
