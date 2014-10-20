@@ -2,7 +2,7 @@
 layout: page
 group: core
 level: 1
-title: Appendix D&colon; categories.xml
+title: Appendix D - categories.xml
 ---
 
 <pre xmlns:jx="http://apache.org/cocoon/templates/jx/1.0" xmlns:ns="http://outerx.org/daisy/1.0">&lt;?xml version="1.0" ?&gt;

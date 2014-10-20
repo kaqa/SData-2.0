@@ -2,7 +2,7 @@
 layout: page
 group: sdata-20
 level: 1
-title: Appendix A&colon; Metadata elements for JSON
+title: Appendix A - Metadata elements for JSON
 ---
 
 SData for JSON recognizes a set of metadata elements presented in the table below.  Any application can 
