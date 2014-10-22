@@ -22,75 +22,11 @@ Changes" menu option of the daisy wiki.
 </tr>
 
 <tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
+	<td>22 October 2014</td>
+	<td>Tudor Milencovici</td>
+	<td><a href="../0504/">5.4 Handling Conflicts on the Target Side</a></td>
+	<td>Corrected the erroneous >= comparison used when detecting target side conflicts. This should be a strict > - thank you Erik Müller for detecting and demonstrating this</td>
 </tr>
-
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-
 </tbody>
 </table>
 
