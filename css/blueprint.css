@@ -204,19 +204,19 @@ background-color: #fff;
 margin-bottom: 20px;
 }
 @media screen and (max-width: 1920px) {
-	div#bodyContainer {width: 85%;}
+	div#bodyContainer {width: 96%;}
 	div#content {width: 76%;}
 	div#sidemenu {width: 24%;}
 	div.search {margin: 0px 10.5% 0 0;}
 }
 @media screen and (max-width: 1600px) {
-	div#bodyContainer {width: 85%;}
+	div#bodyContainer {width: 96%;}
     div#content {width: 70%;}
 	div#sidemenu {width: 30%;}
 	div.search {margin: 0px 11.5% 0 0;}
 }
 @media screen and (max-width: 1280px) {
-	div#bodyContainer {width: 90%;}
+	div#bodyContainer {width: 98%;}
     div#content {width: 66%;}
 	div#sidemenu {width: 34%;}
 	div.search {margin: 0px 9.5% 0 0;}
@@ -226,6 +226,8 @@ margin-bottom: 20px;
     div#content {width: 71%;}
 	div#sidemenu {width: 29%;}
 	div.search {margin: 0px 5.5% 0 0;}
+	
+	ul.top-nav a.active {background-position-x: 98% !important;}
 }
 /* weil min-width fuer body ist 1000px
 @media screen and (max-width: 640px) {
