@@ -37,6 +37,6 @@ div#sidemenu > ul > li {display:table;text-align:center;vertical-align:middle;mi
 
 ul.top-nav {float: left !important;width: 43% !important;margin-right: 1px !important;}
 ul.top-nav a {min-height: 20px;padding: 12% 4px;}
-ul.top-nav a.active {background-image: url(/SData-2.0/img/next.png) !important;background-repeat: no-repeat !important;background-position-x: 148px !important;background-position-y: 26px !important;}
+ul.top-nav a.active {background-image: url(/SData-2.0/img/next.png) !important;background-repeat: no-repeat !important;background-position-x: 95% !important;background-position-y: 26px !important;}
 ul.top-nav li {width: 69%;}
 ul.top-nav li.active {width: 100%;}
