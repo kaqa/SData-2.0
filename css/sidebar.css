@@ -3,7 +3,8 @@ div#sidemenu .head {font-weight:bold;height:1.75em;padding-left:0.6em;padding-to
 div#sidemenu ul {float:right;line-height: 1.2em;list-style:none;margin:0;	padding:0px;/*display:table;*/width: 56.6%;/*width: 152px;*/}
 div#sidemenu ul.sync {margin-top: 71px;}
 div#sidemenu ul.sdata-20 {margin-top: 142px;}
-div#sidemenu ul li {float:left;width:100%;margin:1px 0;}
+div#sidemenu ul li {float:left;margin:1px 0;}
+div#sidemenu ul.navigation li {width:100%;}
 
 div#sidemenu a {/*display:block;*/text-decoration:none;padding-top:0.23em;padding-bottom:0.33em;background-position: left center;}
 div#sidemenu > ul > li {display:table;text-align:center;vertical-align:middle;min-height: 69px;}
@@ -34,5 +35,8 @@ div#sidemenu > ul > li {display:table;text-align:center;vertical-align:middle;mi
 /*div#sidemenu ul li ul li {padding: 0 0 0.5em 1.0em;}*/
 #sidemenu ul ul li {padding: 0 0 0.5em 1.0em;}
 
-ul.top-nav {/* clear: both; */float: left !important;/*width: 110px !important;*/width: 43% !important;margin-right: 1px !important;}
-ul.top-nav a {min-height: 20px;padding: 12% 4px; /*width: 110px !important;*//*width: 80% !important;*/}
+ul.top-nav {float: left !important;width: 43% !important;margin-right: 1px !important;}
+ul.top-nav a {min-height: 20px;padding: 12% 4px;}
+ul.top-nav a.active {background-image: url(/SData-2.0/img/next.png) !important;background-repeat: no-repeat !important;background-position-x: 148px !important;background-position-y: 26px !important;}
+ul.top-nav li {width: 69%;}
+ul.top-nav li.active {width: 100%;}

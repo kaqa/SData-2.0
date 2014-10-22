@@ -205,20 +205,20 @@ margin-bottom: 20px;
 }
 @media screen and (max-width: 1920px) {
 	div#bodyContainer {width: 85%;}
-	div#content {width: 81%;}
-	div#sidemenu {width: 19%;}
+	div#content {width: 76%;}
+	div#sidemenu {width: 24%;}
 	div.search {margin: 0px 10.5% 0 0;}
 }
 @media screen and (max-width: 1600px) {
 	div#bodyContainer {width: 85%;}
-    div#content {width: 77%;}
-	div#sidemenu {width: 23%;}
+    div#content {width: 70%;}
+	div#sidemenu {width: 30%;}
 	div.search {margin: 0px 11.5% 0 0;}
 }
 @media screen and (max-width: 1280px) {
 	div#bodyContainer {width: 90%;}
-    div#content {width: 73%;}
-	div#sidemenu {width: 27%;}
+    div#content {width: 66%;}
+	div#sidemenu {width: 34%;}
 	div.search {margin: 0px 9.5% 0 0;}
 }
 @media screen and (max-width: 1024px) {
