@@ -24,73 +24,9 @@ Changes" menu option of the daisy wiki.
 <tr>
 	<td>22 October 2014</td>
 	<td>Tudor Milencovici</td>
-	<td><a href="../04-0500/">JSON Responses Section</a></td>
+	<td><a href="../04-0500/">JSON Responses</a></td>
 	<td>modified the $baseUrl specification to match the agreed lack of slash at the end. Corrected the examples on the page accordingly</td>
 </tr>
-
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-
 </tbody>
 </table>
 
