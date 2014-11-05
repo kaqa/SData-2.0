@@ -112,7 +112,7 @@ function navigateTo (id)
 			if(ul.hasClass('sub'))	// is target in sub menu?
 			{
 				ul.prev().addClass('active-top').find('a').addClass('active');	// set active top level menu item
-				ul.slideDown(600);
+				ul.slideDown('fast');
 			}
 		}
 		else if(ul.hasClass('navigation'))	// is target a top level menu item?
@@ -120,7 +120,7 @@ function navigateTo (id)
 			$('ul.navigation > ul').not('.' + id).slideUp(100, 'swing'); // slide up all sub menus instead target //??? not for navigation clicks, but for paging ???
 			
 			if ($('ul.' + id).length > 0)
-				$('ul.' + id).slideDown(600);
+				$('ul.' + id).slideDown('fast');
 			
 			$('ul.navigation > li').removeClass('active-top').find('a.active').removeClass('active');
 		}
@@ -181,18 +181,18 @@ jQuery(document).ready(function($) {
 						
 						
 						
-						$('ul.navigation:visible').hide("slide", { direction: "left" }, 1000, function(){	// hide navigation bar
+						$('ul.navigation:visible').hide('fast', function(){	// hide navigation bar
 						
-							$(self).parent().animate({width: '100%'}, 'slow', function() {	// activate clicked top-nav item
+							$(self).parent().animate({width: '100%'}, 'fast', function() {	// activate clicked top-nav item
 							
-								$('ul.top-nav > li.active').animate({width: '69%'}, 'slow', function(){	// deactivate previous top-nav item
+								$('ul.top-nav > li.active').animate({width: '69%'}, 'fast', function(){	// deactivate previous top-nav item
 									$('ul.top-nav > li').removeClass('active');
 								});
 								
-								$('ul.'+group).show("slide", { direction: "left" }, 600, function(){	// show activated navigation bar
+								$('ul.'+group).show('fast', function(){	// show activated navigation bar
 									
 									$(self).parent().addClass('active');
-									$(this).find('ul').slideUp(100);	// close all sub items
+									$(this).find('ul').slideUp('fast');	// close all sub items
 									$(this).children('li').removeClass('active-top');	// remove all active flags from top level menu items
 									
 									if($(this).find('ul.'+$(this).children().first().find('a').attr('id')).length > 0) // if found <ul class="x"> with class of 1st top level menu item's <a id="x"> id (1st item has sub items)
@@ -200,7 +200,7 @@ jQuery(document).ready(function($) {
 										sub = $(this).find('ul.'+$(this).children().first().find('a').attr('id'));
 										$('#sidemenu ul > ul > li > a').removeClass('active');
 										$(this).children().first().addClass('active-top'); // set active 1st top level menu item (TODO: somewhere it does too)
-										sub.slideDown(600); // open sub menu items
+										sub.slideDown('fast'); // open sub menu items
 										
 										if($(this).children().first().hasClass('childs-only')) 
 											sub.children(':first').find('a').addClass('active');
@@ -227,7 +227,7 @@ jQuery(document).ready(function($) {
 						children().children().removeClass('active');
 						
 						$(this).parent().addClass('active-top');
-						$(this).parent().next().slideToggle(600);
+						$(this).parent().next().slideToggle('fast');
 						if($(this).hasClass('childs-only')) $(this).parent().next().children(':first').find('a').addClass('active');
 					}
 					else {} // empty top
