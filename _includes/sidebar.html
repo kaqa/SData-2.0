@@ -278,6 +278,11 @@ jQuery(document).ready(function($) {
 					'title': document.title
 				});*/
 				
+				// add watermarks to blocks
+				$('.compliance').prepend('<div>compliance</div>');
+				$('.note').prepend('<div>note</div>');
+				$('.warning').prepend('<div>warning</div>');
+				
 				window.scrollTo(0,0);
 			});
 		});

@@ -80,6 +80,7 @@ blockquote.compliance, pre.compliance, p.compliance {border-color: #4D4F53;}
 blockquote.note, pre.note, p.note {border-color: #39845a}
 blockquote.warning {border-color: #fc581d;}
 
+blockquote.compliance p, blockquote.note p, blockquote.warning p  {color: #fff;}
 blockquote blockquote p {margin: 0px 0 15px 0;}
 
 .compliance div, .note div, .warning div {
