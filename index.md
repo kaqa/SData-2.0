@@ -29,7 +29,7 @@ The version 2.0 of the standard delivers
             for development teams and architects
 
 
-The documents contained in our GitHub file repository form the complete technical core of standard's 2.0 release. They are to be viewed in conjunction with the version 1.1, expanding and ammending the [SData 1.1 specification](http://interop.sage.com/daisy/sdata/Introduction.html). The following documents describe SData 2.0 (click on the links to download directly):
+The documents contained in our GitHub file repository form the complete technical core of standard's 2.0 release. They are to be viewed in conjunction with the version 1.1, expanding and ammending the [SData 1.1 specification](pages/core/0100/). The following documents describe SData 2.0 (click on the links to download directly):
 
 *   [Approach](https://github.com/Sage/SData-2.0/blob/master/SData%202.0%20approach%20-%20v%20101.pdf?raw=true):    	  The SData 2.0 approach document presents a number of key statements and goals that guide the current development of the standard
 *   [Contracts](https://github.com/Sage/SData-2.0/blob/master/SData%202.0%20-%20contracts%20v%20101.pdf?raw=true):
