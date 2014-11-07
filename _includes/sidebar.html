@@ -16,6 +16,9 @@ $(document).ready(function(){
 
 	$('ul.navigation ul').not(active).hide(); // hide all not active sub items
 	active.prev().addClass('active-top');	// set active to top level menu item
+	
+	// register items with sub items in main navigation
+	$('ul.navigation > li').next('ul').prev().addClass('top');
   
 	/*$('ul.navigation > li > a.childs-only').click(function(){
 		//$('ul.navigation ul').not(active).hide();
@@ -26,9 +29,12 @@ $(document).ready(function(){
 });
 </script>
 
-{% assign categories = "core|sync|sdata-20" | split: "|" %}
+{% assign categories = "home|core|sync|sdata-20" | split: "|" %}
 
 <ul class="top-nav">
+	<li class="{% if page.group == 'home' %}active{% endif %}">
+		<a class="{% if page.group == 'home' %}active{% endif %}" id="home" href="{{site.baseurl}}/">Home</a>
+	</li>
 	<li class="{% if page.group == 'core' %}active{% endif %}">
 		<a id="core" class="{% if page.group == 'core' %}active{% endif %}" href="{{site.baseurl}}/pages/core/0100/">SData 1.1 Core</a>
 	</li>
@@ -147,7 +153,7 @@ jQuery(document).ready(function($) {
 
 		// Make sure that all clicked links that link to your internal website
 		// don't just reload the page but execute a History.pushState call
-		$(document).delegate('#sidemenu a[href^="'+siteUrl+'"], .inner-content a[href^="'+siteUrl+'"], a.ajax[href^="'+siteUrl+'"], a.childs-only', "click", function(e) {
+		$(document).delegate('#sidemenu a[href^="'+siteUrl+'"], #sidemenu a[href^="{{site.baseurl}}"], .inner-content a[href^="'+siteUrl+'"], a.ajax[href^="'+siteUrl+'"], a.childs-only ', "click", function(e) {
 			
 			if($(this).hasClass('childs-only'))
 				//$(this).attr('href', $(this).parent().find('ul > li > a:first-of-type').attr('href'));
