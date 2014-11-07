@@ -28,10 +28,8 @@ The version 2.0 of the standard delivers
 *   Reorganization of the standard, stressing the freedom of choice
             for development teams and architects
 
-        &nbsp;
 
-        The documents contained in our GitHub file repository form the complete technical core of standard's 2.0 release. They are to be
-        viewed in conjunction with the version 1.1, expanding and ammending the [SData 1.1 specification](http://interop.sage.com/daisy/sdata/Introduction.html). The following documents describe SData 2.0 (click on the links to download directly):
+The documents contained in our GitHub file repository form the complete technical core of standard's 2.0 release. They are to be viewed in conjunction with the version 1.1, expanding and ammending the [SData 1.1 specification](http://interop.sage.com/daisy/sdata/Introduction.html). The following documents describe SData 2.0 (click on the links to download directly):
 
 *   [Approach](https://github.com/Sage/SData-2.0/blob/master/SData%202.0%20approach%20-%20v%20101.pdf?raw=true):    	  The SData 2.0 approach document presents a number of key statements and goals that guide the current development of the standard
 *   [Contracts](https://github.com/Sage/SData-2.0/blob/master/SData%202.0%20-%20contracts%20v%20101.pdf?raw=true):
@@ -47,7 +45,7 @@ The version 2.0 of the standard delivers
 
 The documents are hosted at [https://github.com/Sage/SData-2.0](https://github.com/Sage/SData-2.0), our file repository. We welcome your visit!
 
-		The next step in our efforts is a complete rework of the SData site and its contents. The final product will be a complete, consistent specification that combines the information presented in the version 2.0 documents (below) with the contents of the 1.1 version  
+The next step in our efforts is a complete rework of the SData site and its contents. The final product will be a complete, consistent specification that combines the information presented in the version 2.0 documents (below) with the contents of the 1.1 version  
 
 You may also find these SData-related GitHub repositories of interest:
 
@@ -65,6 +63,3 @@ You may also find these SData-related GitHub repositories of interest:
             applications
 *   [Acts-as-SData](https://github.com/Sage/acts_as_sdata):
             a Ruby implementation of the SData protocol
-
-          <link to="" the="" appropriate="" branch="" docs="">
-        
