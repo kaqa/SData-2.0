@@ -38,10 +38,15 @@ SData Sync describes the synchronization protocol underlying compliant applicati
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119, "Key words for use in RFCs to Indicate Requirement Levels" [[5](#5)].
 
 * Compliance aspects are displayed in a black box as shown below
+
 <blockquote class="compliance"> Compliance requirements </blockquote>
+
 * Aspects deemed important for implementation are highlighted in an orange box
+
 <blockquote class="warning">Text </blockquote>
+
 * Notes to the reader are displayed as shown below
+
 <blockquote class="note"> note contents </blockquote>
 
 ## <a name="references" href="#references">References</a>
@@ -69,6 +74,7 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 
 ***
 
+## <a name="references" href="#references">Related work</a>
 You may also find these SData-related GitHub repositories of interest:
 
 *   [Argos-SDK](https://github.com/Sage/argos-sdk):
