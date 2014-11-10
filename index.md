@@ -72,25 +72,25 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
         <td><a name="5" href="#5">5</a></td><td><strong>RFC 2119</strong> <i>Key words for use in RFCs to Indicate Requirement Levels</i></td><td>Best Current Practice</td><td></td><td>Internet Engineering Task Force</td>
     </tr>
 <tr>
-        <td>4</td><td><strong>RFC 5322</strong>  <i>Internet Message 
+        <td>6</td><td><strong>RFC 5322</strong>  <i>Internet Message 
 Format</i></td><td>Draft Standard</td><td>October 
 2008</td><td>Internet Engineering 
 Task Force</td>
     </tr>
     <tr>
-        <td>5</td><td><strong>ISO 4217</strong>  <i>Codes for the 
+        <td>7</td><td><strong>ISO 4217</strong>  <i>Codes for the 
 representation of currencies and 
 funds</i></td><td>-</td><td>2008</td><td>International 
 Organization for 
 Standardization</td>
     </tr>
     <tr>
-        <td>6</td><td><strong>RFC 2616</strong>  <i>Hypertext Transfer 
+        <td>8</td><td><strong>RFC 2616</strong>  <i>Hypertext Transfer 
 Protocol -- HTTP/1.1</i></td><td>Standard</td><td>June 1999</td><td>Internet Engineering 
 Task Force</td>
     </tr>
     <tr>
-        <td>7</td><td><strong>ISO 3166-1</strong>  <i>Codes for the 
+        <td>9</td><td><strong>ISO 3166-1</strong>  <i>Codes for the 
 representation of names of 
 countries and their subdivisions 
 - Part 1: Country codes</i></td><td>-</td><td>2006</td><td>International 
@@ -98,7 +98,7 @@ Organization for
 Standardization</td>
     </tr>
     <tr>
-        <td>8</td><td><strong>ISO 8601</strong> <i>Data elements and 
+        <td>10</td><td><strong>ISO 8601</strong> <i>Data elements and 
 interchange formats -
 Information interchange -
 Representation of dates and 
