@@ -57,19 +57,19 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
         <th>Number</th><th>Title</th><th>Version</th><th>Date</th><th>Author</th>
     </tr>
     <tr>
-        <td><a name="1" href="#1">1</a></td><td><strong>SData</strong> <i>Welcome to SData</i></td><td>1.1</td><td>2011</td><td>Sage Group plc</td>
+        <td>1</td><td><strong>SData</strong> <i>Welcome to SData</i></td><td>1.1</td><td>2011</td><td>Sage Group plc</td>
     </tr>
     <tr>
-        <td><a name="2" href="#2">2</a></td><td><strong>RFC 4627</strong> <i>The application/json Media Type for JavaScript Object Notation (JSON)</i></td><td>Informational</td><td>July 2006</td><td>Internet Engineering Task Force</td>
+        <td>2</td><td><strong>RFC 4627</strong> <i>The application/json Media Type for JavaScript Object Notation (JSON)</i></td><td>Informational</td><td>July 2006</td><td>Internet Engineering Task Force</td>
     </tr>
     <tr>
-        <td><a name="3" href="#3">3</a></td><td><strong>RFC 6749</strong> <i>The OAuth 2.0 Authorization Framework</i></td><td>Proposed Standard</td><td>October 2012</td><td>Internet Engineering Task Force</td>
+        <td>3</td><td><strong>RFC 6749</strong> <i>The OAuth 2.0 Authorization Framework</i></td><td>Proposed Standard</td><td>October 2012</td><td>Internet Engineering Task Force</td>
     </tr>
     <tr>
-        <td><a name="4" href="#4">4</a></td><td><strong>RFC 6750</strong> <i>The OAuth 2.0 Authorization Framework: Bearer Token Usage</i></td><td>Proposed Standard</td><td>October 2012</td><td>Internet Engineering Task Force</td>
+        <td>4</td><td><strong>RFC 6750</strong> <i>The OAuth 2.0 Authorization Framework: Bearer Token Usage</i></td><td>Proposed Standard</td><td>October 2012</td><td>Internet Engineering Task Force</td>
     </tr>
     <tr>
-        <td><a name="5" href="#5">5</a></td><td><strong>RFC 2119</strong> <i>Key words for use in RFCs to Indicate Requirement Levels</i></td><td>Best Current Practice</td><td></td><td>Internet Engineering Task Force</td>
+        <td>5</td><td><strong>RFC 2119</strong> <i>Key words for use in RFCs to Indicate Requirement Levels</i></td><td>Best Current Practice</td><td></td><td>Internet Engineering Task Force</td>
     </tr>
 <tr>
         <td>6</td><td><strong>RFC 5322</strong>  <i>Internet Message 
