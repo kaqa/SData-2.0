@@ -29,9 +29,9 @@ The version 2.0 of the standard delivers
             for development teams and architects
 
 
-Vesion 1.1 of the standard is the basis on which the most current version (2.0) is built. The focus is on ATOM+xml and REST as applicable primarily for integrating applications. The specification contained herein maintains its validity in the context of the 2.0 release.  
-
-SData Sync describes the synchronization protocol underlying compliant applications. 
+Included in the site are older but still valid specifications:
+* Vesion 1.1 of the standard is the basis on which the current version (2.0) is built. The focus is on ATOM+xml and REST as applicable primarily for integrating applications. The specification contained herein maintains its validity in the context of the 2.0 release.  
+* SData Sync describes the synchronization protocol underlying compliant applications. 
 
 ## Conventions used on the site
 
@@ -41,9 +41,9 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 
 <blockquote class="compliance"> Compliance requirements </blockquote>
 
-* Aspects deemed important for implementation are highlighted in an orange box
+* Aspects of particular importance are highlighted in an orange box
 
-<blockquote class="warning">Text </blockquote>
+<blockquote class="warning">Important text </blockquote>
 
 * Notes to the reader are displayed as shown below
 
