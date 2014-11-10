@@ -30,6 +30,7 @@ The version 2.0 of the standard delivers
 
 
 Included in the site are older but still valid specifications:
+
 * Vesion 1.1 of the standard is the basis on which the current version (2.0) is built. The focus is on ATOM+xml and REST as applicable primarily for integrating applications. The specification contained herein maintains its validity in the context of the 2.0 release.  
 * SData Sync describes the synchronization protocol underlying compliant applications. 
 
