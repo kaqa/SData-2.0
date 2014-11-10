@@ -47,7 +47,7 @@ $(document).ready(function(){
 </ul>
 
 {% for category in categories %}
-<ul class="navigation {{category}}" style="display:{% if category != page.group %}none{% else %}inline-block{% endif %}">
+<ul class="navigation {{category}}" style='display:{% if (category == "home") or (category != page.group) %}none{% else %}inline-block{% endif %}'>
 
 {% assign menuitem = 'top' %}
 {% assign id = '' %}
@@ -106,6 +106,7 @@ function getInternetExplorerVersion()
 function navigateTo (id)
 {
 	$('#sidemenu ul.navigation:visible').find('ul > li > a').removeClass('active');
+	//$('#sidemenu ul.navigation').find('ul > li > a').removeClass('active');
 	
 	var ul = $('#' + id).parent().parent();	// <ul><li><a id="id"></a></li></ul>
 	
@@ -183,35 +184,41 @@ jQuery(document).ready(function($) {
 					if(!$(this).hasClass('active'))
 					{
 						var self = this;
+						var prevTopnavItem = $('ul.top-nav > li.active');
 						
-						
-						
-						
-						$('ul.navigation:visible').hide('fast', function(){	// hide navigation bar
+						//$('ul.navigation:visible').hide('fast', function(){	// hide navigation bar
+						$('ul.navigation').hide('fast', function(){	// hide navigation bar
 						
 							$(self).parent().animate({width: '100%'}, 'fast', function() {	// activate clicked top-nav item
 							
-								$('ul.top-nav > li.active').animate({width: '69%'}, 'fast', function(){	// deactivate previous top-nav item
-									$('ul.top-nav > li').removeClass('active');
+								//$('ul.top-nav > li.active').animate({width: '69%'}, 'fast', function(){	// deactivate previous top-nav item
+								prevTopnavItem.animate({width: '69%'}, 'fast', function(){	// deactivate previous top-nav item
+									//$('ul.top-nav > li').removeClass('active');
+									prevTopnavItem.removeClass('active');
 								});
 								
-								$('ul.'+group).show('fast', function(){	// show activated navigation bar
-									
-									$(self).parent().addClass('active');
-									$(this).find('ul').slideUp('fast');	// close all sub items
-									$(this).children('li').removeClass('active-top');	// remove all active flags from top level menu items
-									
-									if($(this).find('ul.'+$(this).children().first().find('a').attr('id')).length > 0) // if found <ul class="x"> with class of 1st top level menu item's <a id="x"> id (1st item has sub items)
-									{
-										sub = $(this).find('ul.'+$(this).children().first().find('a').attr('id'));
-										$('#sidemenu ul > ul > li > a').removeClass('active');
-										$(this).children().first().addClass('active-top'); // set active 1st top level menu item (TODO: somewhere it does too)
-										sub.slideDown('fast'); // open sub menu items
+								if(group != 'home')
+								{
+									$('ul.'+group).show('fast', function(){	// show activated navigation bar
 										
-										if($(this).children().first().hasClass('childs-only')) 
-											sub.children(':first').find('a').addClass('active');
-									}
-								});
+										$(self).parent().addClass('active');
+										//#$(this).find('ul').slideUp('fast');	// close all sub items
+										$(this).children('li').removeClass('active-top');	// remove all active flags from top level menu items
+										
+										if($(this).find('ul.'+$(this).children().first().find('a').attr('id')).length > 0) // if found <ul class="x"> with class of 1st top level menu item's <a id="x"> id (1st item has sub items)
+										{
+											sub = $(this).find('ul.'+$(this).children().first().find('a').attr('id'));
+											$('#sidemenu ul > ul > li > a').removeClass('active');
+											$(this).children().first().addClass('active-top'); // set active 1st top level menu item (TODO: somewhere it does too)
+											sub.slideDown('fast'); // open sub menu items
+											
+											if($(this).children().first().hasClass('childs-only')) 
+												sub.children(':first').find('a').addClass('active');
+										}
+									});
+								}
+								else
+									$(self).parent().addClass('active');
 							});
 						});
 					}
