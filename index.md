@@ -7,7 +7,7 @@ title: SData 2.0 on GitHub
 
 # Welcome ! 
 
-This repository provides technical information on the version 2.0 of the standard.
+This repository provides technical information on the version 2.0, 1.1 and synchronization of the standard.
 
 SData is a web toolkit, promoting the development of REST-orientated
           services and their consumption. It consists of a small,
@@ -29,23 +29,45 @@ The version 2.0 of the standard delivers
             for development teams and architects
 
 
-The documents contained in our GitHub file repository form the complete technical core of standard's 2.0 release. They are to be viewed in conjunction with the version 1.1, expanding and ammending the [SData 1.1 specification](pages/core/0100/). The following documents describe SData 2.0 (click on the links to download directly):
+Vesion 1.1 of the standard is the basis on which the most current version (2.0) is built. The focus is on ATOM+xml and REST as applicable primarily for integrating applications. The specification contained herein maintains its validity in the context of the 2.0 release.  
 
-*   [Approach](https://github.com/Sage/SData-2.0/blob/master/SData%202.0%20approach%20-%20v%20101.pdf?raw=true):    	  The SData 2.0 approach document presents a number of key statements and goals that guide the current development of the standard
-*   [Contracts](https://github.com/Sage/SData-2.0/blob/master/SData%202.0%20-%20contracts%20v%20101.pdf?raw=true):
-            The Contracts document describes the concept of an SData contract, an area not clearly presented in the current version of the standard. It shows the role of contracts, describes the many shapes they may take and finishes by outlining some items that could be considered by contract designers.
-*   [Core](https://github.com/Sage/SData-2.0/blob/master/SData%202.0%20Core%20-%20v%20101.pdf?raw=true):
-            The Core document outlines the essential components of SData 2.0 and describes the differences to the 1.1 version of the standard.
-*   [JSON Formatted responses](https://github.com/Sage/SData-2.0/blob/master/JSON%20formatted%20SData%20responses%20-%20v101.pdf?raw=true):
-            The document describes the various aspects relating to the integration of JSON in SData. It covers the response JSON formatting as well as the mechanisms used to request JSON from a provider.
-*   [Expressing metadata in JSON](https://github.com/Sage/SData-2.0/blob/master/SData%202%200%20Expressing%20metadata%20in%20JSON%20-%20v1.pdf?raw=true):
-            The document describes how metadata surfaces in SData JSON responses. It defines the set of SData-recognized structural elements such as types and links as well as the manner in which metadata surfaces in SData JSON responses. The document also introduces prototypes, the JSON parallel to schemas.
-*   [SageID integration](https://github.com/Sage/SData-2.0/blob/master/SData%202%200%20Sage%20ID%20Integration.pdf?raw=true):
-            The document outlines how SData 2.0 compliant providers interact with the SageID authentication provider.
+SData Sync describes the synchronization protocol underlying compliant applications. 
 
-The documents are hosted at [https://github.com/Sage/SData-2.0](https://github.com/Sage/SData-2.0), our file repository. We welcome your visit!
+## Conventions used on the site
 
-The next step in our efforts is a complete rework of the SData site and its contents. The final product will be a complete, consistent specification that combines the information presented in the version 2.0 documents (below) with the contents of the 1.1 version  
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119, "Key words for use in RFCs to Indicate Requirement Levels" [[5](#5)].
+
+* Compliance aspects are displayed in a black box as shown below
+<blockquote class="compliance"> Compliance requirements </blockquote>
+* Aspects deemed important for implementation are highlighted in an orange box
+<blockquote class="warning">Text </blockquote>
+* Notes to the reader are displayed as shown below
+<blockquote class="note"> note contents </blockquote>
+
+## <a name="references" href="#references">References</a>
+
+<table>
+    <tr>
+        <th>Number</th><th>Title</th><th>Version</th><th>Date</th><th>Author</th>
+    </tr>
+    <tr>
+        <td><a name="1" href="#1">1</a></td><td><strong>SData</strong> <i>Welcome to SData</i></td><td>1.1</td><td>2011</td><td>Sage Group plc</td>
+    </tr>
+    <tr>
+        <td><a name="2" href="#2">2</a></td><td><strong>RFC 4627</strong> <i>The application/json Media Type for JavaScript Object Notation (JSON)</i></td><td>Informational</td><td>July 2006</td><td>Internet Engineering Task Force</td>
+    </tr>
+    <tr>
+        <td><a name="3" href="#3">3</a></td><td><strong>RFC 6749</strong> <i>The OAuth 2.0 Authorization Framework</i></td><td>Proposed Standard</td><td>October 2012</td><td>Internet Engineering Task Force</td>
+    </tr>
+    <tr>
+        <td><a name="4" href="#4">4</a></td><td><strong>RFC 6750</strong> <i>The OAuth 2.0 Authorization Framework: Bearer Token Usage</i></td><td>Proposed Standard</td><td>October 2012</td><td>Internet Engineering Task Force</td>
+    </tr>
+    <tr>
+        <td><a name="5" href="#5">5</a></td><td><strong>RFC 2119</strong> <i>Key words for use in RFCs to Indicate Requirement Levels</i></td><td>Best Current Practice</td><td></td><td>Internet Engineering Task Force</td>
+    </tr>
+</table>
+
+***
 
 You may also find these SData-related GitHub repositories of interest:
 
