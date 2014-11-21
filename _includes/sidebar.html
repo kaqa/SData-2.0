@@ -19,7 +19,7 @@ $(document).ready(function(){
 	
 	// register items with sub items in main navigation
 	$('ul.navigation > li').next('ul').prev().addClass('top');
-  
+
 	/*$('ul.navigation > li > a.childs-only').click(function(){
 		//$('ul.navigation ul').not(active).hide();
 		//$(this).parent().find('ul').not(active).slideToggle(200);
@@ -103,6 +103,9 @@ function getInternetExplorerVersion()
 
 }
 
+/*
+* id - target sidebar menu item
+*/
 function navigateTo (id)
 {
 	$('#sidemenu ul.navigation:visible').find('ul > li > a').removeClass('active');
@@ -113,23 +116,38 @@ function navigateTo (id)
 	{
 		if(!ul.is(':visible'))	// is sub items slided up? / invisible?
 		{
-			$('ul.navigation > li').removeClass('active-top').find('a.active').removeClass('active');
-			$('ul.navigation > ul').slideUp(100, 'swing');
+			$('ul.navigation > li')
+			//.removeClass('active-top')
+			.find('a.active').removeClass('active');
+			$('ul.navigation > ul').slideUp(100, 'swing', function() {
+				$('ul.navigation > li').removeClass('active-top');
+			});
 			
 			if(ul.hasClass('sub'))	// is target in sub menu?
 			{
-				ul.prev().addClass('active-top').find('a').addClass('active');	// set active top level menu item
-				ul.slideDown('fast');
+				ul.prev()
+				//.addClass('active-top')
+				.find('a').addClass('active');	// set active top level menu item
+				ul.slideDown('fast', function() {
+					$(this).prev().addClass('active-top');
+				});
 			}
 		}
 		else if(ul.hasClass('navigation'))	// is target a top level menu item?
 		{
-			$('ul.navigation > ul').not('.' + id).slideUp(100, 'swing'); // slide up all sub menus instead target //??? not for navigation clicks, but for paging ???
+			$('ul.navigation > ul').not('.' + id).slideUp(100, 'swing', function() {
+				$('ul.navigation > li').removeClass('active-top');
+			}); // slide up all sub menus instead target //??? not for navigation clicks, but for paging ???
 			
 			if ($('ul.' + id).length > 0)
-				$('ul.' + id).slideDown('fast');
+				$('ul.' + id).slideDown('fast', function() {
+					//$('ul.navigation > ul:visible').prev().addClass('active-top');
+					$(this).prev().addClass('active-top');
+				});
 			
-			$('ul.navigation > li').removeClass('active-top').find('a.active').removeClass('active');
+			$('ul.navigation > li')
+			//.removeClass('active-top')
+			.find('a.active').removeClass('active');
 		}
 	}
 	$('#' + id).addClass('active');	// set active target menu item
@@ -151,6 +169,7 @@ jQuery(document).ready(function($) {
 		default: 
 		//var siteUrl = 'http://'+(document.location.hostname||document.location.host);
 		var siteUrl = '{{site.baseurl}}/pages/';
+		var ulType = 'content';
 
 		// Make sure that all clicked links that link to your internal website
 		// don't just reload the page but execute a History.pushState call
@@ -173,9 +192,10 @@ jQuery(document).ready(function($) {
 			History.pushState({}, "", this.pathname);
 			
 			// sidemenu link?
-			var ulType = $(this).parent().parent().is('ul') ? ($(this).parent().parent().hasClass('navigation') ? 'navigation' : $(this).parent().parent().hasClass('sub') ? 'sub' : $(this).parent().parent().hasClass('top-nav') ? 'top-nav' : 'content') : 'content';
+			ulType = $(this).parent().parent().is('ul') ? ($(this).parent().parent().hasClass('navigation') ? 'navigation' : $(this).parent().parent().hasClass('sub') ? 'sub' : $(this).parent().parent().hasClass('top-nav') ? 'top-nav' : 'content') : 'content';
 			
-			//console.log(ulType);
+			console.log(ulType);
+			
 			switch(ulType)
 			{
 				case 'top-nav':
@@ -205,13 +225,14 @@ jQuery(document).ready(function($) {
 										
 										$(self).parent().addClass('active');
 										//#$(this).find('ul').slideUp('fast');	// close all sub items
-										$(this).children('li').removeClass('active-top');	// remove all active flags from top level menu items
+										//$(this).children('li').removeClass('active-top');	// remove all active flags from top level menu items
 										
 										if($(this).find('ul.'+$(this).children().first().find('a').attr('id')).length > 0) // if found <ul class="x"> with class of 1st top level menu item's <a id="x"> id (1st item has sub items)
 										{
+											$(this).children().first().addClass('active-top');
 											sub = $(this).find('ul.'+$(this).children().first().find('a').attr('id'));
 											$('#sidemenu ul > ul > li > a').removeClass('active');
-											$(this).children().first().addClass('active-top'); // set active 1st top level menu item (TODO: somewhere it does too)
+											//$(this).children().first().addClass('active-top'); // set active 1st top level menu item (TODO: somewhere it does too)
 											sub.slideDown('fast'); // open sub menu items
 											
 											if($(this).children().first().hasClass('childs-only')) 
@@ -241,13 +262,15 @@ jQuery(document).ready(function($) {
 						$(this).parent().next().
 						children().children().removeClass('active');
 						
-						$(this).parent().addClass('active-top');
+						//$(this).parent().addClass('active-top');
 						$(this).parent().next().slideToggle('fast');
 						if($(this).hasClass('childs-only')) $(this).parent().next().children(':first').find('a').addClass('active');
 					}
 					else {} // empty top
 
 					$(this).addClass('active');
+					$('ul.navigation > li').removeClass('active-top');
+					$(this).parent().addClass('active-top');
 					break;
 				
 				case 'sub':
