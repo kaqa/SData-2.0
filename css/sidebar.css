@@ -61,6 +61,6 @@ ul.navigation > li > a {background: #fff !important;color: #62ac2e !important;}
 ul.top-nav {float: left !important;width: 43% !important;margin-right: 1px !important;}
 ul.top-nav a {min-height: 20px;padding: 12% 4px;}
 ul.top-nav a.active#core, ul.top-nav a.active#sync, ul.top-nav a.active#sdata-20 {background-image: url(/SData-2.0/img/next.png) !important;background-repeat: no-repeat !important;background-position-x: 95% !important;background-position-y: 16px !important;}
-ul.top-nav a.active, ul.top-nav a:hover {background-position: 95% 16px !important;}
+ul.top-nav a.active {background-position: 95% 16px;}
 ul.top-nav li {width: 69%;}
 ul.top-nav li.active {width: 100%;}
