@@ -2,7 +2,7 @@
 layout: page
 group: home
 level: 0
-title: SData 2.0 on GitHub
+title: SData on GitHub
 ---
 
 # Welcome ! 
